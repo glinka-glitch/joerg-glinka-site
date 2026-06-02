@@ -42,7 +42,7 @@ export default async function AboutPage() {
       <div className="absolute -z-10 bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-yellow-400/10 blur-[100px] rounded-full"></div>
 
       {/* HERO */}
-      <section className="relative isolate px-4 md:px-6 pt-20 md:pt-24 pb-20 md:pb-24 overflow-hidden">
+      <section className="relative isolate px-4 md:px-6 pt-12 md:pt-16 pb-20 md:pb-24 overflow-hidden">
 
         {/* Background Typography */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
