@@ -55,43 +55,42 @@ export default function JoergGlinkaWebsite({ blok }) {
           "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
       </p>
 
-      {/* Stats */}
+      {/* STATS */}
+            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-      <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
+                <div className="text-3xl font-black text-white">
+                  {blok.stat_1_value || "20+"}
+                </div>
 
-        <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6">
-          <div className="text-3xl font-black text-white">
-            {blok?.stat_1_value || "20+"}
+                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
+                  {blok.stat_1_label || "Jahre Erfahrung"}
+                </div>
+              </div>
+
+              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
+                <div className="text-xl md:text-2xl font-black text-white whitespace-nowrap leading-none">
+                  {blok.stat_2_value || "E-Commerce"}
+                </div>
+
+                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
+                  {blok.stat_2_label || "Wachstum"}
+                </div>
+              </div>
+
+              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
+                <div className="text-3xl font-black text-white">
+                  {blok.stat_3_value || "AI"}
+                </div>
+
+                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
+                  {blok.stat_3_label || "Transformation"}
+                </div>
+              </div>
+
+            </div>
+
           </div>
-
-          <div className="text-zinc-500 uppercase text-sm mt-2">
-            {blok?.stat_1_label || "Jahre Erfahrung"}
-          </div>
-        </div>
-
-        <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6">
-          <div className="text-xl md:text-2xl font-black text-white">
-            {blok?.stat_2_value || "8-Figure"}
-          </div>
-
-          <div className="text-zinc-500 uppercase text-sm mt-2">
-            {blok?.stat_2_label || "Wachstumsimpact"}
-          </div>
-        </div>
-
-        <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6">
-          <div className="text-3xl font-black text-white">
-            {blok?.stat_3_value || "AI"}
-          </div>
-
-          <div className="text-zinc-500 uppercase text-sm mt-2">
-            {blok?.stat_3_label || "Transformation"}
-          </div>
-        </div>
-
-      </div>
-
-    </div>
 
     {/* RIGHT */}
 
