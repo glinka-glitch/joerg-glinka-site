@@ -8,7 +8,7 @@ export default function Header() {
   return (
    <header className="sticky top-0 left-0 w-full z-[9999] backdrop-blur-md bg-black/90 border-b border-white/10">
 
-      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
 
         <Link href="/" className="flex items-center gap-4">
 
