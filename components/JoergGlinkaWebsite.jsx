@@ -10,7 +10,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
   return (
 <main
-  className="relative bg-black text-white min-h-screen font-sans overflow-x-hidden"
+  className="relative min-h-screen bg-black text-white overflow-hidden"
 >
  <div id="page-top" />
     <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
@@ -20,7 +20,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 <div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-fuchsia-500/10 blur-[20px] rounded-full"></div>
       {/* Navigation */}
 {/* HERO */}
-<section className="relative isolate px-4 md:px-6 pt-20 md:pt-28 pb-20 md:pb-24 overflow-hidden">
+<section className="relative isolate px-4 md:px-6 pt-8 md:pt-12 pb-20 md:pb-24 overflow-hidden">
 
   <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-20 items-start">
 
@@ -108,7 +108,7 @@ export default function JoergGlinkaWebsite({ blok }) {
             width={800}
             height={800}
             priority
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover shadow-[0_20px_60px_rgba(217,70,239,0.25)]"
           />
 
         </div>
