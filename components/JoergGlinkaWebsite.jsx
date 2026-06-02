@@ -22,9 +22,9 @@ export default function JoergGlinkaWebsite({ blok }) {
 
       {/* Hero */}
       <section className="relative px-4 md:px-6 pt-6 md:pt-16 pb-20 md:pb-24">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
+        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
 
-  <div className="relative z-10 order-2 lg:order-1">
+  <div className="relative z-10 order-1 pointer-events-none">
   <div className="absolute -inset-4 border-4 border-fuchsia-600 rotate-3 rounded-3xl"></div>
 
 <Image
@@ -35,6 +35,9 @@ export default function JoergGlinkaWebsite({ blok }) {
   priority
   className="relative rounded-3xl object-cover w-full h-auto"
 />
+<div className="h-20 bg-red-500">
+  TEST
+</div>
 
   <div className="relative z-10 order-1 lg:order-2">
             <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
