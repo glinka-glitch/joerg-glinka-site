@@ -10,7 +10,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
   return (
 <main
-  className="relative bg-black text-white min-h-screen font-sans"
+  className="relative bg-black text-white min-h-screen font-sans overflow-x-hidden"
 >
  <div id="page-top" />
     <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
@@ -22,10 +22,10 @@ export default function JoergGlinkaWebsite({ blok }) {
 
       {/* Hero */}
 <section className="relative px-4 md:px-6 pt-8 md:pt-12 pb-20 md:pb-24">
-       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-20 items-center">
+       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-20 items-center overflow-hidden">
 
   <div className="relative z-10 order-1">
-  <div className="absolute -inset-4 border-4 border-fuchsia-600 rotate-3 rounded-3xl pointer-events-none"></div>
+<div className="absolute inset-0 border-4 border-fuchsia-600 rotate-0 rounded-3xl pointer-events-none"></div>
 
   <Image
     src={blok?.hero_image?.filename}
@@ -33,7 +33,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     width={700}
     height={700}
     priority
-    className="relative rounded-3xl object-cover w-full max-w-[650px] h-auto mx-auto"
+    className="relative rounded-3xl object-cover w-full h-auto"
   />
 </div>
 
@@ -58,7 +58,7 @@ export default function JoergGlinkaWebsite({ blok }) {
             {/* Stats */}
             <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="bg-zinc-900 p-6 rounded-3xl border border-white/10">
-                <div className="text-xl md:text-2xl text-white-500 whitespace-nowrap font-black leading-none">
+                <div className="text-xl md:text-2xl text-white-500 truncate font-black leading-none">
                   {blok?.stat_1_value || '20+'}
                 </div>
 
@@ -68,7 +68,7 @@ export default function JoergGlinkaWebsite({ blok }) {
               </div>
 
               <div className="bg-zinc-900 p-6 rounded-3xl border border-white/10">
-                <div className="text-xl md:text-2xl text-white-500 whitespace-nowrap font-black leading-none">
+                <div className="text-xl md:text-2xl text-white-500 truncate font-black leading-none">
                   {blok?.stat_2_value || '8-Figure'}
                 </div>
 
@@ -78,7 +78,7 @@ export default function JoergGlinkaWebsite({ blok }) {
               </div>
 
               <div className="bg-zinc-900 p-6 rounded-3xl border border-white/10">
-                <div className="text-xl md:text-2xl text-white-500 whitespace-nowrap font-black leading-none">
+                <div className="text-xl md:text-2xl text-white-500 truncate font-black leading-none">
                   {blok?.stat_3_value || 'AI'}
                 </div>
 
