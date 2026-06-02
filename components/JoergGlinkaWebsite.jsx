@@ -21,7 +21,7 @@ export default function JoergGlinkaWebsite({ blok }) {
       {/* Navigation */}
 
       {/* Hero */}
-      <section className="relative px-4 md:px-6 pt-32 md:pt-40 pb-20 md:pb-24">
+      <section className="relative px-4 md:px-6 pt-20 md:pt-28 pb-20 md:pb-24">
         <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
 
   <div className="relative z-10 order-1">
