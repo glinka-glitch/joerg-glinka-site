@@ -28,7 +28,7 @@ const inactive =
         )}
       </button>
 
-      {open && (
+      {false && (
         <div className="absolute top-24 left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/10 px-6 py-10 flex flex-col gap-8 z-[9999]">
           <Link
   href="/"

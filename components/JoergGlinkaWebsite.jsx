@@ -90,7 +90,7 @@ export default function JoergGlinkaWebsite({ blok }) {
           </div>
         </div>
         {/* Services */}
-<section className="relative px-6 pt-10 pb-16">
+<div className="relative px-6 pt-10 pb-16">
   <div className="max-w-7xl mx-auto">
       <div className="flex items-end justify-between gap-10 flex-wrap mb-20">
         <div>
@@ -132,7 +132,7 @@ export default function JoergGlinkaWebsite({ blok }) {
       ))}
     </div>
   </div>
-  </section>
+  </div>
       </section>
       {/* EXPERIENCE */}
 {blok?.experience_headline && (
