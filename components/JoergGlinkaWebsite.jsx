@@ -12,7 +12,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 <main
   className="relative bg-black text-white min-h-screen font-sans"
 >
-  {/* <div id="page-top" /> */}
+ <div id="page-top" />
     <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
 
 <div className="absolute -z-10 top-[25%] right-[-120px] w-[380px] h-[380px] bg-yellow-400/10 blur-[20px] rounded-full"></div>
@@ -21,8 +21,8 @@ export default function JoergGlinkaWebsite({ blok }) {
       {/* Navigation */}
 
       {/* Hero */}
-      <section className="relative px-4 md:px-6 pt-20 md:pt-28 pb-20 md:pb-24">
-        <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
+<section className="relative px-4 md:px-6 pt-16 md:pt-24 pb-20 md:pb-24">
+       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-20 items-center">
 
   <div className="relative z-10 order-1">
   <div className="absolute -inset-4 border-4 border-fuchsia-600 rotate-3 rounded-3xl pointer-events-none"></div>
@@ -33,7 +33,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     width={700}
     height={700}
     priority
-    className="relative rounded-3xl object-cover w-full h-auto"
+    className="relative rounded-3xl object-cover w-full max-w-[650px] h-auto mx-auto"
   />
 </div>
 
