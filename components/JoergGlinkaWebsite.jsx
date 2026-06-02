@@ -12,7 +12,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 <div
   className="relative bg-black text-white min-h-[100dvh] font-sans overflow-x-hidden"
 >
-  <div id="page-top" />
+  {/* <div id="page-top" /> */}
     <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
 
 <div className="absolute -z-10 top-[25%] right-[-120px] w-[380px] h-[380px] bg-yellow-400/10 blur-[20px] rounded-full"></div>
@@ -37,9 +37,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   />
 </div>
 
-<div className="relative z-10 order-2"></div>
-
-  <div className="relative z-10 order-1 lg:order-2">
+  <div className="relative z-10 order-2">
             <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
               {blok?.hero_badge ||
                 'KI-gestützte Commerce-Transformation'}
@@ -271,7 +269,8 @@ export default function JoergGlinkaWebsite({ blok }) {
       </Link>
 
       <a
-        href="#page-top"
+       <a
+  href="#page-top"
         className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
       >
         ↑ Nach oben
