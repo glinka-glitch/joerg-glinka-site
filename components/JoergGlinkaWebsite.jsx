@@ -20,7 +20,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 <div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-fuchsia-500/10 blur-[20px] rounded-full"></div>
       {/* Navigation */}
 {/* HERO */}
-<section className="relative isolate px-4 md:px-6 pt-12 md:pt-16 pb-20 md:pb-24 overflow-hidden">
+<section className="relative isolate px-4 md:px-6 pt-0 pb-20 md:pb-24 overflow-hidden">
 
   <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-20 items-start">
 
