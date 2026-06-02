@@ -9,8 +9,8 @@ export default function JoergGlinkaWebsite({ blok }) {
   const portfolioItems = blok?.portfolio_items || []
 
   return (
-<div
-  className="relative bg-black text-white min-h-[100dvh] font-sans overflow-x-hidden"
+<main
+  className="relative bg-black text-white min-h-screen font-sans"
 >
   {/* <div id="page-top" /> */}
     <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
@@ -280,6 +280,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
 
 </section>
-    </div>
+
+</main>
   )
 }
