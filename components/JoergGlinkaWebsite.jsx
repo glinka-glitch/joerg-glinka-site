@@ -136,7 +136,7 @@ export default function JoergGlinkaWebsite({ blok }) {
       </section>
       {/* EXPERIENCE */}
 {blok?.experience_headline && (
- <section className="px-4 md:px-6 pt-0 pb-20 border-t border-white/10 -mt-16">
+<section className="px-4 md:px-6 pt-8 pb-20 border-t border-white/10">
 
     <div className="max-w-7xl mx-auto">
 
@@ -205,7 +205,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   </section>
 )}
       {/* Testimonials */}
-<section className="relative px-6 pt-0 pb-0 md:pb-2 -mt-20 md:-mt-26">
+<section className="relative px-6 pt-8 pb-8 md:pb-8">
   <div className="max-w-7xl mx-auto">
     <FadeIn>
       <div className="mb-10 md:mb-20">
