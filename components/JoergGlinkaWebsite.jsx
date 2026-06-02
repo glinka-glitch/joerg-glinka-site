@@ -19,76 +19,107 @@ export default function JoergGlinkaWebsite({ blok }) {
 
 <div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-fuchsia-500/10 blur-[20px] rounded-full"></div>
       {/* Navigation */}
+{/* HERO */}
+<section className="relative isolate px-4 md:px-6 pt-20 md:pt-28 pb-20 md:pb-24 overflow-hidden">
 
-      {/* Hero */}
-<section className="relative px-4 md:px-6 pt-8 md:pt-12 pb-20 md:pb-24">
-       <div className="max-w-7xl mx-auto flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-20 items-center overflow-hidden">
+  <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-20 items-start">
 
-  <div className="relative z-10 order-1">
-<div className="absolute inset-0 border-4 border-fuchsia-600 rotate-0 rounded-3xl pointer-events-none"></div>
+    {/* LEFT */}
 
-  <Image
-    src={blok?.hero_image?.filename}
-    alt="Jörg Glinka"
-    width={700}
-    height={700}
-    priority
-    className="relative rounded-3xl object-cover w-full h-auto"
-  />
-</div>
+    <div className="order-2 lg:order-1">
 
-  <div className="relative z-10 order-2">
-            <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
-              {blok?.hero_badge ||
-                'KI-gestützte Commerce-Transformation'}
-            </div>
-            <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[0.9] font-black tracking-[-0.05em] uppercase">
-              {blok?.hero_title_line_1 || 'Digitales'}
-              <br />
-              {blok?.hero_title_line_2 || 'Wachstum'}
-              <br />
-              {blok?.hero_title_line_3 || 'neu denken'}
-            </h2>
+      <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+        {blok?.hero_badge || "KI-gestützte Commerce-Transformation"}
+      </div>
 
-            <p className="mt-8 text-lg md:text-xl text-zinc-300 leading-relaxed font-normal max-w-2xl">
-              {blok?.hero_text ||
-                'Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen.'}
-            </p>
+      <h1
+        className="
+        text-[2.9rem]
+        sm:text-6xl
+        md:text-7xl
+        lg:text-8xl
+        font-black
+        uppercase
+        leading-[0.82]
+        tracking-[-0.06em]
+        whitespace-pre-line
+        "
+      >
+        {`${blok?.hero_title_line_1 || "Digitales"}\n${blok?.hero_title_line_2 || "Wachstum"}\n${blok?.hero_title_line_3 || "neu denken"}`}
+      </h1>
 
-            {/* Stats */}
-            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="bg-zinc-900 p-6 rounded-3xl border border-white/10">
-                <div className="text-xl md:text-2xl text-white-500 truncate font-black leading-none">
-                  {blok?.stat_1_value || '20+'}
-                </div>
+      <div className="mt-8 w-24 h-[4px] bg-fuchsia-600 rounded-full"></div>
 
-                <div className="text-sm text-zinc-400 uppercase tracking-wide mt-2">
-                  {blok?.stat_1_label || 'Jahre Erfahrung'}
-                </div>
-              </div>
+      <p className="mt-8 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+        {blok?.hero_text ||
+          "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
+      </p>
 
-              <div className="bg-zinc-900 p-6 rounded-3xl border border-white/10">
-                <div className="text-xl md:text-2xl text-white-500 truncate font-black leading-none">
-                  {blok?.stat_2_value || '8-Figure'}
-                </div>
+      {/* Stats */}
 
-                <div className="text-sm text-zinc-400 uppercase tracking-wide mt-2">
-                  {blok?.stat_2_label || 'Wachstumsimpact'}
-                </div>
-              </div>
+      <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-              <div className="bg-zinc-900 p-6 rounded-3xl border border-white/10">
-                <div className="text-xl md:text-2xl text-white-500 truncate font-black leading-none">
-                  {blok?.stat_3_value || 'AI'}
-                </div>
+        <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6">
+          <div className="text-3xl font-black text-white">
+            {blok?.stat_1_value || "20+"}
+          </div>
 
-                <div className="text-sm text-zinc-400 uppercase tracking-wide mt-2">
-                  {blok?.stat_3_label || 'Transformation'}
-                </div>
-              </div>
-            </div>
+          <div className="text-zinc-500 uppercase text-sm mt-2">
+            {blok?.stat_1_label || "Jahre Erfahrung"}
           </div>
         </div>
+
+        <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6">
+          <div className="text-xl md:text-2xl font-black text-white">
+            {blok?.stat_2_value || "8-Figure"}
+          </div>
+
+          <div className="text-zinc-500 uppercase text-sm mt-2">
+            {blok?.stat_2_label || "Wachstumsimpact"}
+          </div>
+        </div>
+
+        <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6">
+          <div className="text-3xl font-black text-white">
+            {blok?.stat_3_value || "AI"}
+          </div>
+
+          <div className="text-zinc-500 uppercase text-sm mt-2">
+            {blok?.stat_3_label || "Transformation"}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* RIGHT */}
+
+    <div className="relative w-full max-w-[620px] mx-auto order-1 lg:order-2">
+
+      <div className="absolute -inset-4 border-4 border-fuchsia-600 rounded-3xl"></div>
+
+      {blok?.hero_image?.filename && (
+        <div className="relative z-10 overflow-hidden rounded-3xl">
+
+          <Image
+            src={blok.hero_image.filename}
+            alt="Jörg Glinka"
+            width={800}
+            height={800}
+            priority
+            className="w-full h-auto object-cover"
+          />
+
+        </div>
+      )}
+
+    </div>
+
+  </div>
+
+</section>
+      
         {/* Services */}
 <div className="relative px-6 pt-10 pb-16">
   <div className="max-w-7xl mx-auto">
