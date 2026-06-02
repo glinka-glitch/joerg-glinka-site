@@ -201,7 +201,7 @@ export default function RootLayout({
     <Header />    
 <main className="flex-1 pt-20">
   <StoryblokProvider>
-  <ScrollToTop />
+  {/* <ScrollToTop /> */}
   {children}
 </StoryblokProvider>
 </main>
