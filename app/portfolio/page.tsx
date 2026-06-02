@@ -1,0 +1,470 @@
+import Image from "next/image"
+import { renderRichText } from "@storyblok/react"
+import { fetchStory } from "@/lib/storyblok"
+import type { Metadata } from "next"
+export const metadata: Metadata = {
+  title: "Portfolio | Projekte, Transformation & Wachstum",
+  description:
+    "Ausgewählte Projekte, digitale Transformationen und AI-Driven Growth Initiativen von Jörg Glinka.",
+
+  alternates: {
+    canonical: "https://glinka.tech/portfolio",
+  },
+
+  openGraph: {
+    title: "Portfolio | Jörg Glinka",
+    description:
+      "Digitale Transformation, Commerce-Wachstum und AI Operations.",
+    url: "/portfolio",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+}
+
+export default async function PortfolioPage() {
+  const blok = await fetchStory("portfolio")
+
+  return (
+    <main className="relative min-h-screen bg-black text-white overflow-hidden">
+
+      {/* Glow Effects */}
+      <div className="absolute top-[-300px] left-[-200px] w-[700px] h-[700px] bg-fuchsia-600/20 blur-[180px] rounded-full -z-10"></div>
+
+      <div className="absolute bottom-[-300px] right-[-200px] w-[700px] h-[700px] bg-fuchsia-500/10 blur-[200px] rounded-full -z-10"></div>
+
+{/* HERO */}
+<section className="relative isolate px-4 md:px-6 pt-28 md:pt-32 pb-12 md:pb-16 overflow-hidden">
+<div id="page-top" />
+  {/* Background Glow */}
+  <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full"></div>
+
+  <div className="absolute top-[200px] right-[-200px] w-[500px] h-[500px] bg-fuchsia-500/10 blur-[180px] rounded-full"></div>
+
+  {/* Background Typography */}
+  <div className="absolute inset-0 pointer-events-none overflow-hidden">
+
+    <div className="absolute top-24 left-0 text-[18vw] leading-none font-black text-white/[0.03] uppercase tracking-[-0.08em] whitespace-nowrap">
+      Transformation
+    </div>
+
+  </div>
+
+  <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-0">
+
+{/* Badge */}
+{blok.hero_badge && (
+  <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
+    {blok.hero_badge}
+  </div>
+)}
+
+    {blok.hero_headline && (
+  <div className="max-w-6xl">
+
+    <h1
+      className="
+      max-w-[10ch]
+      sm:max-w-[12ch]
+      md:max-w-none
+
+      text-[1.75rem]
+      sm:text-5xl
+      md:text-6xl
+      lg:text-[6rem]
+      xl:text-[6.5rem]
+
+      font-black
+      uppercase
+
+      leading-[0.9]
+      tracking-[-0.05em]
+
+      break-words
+      whitespace-pre-line
+      "
+    >
+      {blok.hero_headline}
+    </h1>
+
+  </div>
+)}
+
+    {/* Divider */}
+    <div className="mt-6 md:mt-10 w-24 md:w-32 h-[4px] bg-fuchsia-600 rounded-full"></div>
+
+    {/* Text */}
+    {blok.hero_text && (
+  <div
+    className="
+    mt-10
+    max-w-6xl
+    text-zinc-300
+    text-base
+    md:text-xl
+    leading-relaxed
+    lg:columns-2
+    gap-20
+    "
+    dangerouslySetInnerHTML={{
+      __html: renderRichText(blok.hero_text) || "",
+    }}
+  />
+)}
+
+  </div>
+</section>
+
+      {/* FEATURE VISUAL */}
+      {false && blok.hero_image?.filename && (
+        <section className="px-4 md:px-6 pb-16 md:pb-24">
+          <div className="max-w-7xl mx-auto px-6 md:px-0">
+
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/10">
+
+                            <Image
+  src={blok.hero_image.filename}
+  alt="Transformation Leadership"
+  width={1800}
+  height={1000}
+  sizes="100vw"
+  quality={85}
+  className="w-full h-full object-cover"
+/>
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+
+            </div>
+
+          </div>
+        </section>
+      )}
+
+      {/* IMPACT */}
+<section className="px-6 md:px-6 py-12 md:py-16 border-t border-white/10">
+
+  <div className="max-w-7xl mx-auto px-6 md:px-0">
+
+    <div className="mb-10">
+
+      <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+        Impact
+      </div>
+
+      <h2
+  className="
+  max-w-6xl
+  text-[1.65rem]
+  sm:text-4xl
+  md:text-6xl
+  lg:text-[5rem]
+  font-black
+  uppercase
+  tracking-[-0.04em]
+  leading-[0.9]
+  "
+>
+        Erfahrung, Skalierung & Transformation
+      </h2>
+
+    </div>
+
+    {blok.metrics?.length > 0 && (
+
+      <div
+  className="
+  grid
+  grid-cols-1
+  md:grid-cols-3
+  gap-16
+  lg:gap-24
+  mt-16
+  "
+>
+
+        {blok.metrics.map((item: any) => (
+
+          <div key={item._uid}>
+
+            <div className="text-6xl md:text-7xl lg:text-[6rem] font-black text-fuchsia-500 leading-none">
+              {item.value}
+            </div>
+
+            <p className="
+mt-4
+max-w-[24ch]
+text-sm
+md:text-lg
+text-zinc-300
+leading-snug
+">
+              {item.label}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    )}
+
+  </div>
+
+</section>
+
+      {/* CASES */}
+      {blok.portfolio_items?.length > 0 && (
+        <section className="px-4 md:px-6 py-16 md:py-24">
+          <div className="max-w-7xl mx-auto px-6 md:px-0">
+
+            <div className="mb-24">
+              <h2
+  className="max-w-[14ch] md:max-w-5xl text-[1.65rem] sm:text-4xl md:text-7xl lg:text-[5.5rem] font-black uppercase tracking-[-0.03em] leading-[0.95] hyphens-auto"
+  lang="de"
+>
+  Core Expertise
+</h2>
+
+<p className="mt-6 max-w-4xl text-zinc-300 text-base md:text-xl leading-relaxed">
+  Wachstum, Transformation und KI-gestützte Execution für moderne Unternehmen.
+</p>
+            </div>
+
+            <div className="space-y-24">
+
+              {blok.portfolio_items.map((item: any, index: number) => (
+                <div
+                  key={item._uid}
+                  className={`grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center ${
+                    index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""
+                  }`}
+                >
+
+                  {/* IMAGE */}
+                  <div className="relative">
+                  
+
+                    {item.image?.filename && (
+                     <div className="relative z-10 overflow-hidden rounded-[2rem] border-4 border-fuchsia-600 bg-zinc-900 aspect-[3/2]">
+
+                        <Image
+  src={item.image.filename}
+  alt={item.title || "Portfolio Image"}
+  width={1400}
+  height={1000}
+  sizes="(max-width: 1024px) 100vw, 50vw"
+  quality={85}
+  className="w-full h-full object-cover"
+/>
+
+                      </div>
+                    )}
+                  </div>
+
+                  {/* CONTENT */}
+                  <div className="max-w-xl">
+
+                    {item.category && (
+                      <div className="text-fuchsia-500 uppercase tracking-[0.2em] text-sm font-bold">
+                        {item.category}
+                      </div>
+                    )}
+
+                    {item.title && (
+                      <h3 className="mt-4 md:mt-6 text-2xl md:text-5xl lg:text-6xl font-black uppercase leading-[0.9] tracking-[-0.03em] max-w-[16ch] md:max-w-none">
+                        {item.title}
+                      </h3>
+                    )}
+
+                    <div className="mt-10 space-y-8">
+
+                      {item.challenge && (
+                        <div>
+                          <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3">
+                            Focus
+                          </div>
+
+                          <p className="mt-3 max-w-[42ch] text-zinc-300 text-base md:text-lg leading-relaxed">
+                            {item.challenge}
+                          </p>
+                        </div>
+                      )}
+
+                      {item.outcome && (
+                        <div>
+                          <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3">
+                            Impact
+                          </div>
+
+                          <p className="mt-3 max-w-[42ch] text-zinc-300 text-base md:text-lg leading-relaxed">
+                            {item.outcome}
+                          </p>
+                        </div>
+                      )}
+
+                    </div>
+
+                    {item.tags?.length > 0 && (
+                      <div className="mt-10 flex flex-wrap gap-3">
+
+                        {item.tags.map((tag: any, index: number) => (
+                          <div
+                            key={index}
+                            className="px-4 py-2 rounded-full bg-fuchsia-600/20 text-fuchsia-400 text-xs uppercase tracking-[0.15em]"
+                          >
+                            {tag}
+                          </div>
+                        ))}
+
+                      </div>
+                    )}
+
+                  </div>
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* PHILOSOPHY */}
+{(blok.philosophy_headline || blok.philosophy_text) && (
+  <section className="px-4 md:px-6 py-16 md:py-24 border-t border-white/10">
+
+    <div className="max-w-7xl mx-auto px-6 md:px-0">
+
+      {blok.philosophy_badge && (
+        <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
+          {blok.philosophy_badge}
+        </div>
+      )}
+
+      <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+
+        <div>
+          {blok.philosophy_headline && (
+            <h2
+              className="max-w-[16ch] md:max-w-4xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
+            >
+              {blok.philosophy_headline}
+            </h2>
+          )}
+        </div>
+
+        <div>
+          {blok.philosophy_text && (
+            <div
+              className="mt-6 lg:mt-0 max-w-[32ch] text-zinc-300 text-base md:text-xl leading-relaxed prose prose-invert prose-p:text-zinc-300"
+              dangerouslySetInnerHTML={{
+                __html: renderRichText(blok.philosophy_text) || "",
+              }}
+            />
+          )}
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+)}
+
+      {/* CTA */}
+{(blok.cta_headline || blok.cta_text) && (
+  <section className="px-4 md:px-6 py-16 md:py-24 border-t border-white/10">
+
+    <div className="max-w-7xl mx-auto px-6 md:px-0">
+
+      {blok.cta_badge && (
+        <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
+          {blok.cta_badge}
+        </div>
+      )}
+
+      <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+
+        {/* LEFT COLUMN */}
+        <div>
+
+          {blok.cta_headline && (
+            <h2
+              className="max-w-[16ch] md:max-w-4xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
+            >
+              {blok.cta_headline}
+            </h2>
+          )}
+
+        </div>
+
+        {/* RIGHT COLUMN */}
+        <div>
+
+          {blok.cta_text && (
+            <div
+              className="mt-6 lg:mt-0 max-w-[34ch] text-zinc-300 text-base md:text-xl leading-relaxed prose prose-invert prose-p:text-zinc-300"
+              dangerouslySetInnerHTML={{
+                __html: renderRichText(blok.cta_text) || "",
+              }}
+            />
+          )}
+
+          <div className="mt-30 lg">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center gap-3 bg-fuchsia-600 hover:bg-fuchsia-500 transition duration-300 px-5 md:px-10 py-3 md:py-5 rounded-full uppercase tracking-wide font-bold text-sm w-full sm:w-auto"
+            >
+              Jetzt Kontakt aufnehmen!
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+)}
+{/* Page Navigation */}
+<section className="px-6 md:px-6 py-12 md:py-16 border-t border-white/10">
+
+  <div className="max-w-7xl mx-auto px-6 md:px-0">
+
+    <h3 className="text-[1.65rem] md:text-4xl font-black uppercase leading-[0.95] max-w-[16ch]">
+      Wo liegen Ihre größten wachstumshebel?
+    </h3>
+
+    <p className="text-zinc-400 max-w-4xl mb-10 text-lg leading-relaxed">
+      Ob digitale Transformation, KI-Integration, operative Skalierung oder Wachstum – gemeinsam identifizieren wir die Maßnahmen mit der größten Wirkung für Ihr Unternehmen.
+    </p>
+
+    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+
+      <a
+        href="/contact"
+        className="inline-flex items-center bg-yellow-400 text-black px-8 py-4 font-black uppercase tracking-wide rounded-full hover:scale-105 transition-all duration-300"
+      >
+        Strategiegespräch vereinbaren
+      </a>
+
+      <a
+        href="#page-top"
+        className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
+      >
+        ↑ Nach oben
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+    </main>
+  )
+}
