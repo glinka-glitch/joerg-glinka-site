@@ -2,6 +2,7 @@ import Image from "next/image"
 import { renderRichText } from "@storyblok/react"
 import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
+import Link from "next/link"
 export const metadata: Metadata = {
   title: "Portfolio | Projekte, Transformation & Wachstum",
   description:
@@ -38,8 +39,11 @@ export default async function PortfolioPage() {
       <div className="absolute bottom-[-300px] right-[-200px] w-[700px] h-[700px] bg-fuchsia-500/10 blur-[200px] rounded-full -z-10"></div>
 
 {/* HERO */}
-<section className="relative isolate px-4 md:px-6 pt-28 md:pt-32 pb-12 md:pb-16 overflow-hidden">
-<div id="page-top" />
+<section className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden">
+<div
+  id="page-top"
+  className="scroll-mt-24 md:scroll-mt-28"
+/>
   {/* Background Glow */}
   <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full"></div>
 
@@ -54,7 +58,7 @@ export default async function PortfolioPage() {
 
   </div>
 
-  <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-0">
+  <div className="relative z-10 max-w-7xl mx-auto">
 
 {/* Badge */}
 {blok.hero_badge && (
@@ -63,31 +67,25 @@ export default async function PortfolioPage() {
   </div>
 )}
 
-    {blok.hero_headline && (
-  <div className="max-w-6xl">
+{blok.hero_headline && (
+  <div className="max-w-[18ch] md:max-w-5xl">
 
-    <h1
-      className="
-      max-w-[10ch]
-      sm:max-w-[12ch]
-      md:max-w-none
-
-      text-[1.75rem]
-      sm:text-5xl
-      md:text-6xl
-      lg:text-[6rem]
-      xl:text-[6.5rem]
-
-      font-black
-      uppercase
-
-      leading-[0.9]
-      tracking-[-0.05em]
-
-      break-words
-      whitespace-pre-line
-      "
-    >
+   <h1
+  className="
+  max-w-[18ch]
+  md:max-w-5xl
+  text-[1.9rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
+  font-black
+  uppercase
+  tracking-[-0.04em]
+  leading-[0.9]
+  whitespace-pre-line
+  break-words
+  "
+>
       {blok.hero_headline}
     </h1>
 
@@ -100,16 +98,15 @@ export default async function PortfolioPage() {
     {/* Text */}
     {blok.hero_text && (
   <div
-    className="
-    mt-10
-    max-w-6xl
-    text-zinc-300
-    text-base
-    md:text-xl
-    leading-relaxed
-    lg:columns-2
-    gap-20
-    "
+  className="
+  mt-10
+  max-w-none
+  md:max-w-5xl
+  text-zinc-300
+  text-lg
+  md:text-xl
+  leading-relaxed
+  "
     dangerouslySetInnerHTML={{
       __html: renderRichText(blok.hero_text) || "",
     }}
@@ -122,7 +119,7 @@ export default async function PortfolioPage() {
       {/* FEATURE VISUAL */}
       {false && blok.hero_image?.filename && (
         <section className="px-4 md:px-6 pb-16 md:pb-24">
-          <div className="max-w-7xl mx-auto px-6 md:px-0">
+          <div className="max-w-7xl mx-auto">
 
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10">
 
@@ -145,9 +142,9 @@ export default async function PortfolioPage() {
       )}
 
       {/* IMPACT */}
-<section className="px-6 md:px-6 py-12 md:py-16 border-t border-white/10">
+<section className="px-4 md:px-6 py-12 md:py-16 border-t border-white/">
 
-  <div className="max-w-7xl mx-auto px-6 md:px-0">
+  <div className="max-w-7xl mx-auto">
 
     <div className="mb-10">
 
@@ -157,7 +154,8 @@ export default async function PortfolioPage() {
 
       <h2
   className="
-  max-w-6xl
+  max-w-none
+  md:max-w-5xl
   text-[1.65rem]
   sm:text-4xl
   md:text-6xl
@@ -173,45 +171,39 @@ export default async function PortfolioPage() {
 
     </div>
 
-    {blok.metrics?.length > 0 && (
+  {blok.metrics?.length > 0 && (
+
+  <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+    {blok.metrics.map((item: any) => (
 
       <div
-  className="
-  grid
-  grid-cols-1
-  md:grid-cols-3
-  gap-16
-  lg:gap-24
-  mt-16
-  "
->
+        key={item._uid}
+        className="
+        editorial-card
+        bg-zinc-900
+        border
+        border-white/10
+        rounded-3xl
+        p-6
+        "
+      >
 
-        {blok.metrics.map((item: any) => (
+        <div className="text-5xl font-black text-fuchsia-500">
+          {item.value}
+        </div>
 
-          <div key={item._uid}>
-
-            <div className="text-6xl md:text-7xl lg:text-[6rem] font-black text-fuchsia-500 leading-none">
-              {item.value}
-            </div>
-
-            <p className="
-mt-4
-max-w-[24ch]
-text-sm
-md:text-lg
-text-zinc-300
-leading-snug
-">
-              {item.label}
-            </p>
-
-          </div>
-
-        ))}
+        <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
+          {item.label}
+        </div>
 
       </div>
 
-    )}
+    ))}
+
+  </div>
+
+)}
 
   </div>
 
@@ -220,12 +212,22 @@ leading-snug
       {/* CASES */}
       {blok.portfolio_items?.length > 0 && (
         <section className="px-4 md:px-6 py-16 md:py-24">
-          <div className="max-w-7xl mx-auto px-6 md:px-0">
+          <div className="max-w-7xl mx-auto">
 
             <div className="mb-24">
-              <h2
-  className="max-w-[14ch] md:max-w-5xl text-[1.65rem] sm:text-4xl md:text-7xl lg:text-[5.5rem] font-black uppercase tracking-[-0.03em] leading-[0.95] hyphens-auto"
-  lang="de"
+             <h2
+className="
+max-w-none
+md:max-w-5xl
+text-[2.2rem]
+sm:text-5xl
+md:text-6xl
+lg:text-7xl
+font-black
+uppercase
+tracking-[-0.04em]
+leading-[0.95]
+"
 >
   Core Expertise
 </h2>
@@ -239,35 +241,35 @@ leading-snug
 
               {blok.portfolio_items.map((item: any, index: number) => (
                 <div
-                  key={item._uid}
-                  className={`grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center ${
-                    index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""
-                  }`}
-                >
+  key={item._uid}
+  className={`grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center overflow-hidden ${
+    index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""
+  }`}
+>
 
                   {/* IMAGE */}
-                  <div className="relative">
+                  <div className="relative overflow-hidden">
                   
 
                     {item.image?.filename && (
-                     <div className="relative z-10 overflow-hidden rounded-[2rem] border-4 border-fuchsia-600 bg-zinc-900 aspect-[3/2]">
+  <div className="relative z-10 overflow-hidden rounded-[2rem] border-4 border-fuchsia-600 bg-zinc-900 aspect-[3/2]">
 
-                        <Image
-  src={item.image.filename}
-  alt={item.title || "Portfolio Image"}
-  width={1400}
-  height={1000}
-  sizes="(max-width: 1024px) 100vw, 50vw"
-  quality={85}
-  className="w-full h-full object-cover"
-/>
+    <Image
+      src={item.image.filename}
+      alt={item.title || "Portfolio Image"}
+      width={1400}
+      height={1000}
+      sizes="(max-width: 1024px) 100vw, 50vw"
+      quality={85}
+      className="w-full h-full object-cover"
+    />
 
-                      </div>
-                    )}
+  </div>
+)}
                   </div>
 
                   {/* CONTENT */}
-                  <div className="max-w-xl">
+                  <div className="w-full">
 
                     {item.category && (
                       <div className="text-fuchsia-500 uppercase tracking-[0.2em] text-sm font-bold">
@@ -276,12 +278,25 @@ leading-snug
                     )}
 
                     {item.title && (
-                      <h3 className="mt-4 md:mt-6 text-2xl md:text-5xl lg:text-6xl font-black uppercase leading-[0.9] tracking-[-0.03em] max-w-[16ch] md:max-w-none">
+                      <h3
+className="
+mt-4
+md:mt-6
+text-[2.3rem]
+md:text-5xl
+lg:text-6xl
+font-black
+uppercase
+leading-[0.88]
+tracking-[-0.04em]
+max-w-none
+"
+>
                         {item.title}
                       </h3>
                     )}
 
-                    <div className="mt-10 space-y-8">
+                    <div className="mt-12 space-y-10">
 
                       {item.challenge && (
                         <div>
@@ -289,7 +304,7 @@ leading-snug
                             Focus
                           </div>
 
-                          <p className="mt-3 max-w-[42ch] text-zinc-300 text-base md:text-lg leading-relaxed">
+                          <p className="mt-3 max-w-none text-zinc-300 text-base md:text-lg leading-relaxed">
                             {item.challenge}
                           </p>
                         </div>
@@ -301,7 +316,7 @@ leading-snug
                             Impact
                           </div>
 
-                          <p className="mt-3 max-w-[42ch] text-zinc-300 text-base md:text-lg leading-relaxed">
+                          <p className="mt-3 max-w-none text-zinc-300 text-base md:text-lg leading-relaxed">
                             {item.outcome}
                           </p>
                         </div>
@@ -310,12 +325,12 @@ leading-snug
                     </div>
 
                     {item.tags?.length > 0 && (
-                      <div className="mt-10 flex flex-wrap gap-3">
+                      <div className="mt-12 flex flex-wrap gap-4">
 
                         {item.tags.map((tag: any, index: number) => (
                           <div
                             key={index}
-                            className="px-4 py-2 rounded-full bg-fuchsia-600/20 text-fuchsia-400 text-xs uppercase tracking-[0.15em]"
+                            className="px-5 py-2 rounded-full bg-fuchsia-600/20 text-fuchsia-400 text-xs uppercase tracking-[0.15em]"
                           >
                             {tag}
                           </div>
@@ -337,7 +352,7 @@ leading-snug
 {(blok.philosophy_headline || blok.philosophy_text) && (
   <section className="px-4 md:px-6 py-16 md:py-24 border-t border-white/10">
 
-    <div className="max-w-7xl mx-auto px-6 md:px-0">
+    <div className="max-w-7xl mx-auto">
 
       {blok.philosophy_badge && (
         <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
@@ -350,7 +365,7 @@ leading-snug
         <div>
           {blok.philosophy_headline && (
             <h2
-              className="max-w-[16ch] md:max-w-4xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
+              className="max-w-none md:max-w-5xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
             >
               {blok.philosophy_headline}
             </h2>
@@ -360,7 +375,7 @@ leading-snug
         <div>
           {blok.philosophy_text && (
             <div
-              className="mt-6 lg:mt-0 max-w-[32ch] text-zinc-300 text-base md:text-xl leading-relaxed prose prose-invert prose-p:text-zinc-300"
+              className="mt-6 lg:mt-0 max-w-none text-zinc-300 text-base md:text-xl leading-relaxed prose prose-invert prose-p:text-zinc-300"
               dangerouslySetInnerHTML={{
                 __html: renderRichText(blok.philosophy_text) || "",
               }}
@@ -379,7 +394,7 @@ leading-snug
 {(blok.cta_headline || blok.cta_text) && (
   <section className="px-4 md:px-6 py-16 md:py-24 border-t border-white/10">
 
-    <div className="max-w-7xl mx-auto px-6 md:px-0">
+    <div className="max-w-7xl mx-auto">
 
       {blok.cta_badge && (
         <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
@@ -394,7 +409,7 @@ leading-snug
 
           {blok.cta_headline && (
             <h2
-              className="max-w-[16ch] md:max-w-4xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
+             className="max-w-none md:max-w-5xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
             >
               {blok.cta_headline}
             </h2>
@@ -414,13 +429,13 @@ leading-snug
             />
           )}
 
-          <div className="mt-30 lg">
-            <a
+          <div className="mt-10 md:mt-12">
+            <Link
               href="/contact"
               className="inline-flex items-center justify-center gap-3 bg-fuchsia-600 hover:bg-fuchsia-500 transition duration-300 px-5 md:px-10 py-3 md:py-5 rounded-full uppercase tracking-wide font-bold text-sm w-full sm:w-auto"
             >
               Jetzt Kontakt aufnehmen!
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -434,9 +449,18 @@ leading-snug
 {/* Page Navigation */}
 <section className="px-6 md:px-6 py-12 md:py-16 border-t border-white/10">
 
-  <div className="max-w-7xl mx-auto px-6 md:px-0">
+  <div className="max-w-7xl mx-auto">
 
-    <h3 className="text-[1.65rem] md:text-4xl font-black uppercase leading-[0.95] max-w-[16ch]">
+    <h3 className="
+text-[1.65rem]
+md:text-5xl
+lg:text-6xl
+font-black
+uppercase
+leading-[0.9]
+tracking-[-0.04em]
+max-w-none
+">
       Wo liegen Ihre größten wachstumshebel?
     </h3>
 
@@ -444,14 +468,14 @@ leading-snug
       Ob digitale Transformation, KI-Integration, operative Skalierung oder Wachstum – gemeinsam identifizieren wir die Maßnahmen mit der größten Wirkung für Ihr Unternehmen.
     </p>
 
-    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 
-      <a
+      <Link
         href="/contact"
         className="inline-flex items-center bg-yellow-400 text-black px-8 py-4 font-black uppercase tracking-wide rounded-full hover:scale-105 transition-all duration-300"
       >
         Strategiegespräch vereinbaren
-      </a>
+      </Link>
 
       <a
         href="#page-top"

@@ -42,7 +42,7 @@ export default async function AboutPage() {
       <div className="absolute -z-10 bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-yellow-400/10 blur-[100px] rounded-full"></div>
 
       {/* HERO */}
-      <section className="relative isolate px-4 md:px-6 pt-0 pb-20 md:pb-24 overflow-hidden">
+      <section className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden">
 
         {/* Background Typography */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -66,16 +66,18 @@ export default async function AboutPage() {
             {/* Headline */}
             <h1
   className="
-  text-[2.9rem]
-  sm:text-6xl
-  md:text-7xl
-  lg:text-8xl
+  max-w-[18ch]
+  md:max-w-5xl
+  text-[1.9rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
   font-black
   uppercase
-  leading-[0.82]
-  tracking-[-0.06em]
+  tracking-[-0.04em]
+  leading-[0.9]
   whitespace-pre-line
-  max-w-none
+  break-words
   "
 >
               {blok.hero_headline || "Strategy\nGrowth\nTransformation"}
@@ -85,7 +87,7 @@ export default async function AboutPage() {
             <div className="mt-8 w-24 h-[4px] bg-fuchsia-600 rounded-full"></div>
 
             {/* Text */}
-            <div className="mt-8 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+            <div className="mt-8 max-w-[38ch] md:max-w-4xl text-lg md:text-xl text-zinc-300 leading-relaxed">
               {blok.hero_text?.content ? (
                 blok.hero_text.content.map((item: any, index: number) => (
                   <p key={index} className="mb-6">
@@ -162,7 +164,7 @@ export default async function AboutPage() {
       </section>
 
       {/* STORY */}
-      <section className="px-4 md:px-6 py-16 md:py-20 border-t border-white/10">
+      <section className="px-4 md:px-6 py-10 md:py-16 border-t border-white/10">
 
         <div className="max-w-7xl mx-auto">
 
@@ -172,24 +174,25 @@ export default async function AboutPage() {
 
           <h2
   className="
-  max-w-[16ch]
+  max-w-[18ch]
   md:max-w-5xl
-  text-[1.65rem]
-  sm:text-4xl
+  text-[1.9rem]
+  sm:text-5xl
   md:text-6xl
   lg:text-7xl
   font-black
   uppercase
   tracking-[-0.04em]
-  leading-[0.95]
+  leading-[0.9]
   whitespace-pre-line
+  break-words
   "
 >
   {blok.story_headline ||
     "Digitale Transformation mit unternehmerischem Fokus"}
 </h2>
 
-          <div className="mt-6 max-w-4xl text-zinc-300 text-lg md:text-xl leading-relaxed">
+          <div className="mt-6 max-w-[40ch] md:max-w-4xl text-zinc-300 text-lg leading-relaxed">
             {blok.story_text?.content ? (
               blok.story_text.content.map((item: any, index: number) => (
                 <p key={index} className="mb-6">
@@ -208,7 +211,7 @@ export default async function AboutPage() {
       </section>
 
       {/* EXPERTISE */}
-      <section className="px-4 md:px-6 py-16 md:py-20 border-t border-white/10">
+      <section className="px-4 md:px-6 py-10 md:py-16 border-t border-white/10">
 
         <div className="max-w-7xl mx-auto">
 
@@ -270,16 +273,16 @@ export default async function AboutPage() {
 
           <h2
   className="
-  max-w-[16ch]
+  max-w-[14ch]
   md:max-w-5xl
-  text-[1.65rem]
-  sm:text-4xl
+  text-[2.2rem]
+  sm:text-5xl
   md:text-6xl
   lg:text-7xl
   font-black
   uppercase
   tracking-[-0.04em]
-  leading-[0.95]
+  leading-[0.9]
   "
 >
             Meine Expertise aus 25+ Jahren Erfahrung
@@ -310,8 +313,7 @@ export default async function AboutPage() {
       </section>
 
       {/* Page Navigation */}
-<section className="px-6 py-24 border-t border-white/10">
-
+<section className="px-4 md:px-6 py-12 md:py-20 border-t border-white/10">
   <div className="max-w-7xl mx-auto">
 
     <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12">
@@ -320,11 +322,22 @@ export default async function AboutPage() {
 
       <div className="max-w-4xl">
 
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-black uppercase leading-[0.95] mb-5">
+        <h3
+  className="
+  max-w-[12ch]
+  md:max-w-none
+  text-3xl
+  md:text-4xl
+  font-black
+  uppercase
+  leading-[0.9]
+  tracking-[-0.04em]
+  mb-4
+">
           Wo liegen Ihre größten Wachstumshebel?
         </h3>
 
-        <p className="text-zinc-400 text-lg leading-relaxed">
+        <p className="text-zinc-400 max-w-[36ch] md:max-w-2xl leading-relaxed">
           Ob digitale Transformation, KI-Integration,
           operative Skalierung oder Wachstum –
           gemeinsam identifizieren wir die Maßnahmen
@@ -345,7 +358,7 @@ export default async function AboutPage() {
           justify-center
           bg-yellow-400
           text-black
-          px-8
+          px-6
           py-4
           font-black
           uppercase

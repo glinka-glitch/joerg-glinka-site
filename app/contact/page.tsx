@@ -46,12 +46,12 @@ export default async function ContactPage() {
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
 <div id="page-top" />
       {/* Glow Effects */}
-      <div className="absolute top-[-250px] left-[-150px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full"></div>
+      <div className="absolute top-[-250px] left-[-150px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full pointer-events-none"></div>
 
-      <div className="absolute bottom-[-300px] right-[-150px] w-[600px] h-[600px] bg-fuchsia-500/10 blur-[180px] rounded-full"></div>
+<div className="absolute bottom-[-300px] right-[-150px] w-[600px] h-[600px] bg-fuchsia-500/10 blur-[180px] rounded-full pointer-events-none"></div>
 
       {/* HERO */}
-      <section className="relative isolate px-4 md:px-6 pt-32 md:pt-40 pb-16 md:pb-24 overflow-hidden">
+      <section className="relative isolate px-4 md:px-6 pt-8 md:pt-20 pb-10 md:pb-16 overflow-hidden">
 
         {/* Background Typography */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -70,15 +70,28 @@ export default async function ContactPage() {
           </div>
 
           {/* Headline */}
-          <h1 className="max-w-5xl text-4xl sm:text-5xl md:text-7xl lg:text-[6.5rem] font-black uppercase leading-[0.88] tracking-[-0.06em]">
+          <h1
+  className="
+  max-w-[10ch]
+  md:max-w-5xl
+  text-[2.2rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
+  font-black
+  uppercase
+  leading-[0.9]
+  tracking-[-0.04em]
+  "
+>
             {blok.headline}
           </h1>
 
           {/* Divider */}
-          <div className="mt-6 md:mt-10 w-24 md:w-32 h-[4px] bg-fuchsia-600 rounded-full"></div>
+          <div className="mt-6 w-20 h-[4px] bg-fuchsia-600 rounded-full"></div>
 
           {/* Text */}
-          <p className="mt-6 md:mt-12 text-zinc-300 text-lg md:text-2xl leading-relaxed max-w-4xl">
+          <p className="mt-6 text-zinc-300 text-lg leading-relaxed max-w-[38ch] md:max-w-4xl">
             {blok.text}
           </p>
 
@@ -133,7 +146,7 @@ export default async function ContactPage() {
 
       </section>
 {/* Page Navigation */}
-<section className="px-4 md:px-6 py-20 border-t border-white/10">
+<section className="relative z-[9999] px-4 md:px-6 py-12 md:py-20 border-t border-white/10">
 
   <div className="max-w-7xl mx-auto">
 
@@ -146,7 +159,7 @@ export default async function ContactPage() {
       Projekte und Strategien für nachhaltiges digitales Wachstum.
     </p>
 
-    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="flex flex-col items-start gap-4">
 
       <Link
         href="/"

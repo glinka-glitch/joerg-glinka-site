@@ -12,7 +12,10 @@ export default function JoergGlinkaWebsite({ blok }) {
 <main
   className="relative min-h-screen bg-black text-white overflow-hidden"
 >
- <div id="page-top" />
+<div
+  id="page-top"
+  className="scroll-mt-24 md:scroll-mt-28"
+/>
     <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
 
 <div className="absolute -z-10 top-[25%] right-[-120px] w-[380px] h-[380px] bg-yellow-400/10 blur-[20px] rounded-full"></div>
@@ -20,7 +23,9 @@ export default function JoergGlinkaWebsite({ blok }) {
 <div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-fuchsia-500/10 blur-[20px] rounded-full"></div>
       {/* Navigation */}
 {/* HERO */}
-<section className="relative isolate px-4 md:px-6 pt-0 pb-20 md:pb-24 overflow-hidden">
+<section
+  className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden"
+>
 
   <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-20 items-start">
 
@@ -50,13 +55,13 @@ export default function JoergGlinkaWebsite({ blok }) {
 
       <div className="mt-8 w-24 h-[4px] bg-fuchsia-600 rounded-full"></div>
 
-      <p className="mt-8 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+      <p className="mt-8 max-w-[32ch] md:max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
         {blok?.hero_text ||
           "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
       </p>
 
       {/* STATS */}
-            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-4">
 
               <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
                 <div className="text-3xl font-black text-white">
@@ -120,15 +125,15 @@ export default function JoergGlinkaWebsite({ blok }) {
 </section>
       
         {/* Services */}
-<section className="relative px-6 pt-10 pb-16">
+<section className="relative px-4 md:px-6 py-10 md:py-16">
   <div className="max-w-7xl mx-auto">
-      <div className="flex items-end justify-between gap-10 flex-wrap mb-20">
+      <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-5 md:p-8 h-full">
         <div>
           <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
             Services
           </div>
 
-<h2 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.05em]">
+<h2 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.03em]">
   {blok?.services_headline || "Leistungen & Expertise"}
 </h2>
         </div>
@@ -140,15 +145,15 @@ export default function JoergGlinkaWebsite({ blok }) {
       </div>
 
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {blok?.services?.map((service) => (
         <FadeIn key={service._uid}>
-          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-8 md:p-10 h-full">
-            <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
+          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-8 h-full">
+            <div className="inline-block bg-fuchsia-600 text-white px-3 py-2 text-[10px] font-black uppercase tracking-[0.15em] rotate-[-2deg] mb-6">
               {service.tag}
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-black uppercase leading-tight break-words">
+            <h3 className="text-xl md:text-2xl font-black uppercase leading-[0.95] break-words">
               <span className="whitespace-pre-line">
   {service.title}
 </span>
@@ -165,7 +170,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   </section>
       {/* EXPERIENCE */}
 {blok?.experience_headline && (
-<section className="px-4 md:px-6 pt-8 pb-20 border-t border-white/10">
+<section className="px-4 md:px-6 py-10 md:py-16 border-t border-white/10">
 
     <div className="max-w-7xl mx-auto">
 
@@ -173,12 +178,12 @@ export default function JoergGlinkaWebsite({ blok }) {
         Erfahrung
       </div>
 
-      <h2 className="text-4xl md:text-6xl font-black uppercase leading-[0.9] tracking-[-0.05em] max-w-5xl">
-        {blok.experience_headline}
-      </h2>
+      <h2 className="text-[1.9rem] sm:text-[2.2rem] md:text-6xl lg:text-7xl font-black uppercase leading-[0.88] tracking-[-0.03em] break-words">
+  {blok.experience_headline}
+</h2>
 
       {blok.experience_text && (
-  <div className="mt-8 text-zinc-300 text-lg leading-relaxed max-w-4xl">
+  <div className="mt-8 mb-10 text-zinc-300 text-lg leading-relaxed max-w-[40ch] md:max-w-4xl">
   <p>
     Von internationalem E-Commerce über Omnichannel-Handel bis hin zu digitaler
     Transformation im Mittelstand: In den vergangenen Jahren habe ich Unternehmen
@@ -192,13 +197,13 @@ export default function JoergGlinkaWebsite({ blok }) {
   </p>
 </div>
 )}
-<h3 className="text-sm uppercase tracking-[0.25em] text-zinc-500 mb-8">
+<h3 className="text-sm uppercase tracking-[0.08em] md:tracking-[0.25em] text-zinc-500 mt-10 mb-6">
   Ausgewählte Stationen & Projekte
 </h3>
     {blok.experience_companies && (
       
 
-  <div className="mt-12 mb-20 grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+  <div className="mt-6 mb-2 grid md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
 
     {[
       "Trusted Shops",
@@ -217,7 +222,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
       <div
         key={index}
-        className="border border-white/5 bg-zinc-950 rounded-xl px-6 py-5 text-center text-zinc-300 hover:border-fuchsia-500 transition-all duration-300"
+        className="border border-white/5 bg-zinc-900 rounded-2xl px-4 py-4 text-center text-zinc-300 hover:border-fuchsia-500 transition-all duration-300"
       >
         {company}
       </div>
@@ -234,39 +239,39 @@ export default function JoergGlinkaWebsite({ blok }) {
   </section>
 )}
       {/* Testimonials */}
-<section className="relative px-6 pt-8 pb-8 md:pb-8">
+<section className="relative px-4 md:px-6 py-10 md:py-16">
   <div className="max-w-7xl mx-auto">
     <FadeIn>
-      <div className="mb-10 md:mb-20">
+      <div className="mb-6 md:mb-8">
         <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
           Trust & Impact
         </div>
 
-        <h2 className="text-3xl md:text-5xl lg:text-7xl font-black uppercase editorial-title">
+        <h2 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase editorial-title">
           Vertrauen durch
           <br />
           Ergebnisse
         </h2>
       </div>
     </FadeIn>
-   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
   {blok?.testimonials?.map((item) => (
     <FadeIn key={item._uid}>
-      <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-10 h-full hover:border-fuchsia-500/30 transition-all duration-300">
+      <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-8 h-full hover:border-fuchsia-500/30 transition-all duration-300">
 
         <div className="mb-6">
-          <span className="text-fuchsia-400 text-xs font-black uppercase tracking-[0.25em]">
+          <span className="text-fuchsia-400 text-[10px] font-black uppercase tracking-[0.15em]">
             {item.Category}
           </span>
         </div>
 
-        <h3 className="text-2xl md:text-3xl font-black uppercase leading-tight mb-6">
+        <h3 className="text-xl md:text-2xl font-black uppercase leading-[0.95] mb-4">
           {item.Headline}
         </h3>
 
-        <p className="text-zinc-300 text-lg leading-relaxed">
-          {item.Text}
-        </p>
+        <p className="text-zinc-300 text-lg leading-relaxed max-w-[36ch]">
+  {item.Text}
+</p>
 
       </div>
     </FadeIn>
@@ -275,20 +280,20 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
 </section>
 {/* Page Navigation */}
-<section className="px-6 py-6 md:py-24">
+<section className="px-4 md:px-6 py-8 md:py-16">
 
-  <div className="max-w-7xl mx-auto border-t border-white/10 pt-8 md:pt-16 relative z-50">
+  <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
-    <h3 className="text-2xl md:text-3xl font-black uppercase mb-4">
+    <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.95] mb-4">
       Lernen Sie die Person hinter den Ergebnissen kennen
     </h3>
 
-    <p className="text-zinc-400 max-w-2xl mb-10">
+    <p className="text-zinc-400 max-w-[36ch] md:max-w-2xl mb-8 leading-relaxed">
       Erfahren Sie mehr über meinen Werdegang, meine Erfahrungen und die Prinzipien,
       die erfolgreiche digitale Transformation und nachhaltiges Wachstum ermöglichen.
     </p>
 
-    <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
 
       <Link
         href="/about"
