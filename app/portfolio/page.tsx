@@ -360,7 +360,7 @@ max-w-none
         </div>
       )}
 
-      <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+      <div className="lg:grid lg:grid-cols-[1.4fr_0.9fr] lg:gap-24 lg:items-start">
 
         <div>
           {blok.philosophy_headline && (
@@ -402,7 +402,7 @@ max-w-none
         </div>
       )}
 
-      <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
+      <div className="lg:grid lg:grid-cols-[1.4fr_0.9fr] lg:gap-24 lg:items-start">
 
         {/* LEFT COLUMN */}
         <div>
@@ -478,11 +478,11 @@ max-w-none
       </Link>
 
       <a
-        href="#page-top"
-        className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
-      >
-        ↑ Nach oben
-      </a>
+  href="#page-top"
+  className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
+>
+  ↑ Nach oben
+</a>
 
     </div>
 

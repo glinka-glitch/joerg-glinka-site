@@ -7,6 +7,48 @@ import { Menu } from 'lucide-react'
 export default function JoergGlinkaWebsite({ blok }) {
   const methodologyItems = blok?.methodology_items || []
   const portfolioItems = blok?.portfolio_items || []
+  const companies = [
+  {
+    name: "Trusted Shops",
+    logo: "/logos/trusted-shops.svg",
+    url: "https://www.trustedshops.de",
+  },
+  {
+    name: "BNP Paribas",
+    logo: "/logos/bnp-paribas.svg",
+    url: "https://group.bnpparibas",
+  },
+  {
+    name: "Lautsprecher Teufel",
+    logo: "/logos/teufel.svg",
+    url: "https://teufel.de",
+  },
+  {
+    name: "Fritz Berger",
+    logo: "/logos/fritz-berger.svg",
+    url: "https://www.fritz-berger.de",
+  },
+  {
+    name: "Fahrrad XXL",
+    logo: "/logos/fahrrad-xxl.svg",
+    url: "https://www.fahrrad-xxl.de",
+  },
+  {
+    name: "Bike Discount",
+    logo: "/logos/bike-discount.svg",
+    url: "https://www.bike-discount.de",
+  },
+  {
+    name: "SCHELL",
+    logo: "/logos/schell.svg",
+    url: "https://www.schell.eu",
+  },
+  {
+    name: "CJD",
+    logo: "/logos/cjd.svg",
+    url: "https://www.cjd.de",
+  },
+]
 
   return (
 <main
@@ -185,10 +227,7 @@ export default function JoergGlinkaWebsite({ blok }) {
       {blok.experience_text && (
   <div className="mt-8 mb-10 text-zinc-300 text-lg leading-relaxed max-w-[40ch] md:max-w-4xl">
   <p>
-    Von internationalem E-Commerce über Omnichannel-Handel bis hin zu digitaler
-    Transformation im Mittelstand: In den vergangenen Jahren habe ich Unternehmen
-    unterschiedlichster Größenordnungen beim Aufbau, der Skalierung und
-    Weiterentwicklung digitaler Geschäftsmodelle begleitet.
+    Von internationalem E-Commerce über Omnichannel-Handel bis hin zu digitaler Transformation im Mittelstand: In den vergangenen Jahren habe ich Unternehmen unterschiedlichster Größenordnungen beim Aufbau, der Skalierung und Weiterentwicklung digitaler Geschäftsmodelle begleitet.
   </p>
 
   <p className="mt-6">
@@ -197,47 +236,64 @@ export default function JoergGlinkaWebsite({ blok }) {
   </p>
 </div>
 )}
-<h3 className="text-sm uppercase tracking-[0.08em] md:tracking-[0.25em] text-zinc-500 mt-10 mb-6">
-  Ausgewählte Stationen & Projekte
-</h3>
+<p className="text-zinc-500 text-xs uppercase tracking-[0.2em] mb-8">
+Ausgewählte Unternehmen & Organisationen, für die ich gearbeitet habe
+</p>
     {blok.experience_companies && (
-      
+<div className="mt-10">
 
-  <div className="mt-6 mb-2 grid md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 items-center">
 
-    {[
-      "Trusted Shops",
-      "Lautsprecher Teufel",
-      "Fritz Berger",
-      "Fahrrad XXL",
-      "Bike Discount",
-      "VBS Hobby Service",
-      "DW Shop",
-      "Close Up",
-      "PIKO Spielwaren",
-      "Streetbuzz",
-      "CJD",
-      "SCHELL"
-    ].map((company, index) => (
-
-      <div
-        key={index}
-        className="border border-white/5 bg-zinc-900 rounded-2xl px-4 py-4 text-center text-zinc-300 hover:border-fuchsia-500 transition-all duration-300"
-      >
-        {company}
-      </div>
-
-    ))}
+    {companies.map((company) => (
+  <a
+    key={company.name}
+    href={company.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    title={company.name}
+    aria-label={`Website von ${company.name} öffnen`}
+    className="
+      flex
+      items-center
+      justify-center
+      h-12
+      md:h-14
+      opacity-90
+      hover:opacity-100
+      hover:-translate-y-1
+      transition-all
+      duration-300
+    "
+  >
+    <Image
+      src={company.logo}
+      alt={company.name}
+      width={240}
+      height={80}
+      className="
+        h-8
+        md:h-10
+        w-auto
+        max-w-full
+        object-contain
+      "
+    />
+  </a>
+))}
 
   </div>
+<p className="mt-10 text-zinc-500 text-sm md:text-base leading-relaxed max-w-4xl">
+  Erfahrung aus Commerce, Retail, Industrie und Finanzdienstleistung.
+</p>
+</div>
+
 
 )}  
-
-
     </div>
 
   </section>
 )}
+
       {/* Testimonials */}
 <section className="relative px-4 md:px-6 py-10 md:py-16">
   <div className="max-w-7xl mx-auto">

@@ -32,8 +32,10 @@ export default async function AboutPage() {
   {...storyblokEditable(blok)}
   className="relative min-h-screen bg-black text-white overflow-hidden"
 >
-  <div id="page-top" />
-
+  <div
+  id="page-top"
+  className="scroll-mt-24 md:scroll-mt-28"
+/>
   {/* Navigation */}
 
       {/* Glow Effects */}
@@ -350,7 +352,7 @@ export default async function AboutPage() {
 
       <div className="flex flex-col items-start lg:items-end gap-8">
 
-        <a
+        <Link
           href="/contact"
           className="
           inline-flex
@@ -370,9 +372,9 @@ export default async function AboutPage() {
           "
         >
           Strategiegespräch vereinbaren
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="#page-top"
           className="
           font-bold
@@ -384,7 +386,7 @@ export default async function AboutPage() {
           "
         >
           ↑ Nach oben
-        </a>
+        </Link>
 
       </div>
 

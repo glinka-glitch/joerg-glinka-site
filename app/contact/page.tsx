@@ -44,7 +44,10 @@ export default async function ContactPage() {
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
-<div id="page-top" />
+<div
+  id="page-top"
+  className="scroll-mt-24 md:scroll-mt-28"
+/>
       {/* Glow Effects */}
       <div className="absolute top-[-250px] left-[-150px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full pointer-events-none"></div>
 
