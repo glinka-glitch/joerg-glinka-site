@@ -74,10 +74,10 @@ export default async function ContactPage() {
 
           {/* Headline */}
           <h1
-  className="
-  max-w-[10ch]
+ className="
+  max-w-none
   md:max-w-5xl
-  text-[2.2rem]
+  text-[2.6rem]
   sm:text-5xl
   md:text-6xl
   lg:text-7xl

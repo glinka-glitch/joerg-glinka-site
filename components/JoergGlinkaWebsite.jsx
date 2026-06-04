@@ -12,41 +12,49 @@ export default function JoergGlinkaWebsite({ blok }) {
     name: "Trusted Shops",
     logo: "/logos/trusted-shops.svg",
     url: "https://www.trustedshops.de",
+    size: "h-8 md:h-10",
   },
   {
     name: "BNP Paribas",
     logo: "/logos/bnp-paribas.svg",
     url: "https://group.bnpparibas",
+    size: "h-8 md:h-10",
   },
   {
     name: "Lautsprecher Teufel",
     logo: "/logos/teufel.svg",
     url: "https://teufel.de",
+    size: "h-10 md:h-12",
   },
   {
     name: "Fritz Berger",
     logo: "/logos/fritz-berger.svg",
     url: "https://www.fritz-berger.de",
+    size: "h-10 md:h-12",
   },
   {
     name: "Fahrrad XXL",
     logo: "/logos/fahrrad-xxl.svg",
     url: "https://www.fahrrad-xxl.de",
+    size: "h-8 md:h-10",
   },
   {
     name: "Bike Discount",
     logo: "/logos/bike-discount.svg",
     url: "https://www.bike-discount.de",
+    size: "h-8 md:h-10",
   },
   {
     name: "SCHELL",
     logo: "/logos/schell.svg",
     url: "https://www.schell.eu",
+    size: "h-6 md:h-8",
   },
   {
     name: "CJD",
     logo: "/logos/cjd.svg",
     url: "https://www.cjd.de",
+    size: "h-7 md:h-8",
   },
 ]
 
@@ -266,18 +274,12 @@ Ausgewählte Unternehmen & Organisationen, für die ich gearbeitet habe
     "
   >
     <Image
-      src={company.logo}
-      alt={company.name}
-      width={240}
-      height={80}
-      className="
-        h-8
-        md:h-10
-        w-auto
-        max-w-full
-        object-contain
-      "
-    />
+  src={company.logo}
+  alt={company.name}
+  width={240}
+  height={80}
+  className={`${company.size} w-auto max-w-full object-contain`}
+/>
   </a>
 ))}
 

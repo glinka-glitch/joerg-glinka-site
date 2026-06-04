@@ -25,9 +25,15 @@ export default function Header() {
               JÖRG GLINKA
             </h1>
 
-            <p className="text-xs uppercase tracking-[0.25em] text-zinc-400 mt-1">
-              AI-Driven Growth & E-Commerce
-            </p>
+            <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1 leading-tight">
+  <span className="md:hidden">
+    AI-Driven Growth
+  </span>
+
+  <span className="hidden md:inline">
+    AI-Driven Growth & E-Commerce
+  </span>
+</p>
           </div>
 
         </Link>
