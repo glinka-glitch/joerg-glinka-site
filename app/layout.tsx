@@ -200,8 +200,8 @@ export default function RootLayout({
 />
     <Header />    
 <main className="flex-1">
-  <StoryblokProvider>
-  {/* <ScrollToTop /> */}
+<StoryblokProvider>
+  <ScrollToTop />
   {children}
 </StoryblokProvider>
 </main>
