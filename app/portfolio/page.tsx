@@ -68,22 +68,21 @@ export default async function PortfolioPage() {
 )}
 
 {blok.hero_headline && (
-  <div className="max-w-[18ch] md:max-w-5xl">
+  <div className="max-w-none md:max-w-5xl">
 
    <h1
   className="
-  max-w-[18ch]
-  md:max-w-5xl
-  text-[1.9rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  tracking-[-0.04em]
-  leading-[0.9]
-  whitespace-pre-line
-  break-words
+ max-w-none
+md:max-w-5xl
+text-[2.4rem]
+sm:text-5xl
+md:text-6xl
+lg:text-7xl
+font-black
+uppercase
+tracking-[-0.04em]
+leading-[0.9]
+text-balance
   "
 >
       {blok.hero_headline}
@@ -142,7 +141,7 @@ export default async function PortfolioPage() {
       )}
 
       {/* IMPACT */}
-<section className="px-4 md:px-6 py-12 md:py-16 border-t border-white/">
+<section className="px-4 md:px-6 py-12 md:py-16">
 
   <div className="max-w-7xl mx-auto">
 
@@ -166,7 +165,7 @@ export default async function PortfolioPage() {
   leading-[0.9]
   "
 >
-        Erfahrung, Skalierung & Transformation
+        Messbare Wirkung
       </h2>
 
     </div>
