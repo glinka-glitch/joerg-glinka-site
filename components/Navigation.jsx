@@ -18,6 +18,7 @@ export default function Navigation() {
 
       <Link
         href="/"
+        scroll={true}
         className={pathname === "/" ? active : inactive}
       >
         Home
@@ -25,6 +26,7 @@ export default function Navigation() {
 
       <Link
         href="/about"
+        scroll={true}
         className={pathname === "/about" ? active : inactive}
       >
         About
@@ -32,6 +34,7 @@ export default function Navigation() {
 
       <Link
         href="/portfolio"
+        scroll={true}
         className={pathname === "/portfolio" ? active : inactive}
       >
         Portfolio
@@ -39,6 +42,7 @@ export default function Navigation() {
 
       <Link
         href="/contact"
+        scroll={true}
         className={pathname === "/contact" ? active : inactive}
       >
         Contact
