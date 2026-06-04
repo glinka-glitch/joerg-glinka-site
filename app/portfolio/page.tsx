@@ -128,7 +128,7 @@ text-balance
   width={1800}
   height={1000}
   sizes="100vw"
-  quality={85}
+  quality={80}
   className="w-full h-full object-cover"
 />
 
@@ -259,7 +259,7 @@ leading-[0.95]
       width={1400}
       height={1000}
       sizes="(max-width: 1024px) 100vw, 50vw"
-      quality={85}
+      quality={80}
       className="w-full h-full object-cover"
     />
 
