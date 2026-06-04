@@ -251,7 +251,7 @@ leading-[0.95]
                   
 
                     {item.image?.filename && (
-  <div className="relative z-10 overflow-hidden rounded-[2rem] border-4 border-fuchsia-600 bg-zinc-900 aspect-[3/2]">
+  <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900 aspect-[3/2]">
 
     <Image
       src={item.image.filename}
