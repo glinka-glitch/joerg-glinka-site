@@ -109,44 +109,58 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok?.hero_text ||
           "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
       </p>
+      {blok.hero_subtext && (
+  <p className="mt-5 text-sm md:text-base text-zinc-500 leading-relaxed max-w-[42ch]">
+    {blok.hero_subtext}
+  </p>
+)}
 
-      {/* STATS */}
-            <div className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-3 gap-4">
+     {/* EXECUTIVE TRUST BAR */}
 
-              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
-                <div className="text-3xl font-black text-white">
-                  {blok.stat_1_value || "20+"}
-                </div>
+<div className="mt-12 md:mt-14">
 
-                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
-                  {blok.stat_1_label || "Jahre Erfahrung"}
-                </div>
-              </div>
+  <div className="flex flex-col sm:flex-row sm:flex-wrap lg:flex-nowrap gap-10 lg:gap-16">
 
-              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
-                <div className="text-xl md:text-2xl font-black text-white whitespace-nowrap leading-none">
-                  {blok.stat_2_value || "E-Commerce"}
-                </div>
+    {/* ITEM 1 */}
+    <div>
+      <div className="text-4xl md:text-5xl font-black text-white">
+        {blok.stat_1_value}
+      </div>
 
-                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
-                  {blok.stat_2_label || "Wachstum"}
-                </div>
-              </div>
+      <div className="text-zinc-500 uppercase tracking-[0.12em] text-sm mt-2">
+        {blok.stat_1_label}
+      </div>
+    </div>
 
-              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
-                <div className="text-3xl font-black text-white">
-                  {blok.stat_3_value || "AI"}
-                </div>
+    <div className="hidden lg:block w-px h-12 bg-white/10" />
 
-                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
-                  {blok.stat_3_label || "Transformation"}
-                </div>
-              </div>
+    {/* ITEM 2 */}
+    <div>
+      <div className="text-4xl md:text-5xl font-black text-white">
+        {blok.stat_2_value}
+      </div>
 
-            </div>
+      <div className="text-zinc-500 uppercase tracking-[0.12em] text-sm mt-2">
+        {blok.stat_2_label}
+      </div>
+    </div>
 
-          </div>
+    <div className="hidden lg:block w-px h-12 bg-white/10" />
 
+    {/* ITEM 3 */}
+    <div>
+      <div className="text-4xl md:text-5xl font-black text-white">
+        {blok.stat_3_value}
+      </div>
+
+      <div className="text-zinc-500 uppercase tracking-[0.12em] text-sm mt-2">
+        {blok.stat_3_label}
+      </div>
+    </div>
+
+  </div>
+  </div>
+ </div>
     {/* RIGHT */}
 
     <div className="relative w-full max-w-[620px] mx-auto order-1 lg:order-2">
@@ -173,80 +187,20 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
 
 </section>
-      
-        {/* Services */}
-<section className="relative px-4 md:px-6 py-10 md:py-16">
-  <div className="max-w-7xl mx-auto">
-      <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-5 md:p-8 h-full">
-        <div>
-          <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-            Services
-          </div>
-
-<h2 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.03em]">
-  {blok?.services_headline || "Leistungen & Expertise"}
-</h2>
-        </div>
-
-<p className="mt-6 text-lg md:text-xl text-zinc-300 leading-relaxed max-w-3xl font-semibold">
-  {blok?.services_text ||
-    "KI-gestützte Wachstumsstrategien, Commerce-Transformation und moderne digitale Systeme für nachhaltige Skalierung."}
-</p>
-      </div>
-
-
-    <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-      {blok?.services?.map((service) => (
-        <FadeIn key={service._uid}>
-          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-8 h-full">
-            <div className="inline-block bg-fuchsia-600 text-white px-3 py-2 text-[10px] font-black uppercase tracking-[0.15em] rotate-[-2deg] mb-6">
-              {service.tag}
-            </div>
-
-            <h3 className="text-xl md:text-2xl font-black uppercase leading-[0.95] break-words">
-              <span className="whitespace-pre-line">
-  {service.title}
-</span>
-            </h3>
-
-            <p className="mt-6 text-zinc-400 leading-relaxed">
-              {service.description}
-            </p>
-          </div>
-        </FadeIn>
-      ))}
-    </div>
-  </div>
-  </section>
-      {/* EXPERIENCE */}
+       {/* EXPERIENCE */}
 {blok?.experience_headline && (
-<section className="px-4 md:px-6 py-10 md:py-16 border-t border-white/10">
+<section className="px-4 md:px-6 pt-8 md:pt-10 pb-14 md:pb-16">
 
     <div className="max-w-7xl mx-auto">
 
       <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-        Erfahrung
+        Trusted By
       </div>
 
       <h2 className="text-[1.9rem] sm:text-[2.2rem] md:text-6xl lg:text-7xl font-black uppercase leading-[0.88] tracking-[-0.03em] break-words">
   {blok.experience_headline}
 </h2>
-
-      {blok.experience_text && (
-  <div className="mt-8 mb-10 text-zinc-300 text-lg leading-relaxed max-w-[40ch] md:max-w-4xl">
-  <p>
-    Von internationalem E-Commerce über Omnichannel-Handel bis hin zu digitaler Transformation im Mittelstand: In den vergangenen Jahren habe ich Unternehmen unterschiedlichster Größenordnungen beim Aufbau, der Skalierung und Weiterentwicklung digitaler Geschäftsmodelle begleitet.
-  </p>
-
-  <p className="mt-6">
-    Dazu zählen Marken, Händler und Organisationen aus den Bereichen Consumer
-    Goods, Outdoor, Spielwaren, Fahrrad, Home & Living, B2B und Non-Profit.
-  </p>
-</div>
-)}
-<p className="text-zinc-500 text-xs uppercase tracking-[0.2em] mb-8">
-Ausgewählte Unternehmen & Organisationen, für die ich gearbeitet habe
-</p>
+   
     {blok.experience_companies && (
 <div className="mt-10">
 
@@ -261,17 +215,17 @@ Ausgewählte Unternehmen & Organisationen, für die ich gearbeitet habe
     title={company.name}
     aria-label={`Website von ${company.name} öffnen`}
     className="
-      flex
-      items-center
-      justify-center
-      h-12
-      md:h-14
-      opacity-90
-      hover:opacity-100
-      hover:-translate-y-1
-      transition-all
-      duration-300
-    "
+  flex
+  items-center
+  justify-center
+  h-16
+  md:h-20
+  opacity-90
+  hover:opacity-100
+  hover:-translate-y-1
+  transition-all
+  duration-300
+"
   >
     <Image
   src={company.logo}
@@ -284,13 +238,134 @@ Ausgewählte Unternehmen & Organisationen, für die ich gearbeitet habe
 ))}
 
   </div>
-<p className="mt-10 text-zinc-500 text-sm md:text-base leading-relaxed max-w-4xl">
-  Erfahrung aus Commerce, Retail, Industrie und Finanzdienstleistung.
-</p>
+  {blok.experience_text && (
+  <div className="mt-8 mb-10 text-zinc-300 text-lg leading-relaxed max-w-[40ch] md:max-w-4xl">
+  <div className="mt-10 max-w-4xl">
+  <p className="text-zinc-300 text-lg md:text-xl leading-relaxed">
+    Mehr als 25 Jahre Erfahrung in E-Commerce, digitaler Transformation und Wachstum.
+  </p>
+</div>
+</div>
+)}
 </div>
 
 
 )}  
+
+{/* ICP SECTION */}
+
+<section className="relative px-4 md:px-6 py-14 md:py-20">
+  <div className="max-w-7xl mx-auto">
+
+    {/* Eyebrow */}
+    <div className="inline-block bg-fuchsia-600 text-white text-xs md:text-sm font-bold uppercase tracking-[0.15em] px-4 py-2 mb-6">
+      {blok.icp_eyebrow}
+    </div>
+
+    {/* Headline */}
+    <h2 className="text-5xl md:text-7xl font-black uppercase leading-[0.9] max-w-5xl">
+      {blok.icp_headline}
+    </h2>
+
+    {/* Intro */}
+    <p className="mt-8 text-zinc-300 text-lg md:text-xl leading-relaxed max-w-4xl">
+      {blok.icp_text}
+    </p>
+
+    {/* Cards */}
+    <div className="grid md:grid-cols-3 gap-6 mt-12">
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <h3 className="text-2xl font-black mb-4">
+          {blok.icp_card_1_headline}
+        </h3>
+
+        <p className="text-zinc-400 leading-relaxed">
+          {blok.icp_card_1_text}
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <h3 className="text-2xl font-black mb-4">
+          {blok.icp_card_2_headline}
+        </h3>
+
+        <p className="text-zinc-400 leading-relaxed">
+          {blok.icp_card_2_text}
+        </p>
+      </div>
+
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <h3 className="text-2xl font-black mb-4">
+          {blok.icp_card_3_headline}
+        </h3>
+
+        <p className="text-zinc-400 leading-relaxed">
+          {blok.icp_card_3_text}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{/* Services */}
+<section className="relative px-4 md:px-6 py-10 md:py-16">
+  <div className="max-w-7xl mx-auto">
+   <div className="mb-10 md:mb-12">
+
+  <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+    Services
+  </div>
+
+  <h2 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.03em]">
+    {blok?.services_headline || "Leistungen & Expertise"}
+  </h2>
+
+  <p className="mt-6 text-lg md:text-xl text-zinc-300 leading-relaxed max-w-4xl font-semibold">    {blok?.services_text ||
+      "KI-gestützte Wachstumsstrategien, Commerce-Transformation und moderne digitale Systeme für nachhaltige Skalierung."}
+  </p>
+
+</div>   
+
+
+    <div className="mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      {blok?.services?.map((service) => (
+        <FadeIn key={service._uid}>
+          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-10 md:p-12 h-full">            <div
+  className="
+  inline-block
+  bg-fuchsia-600
+  text-white
+  px-4
+  py-2
+  text-xs
+  font-black
+  uppercase
+  tracking-[0.18em]
+  rotate-[-2deg]
+  mb-8
+  "
+>
+  {service.tag}
+</div>
+
+            <h3 className="text-2xl md:text-3xl font-black uppercase leading-[0.95] break-words">
+              <span className="whitespace-pre-line">
+  {service.title}
+</span>
+            </h3>
+
+            <p className="mt-6 text-zinc-400 leading-relaxed">
+              {service.description}
+            </p>
+          </div>
+        </FadeIn>
+      ))}
+    </div>
+  </div>
+  </section>
     </div>
 
   </section>
@@ -301,29 +376,49 @@ Ausgewählte Unternehmen & Organisationen, für die ich gearbeitet habe
   <div className="max-w-7xl mx-auto">
     <FadeIn>
       <div className="mb-6 md:mb-8">
-        <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+        <div className="
+inline-block
+bg-fuchsia-600
+text-white
+px-4
+py-2
+text-xs
+font-black
+uppercase
+tracking-[0.18em]
+rotate-[-2deg]
+mb-8
+">
           Trust & Impact
         </div>
 
-        <h2 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase editorial-title">
-          Vertrauen durch
-          <br />
-          Ergebnisse
-        </h2>
+        <h2 className="
+  text-[2.2rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
+  font-black
+  uppercase
+  leading-[0.9]
+  tracking-[-0.03em]
+  max-w-5xl
+">
+  Vertrauen durch Ergebnisse
+</h2>
       </div>
     </FadeIn>
-   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
   {blok?.testimonials?.map((item) => (
     <FadeIn key={item._uid}>
       <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-8 h-full hover:border-fuchsia-500/30 transition-all duration-300">
 
         <div className="mb-6">
-          <span className="text-fuchsia-400 text-[10px] font-black uppercase tracking-[0.15em]">
-            {item.Category}
-          </span>
-        </div>
+  <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 text-xs font-black uppercase tracking-[0.18em] rotate-[-2deg]">
+    {item.Category}
+  </div>
+</div>
 
-        <h3 className="text-xl md:text-2xl font-black uppercase leading-[0.95] mb-4">
+        <h3 className="text-2xl md:text-3xl font-black uppercase leading-[0.95] mb-4">
           {item.Headline}
         </h3>
 
