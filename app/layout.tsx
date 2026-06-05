@@ -8,6 +8,8 @@ import ScrollToTop from "@/components/ScrollToTop"
 import { Geist, Geist_Mono } from "next/font/google";
 import CookieBanner from "@/components/CookieBanner"
 import Header from "@/components/Header"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -245,6 +247,8 @@ export default function RootLayout({
   </div>
 </footer>
 <CookieBanner />
+<Analytics />
+<SpeedInsights />
 </body>
     </html>
   );
