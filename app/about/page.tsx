@@ -102,43 +102,7 @@ export default async function AboutPage() {
                 </p>
               )}
             </div>
-
-            {/* STATS */}
-            <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
-
-              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
-                <div className="text-3xl font-black text-white">
-                  {blok.stat_1_value || "20+"}
-                </div>
-
-                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
-                  {blok.stat_1_label || "Jahre Erfahrung"}
-                </div>
-              </div>
-
-              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
-                <div className="text-xl md:text-2xl font-black text-white whitespace-nowrap leading-none">
-                  {blok.stat_2_value || "E-Commerce"}
-                </div>
-
-                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
-                  {blok.stat_2_label || "Wachstum"}
-                </div>
-              </div>
-
-              <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6">
-                <div className="text-3xl font-black text-white">
-                  {blok.stat_3_value || "AI"}
-                </div>
-
-                <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
-                  {blok.stat_3_label || "Transformation"}
-                </div>
-              </div>
-
             </div>
-
-          </div>
 
           {/* RIGHT */}
           <div className="relative w-full max-w-[620px] mx-auto order-1 lg:order-2">
@@ -176,8 +140,8 @@ export default async function AboutPage() {
 
           <h2
   className="
-  max-w-[18ch]
-  md:max-w-5xl
+  max-w-none
+  md:max-w-none
   text-[1.9rem]
   sm:text-5xl
   md:text-6xl
@@ -211,59 +175,66 @@ export default async function AboutPage() {
         </div>
 
       </section>
+{/* FOCUS AREAS */}
 
-      {/* EXPERTISE */}
-      <section className="px-4 md:px-6 py-10 md:py-16 border-t border-white/10">
+<section className="px-4 md:px-6 py-16 md:py-24 border-t border-white/10">
 
-        <div className="max-w-7xl mx-auto">
+  <div className="max-w-7xl mx-auto">
 
-          <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-            Expertise
-          </div>
+    <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+      {blok.focus_badge}
+    </div>
 
-          <h2
+    <h2
   className="
-  max-w-[16ch]
-  md:max-w-5xl
-  text-[1.65rem]
-  sm:text-4xl
+  max-w-none
+  text-5xl
   md:text-6xl
-  lg:text-7xl
   font-black
   uppercase
   tracking-[-0.04em]
-  leading-[0.95]
+  leading-[0.9]
   "
 >
-            Leistungen &
-            Kompetenzfelder
-          </h2>
+      {blok.focus_headline}
+    </h2>
 
-          <div className="mt-10 md:mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+    <p className="mt-8 max-w-none text-zinc-400 text-lg leading-relaxed">
+      {blok.focus_intro}
+    </p>
 
-            {blok.expertise_items?.map((item: any) => (
-              <div
-                key={item._uid}
-                className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-8 md:p-10 hover:border-fuchsia-500/50 hover:-translate-y-2 hover:shadow-[0_20px_80px_rgba(217,70,239,0.15)] transition duration-500"
-              >
+    <div className="mt-16 border-t border-white/10">
 
-                <h3 className="text-2xl font-black uppercase leading-tight">
-                  {item.title}
-                </h3>
+      {[1, 2, 3].map((i) => (
+        <div
+          key={i}
+          className="grid md:grid-cols-[120px_1fr] gap-8 py-10 border-b border-white/10"
+        >
 
-                <p className="mt-6 text-zinc-400 leading-relaxed">
-                  {item.text}
-                </p>
+          <div className="text-5xl md:text-6xl font-black text-fuchsia-600">
+            {blok[`focus_${i}_number`]}
+          </div>
 
-              </div>
-            ))}
+          <div>
+
+            <h3 className="text-3xl md:text-4xl font-black uppercase">
+              {blok[`focus_${i}_title`]}
+            </h3>
+
+            <p className="mt-4 text-zinc-400 text-lg leading-relaxed max-w-3xl">
+              {blok[`focus_${i}_text`]}
+            </p>
 
           </div>
 
         </div>
+      ))}
 
-      </section>
+    </div>
 
+  </div>
+
+</section>
       {/* TIMELINE */}
       <section className="px-4 md:px-6 py-16 md:py-20 border-t border-white/10">
 
@@ -275,8 +246,7 @@ export default async function AboutPage() {
 
           <h2
   className="
-  max-w-[14ch]
-  md:max-w-5xl
+  max-w-none
   text-[2.2rem]
   sm:text-5xl
   md:text-6xl
@@ -287,7 +257,7 @@ export default async function AboutPage() {
   leading-[0.9]
   "
 >
-            Meine Expertise aus 25+ Jahren Erfahrung
+            Was meine Arbeit geprägt hat
           </h2>
 
           <div className="mt-10 md:mt-12 max-w-5xl space-y-8 md:space-y-12 border-l border-fuchsia-500/30 pl-6 md:pl-10">
@@ -336,7 +306,7 @@ export default async function AboutPage() {
   tracking-[-0.04em]
   mb-4
 ">
-          Wo liegen Ihre größten Wachstumshebel?
+          Lassen Sie uns über Ihre Themen sprechen
         </h3>
 
         <p className="text-zinc-400 max-w-[36ch] md:max-w-2xl leading-relaxed">

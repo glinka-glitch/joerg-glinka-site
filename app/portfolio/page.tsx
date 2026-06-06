@@ -68,16 +68,16 @@ export default async function PortfolioPage() {
 )}
 
 {blok.hero_headline && (
-  <div className="max-w-none md:max-w-5xl">
+  <div className="max-w-none md:max-w-none">
 
    <h1
   className="
  max-w-none
-md:max-w-5xl
+md:max-w-none
 text-[2.4rem]
 sm:text-5xl
 md:text-6xl
-lg:text-7xl
+lg:text-[6.5rem]
 font-black
 uppercase
 tracking-[-0.04em]
@@ -97,15 +97,14 @@ text-balance
     {/* Text */}
     {blok.hero_text && (
   <div
-  className="
-  mt-10
-  max-w-none
-  md:max-w-5xl
-  text-zinc-300
-  text-lg
-  md:text-xl
-  leading-relaxed
-  "
+    className="
+    mt-10
+    max-w-[90ch]
+    text-zinc-300
+    text-lg
+    md:text-xl
+    leading-relaxed
+    "
     dangerouslySetInnerHTML={{
       __html: renderRichText(blok.hero_text) || "",
     }}
@@ -154,10 +153,10 @@ text-balance
       <h2
   className="
   max-w-none
-  md:max-w-5xl
+  md:max-w-none
   text-[1.65rem]
   sm:text-4xl
-  md:text-6xl
+  md:text-5xl
   lg:text-[5rem]
   font-black
   uppercase
@@ -172,27 +171,24 @@ text-balance
 
   {blok.metrics?.length > 0 && (
 
-  <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4">
+  <div className="mt-12 md:mt-16 grid md:grid-cols-3 gap-12 md:gap-16">
 
     {blok.metrics.map((item: any) => (
 
       <div
-        key={item._uid}
-        className="
-        editorial-card
-        bg-zinc-900
-        border
-        border-white/10
-        rounded-3xl
-        p-6
-        "
-      >
+  key={item._uid}
+  className="
+  border-t
+  border-white/10
+  pt-6
+  "
+>
 
-        <div className="text-5xl font-black text-fuchsia-500">
+        <div className="text-4xl md:text-5xl font-black text-fuchsia-500">
           {item.value}
         </div>
 
-        <div className="text-zinc-500 uppercase text-sm mt-2 leading-tight">
+        <div className="text-zinc-400 uppercase text-sm tracking-wide mt-3 leading-snug">
           {item.label}
         </div>
 
@@ -217,7 +213,7 @@ text-balance
              <h2
 className="
 max-w-none
-md:max-w-5xl
+md:max-w-none
 text-[2.2rem]
 sm:text-5xl
 md:text-6xl
@@ -228,11 +224,13 @@ tracking-[-0.04em]
 leading-[0.95]
 "
 >
-  Core Expertise
+  Die drei Hebel für nachhaltiges Wachstum
 </h2>
 
 <p className="mt-6 max-w-4xl text-zinc-300 text-base md:text-xl leading-relaxed">
-  Wachstum, Transformation und KI-gestützte Execution für moderne Unternehmen.
+  Wachstum entsteht nicht durch einzelne Maßnahmen.
+Sondern durch das Zusammenspiel von Geschäftsmodell,
+Technologie und Führung.
 </p>
             </div>
 
@@ -251,7 +249,7 @@ leading-[0.95]
                   
 
                     {item.image?.filename && (
-  <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900 aspect-[3/2]">
+  <div className="relative z-10 overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900 aspect-[16/10]">
 
     <Image
       src={item.image.filename}

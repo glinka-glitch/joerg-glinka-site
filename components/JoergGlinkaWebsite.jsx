@@ -271,42 +271,6 @@ export default function JoergGlinkaWebsite({ blok }) {
     <p className="mt-8 text-zinc-300 text-lg md:text-xl leading-relaxed max-w-4xl">
       {blok.icp_text}
     </p>
-
-    {/* Cards */}
-    <div className="grid md:grid-cols-3 gap-6 mt-12">
-
-      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-        <h3 className="text-2xl font-black mb-4">
-          {blok.icp_card_1_headline}
-        </h3>
-
-        <p className="text-zinc-400 leading-relaxed">
-          {blok.icp_card_1_text}
-        </p>
-      </div>
-
-      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-        <h3 className="text-2xl font-black mb-4">
-          {blok.icp_card_2_headline}
-        </h3>
-
-        <p className="text-zinc-400 leading-relaxed">
-          {blok.icp_card_2_text}
-        </p>
-      </div>
-
-      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-        <h3 className="text-2xl font-black mb-4">
-          {blok.icp_card_3_headline}
-        </h3>
-
-        <p className="text-zinc-400 leading-relaxed">
-          {blok.icp_card_3_text}
-        </p>
-      </div>
-
-    </div>
-
   </div>
 </section>
 
@@ -401,28 +365,22 @@ mb-8
   uppercase
   leading-[0.9]
   tracking-[-0.03em]
-  max-w-5xl
+  max-w-none
 ">
-  Vertrauen durch Ergebnisse
+  Warum Kunden mit mir arbeiten
 </h2>
       </div>
     </FadeIn>
-   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <div className="max-w-5xl space-y-10">
   {blok?.testimonials?.map((item) => (
     <FadeIn key={item._uid}>
-      <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-8 h-full hover:border-fuchsia-500/30 transition-all duration-300">
+      <div className="border-t border-white/10 pt-8">
 
-        <div className="mb-6">
-  <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 text-xs font-black uppercase tracking-[0.18em] rotate-[-2deg]">
-    {item.Category}
-  </div>
-</div>
-
-        <h3 className="text-2xl md:text-3xl font-black uppercase leading-[0.95] mb-4">
+        <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.95] mb-4">
           {item.Headline}
         </h3>
 
-        <p className="text-zinc-300 text-lg leading-relaxed max-w-[36ch]">
+        <p className="text-zinc-400 text-xl leading-relaxed max-w-3xl">
   {item.Text}
 </p>
 
