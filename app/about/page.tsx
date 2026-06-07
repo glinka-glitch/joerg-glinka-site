@@ -4,13 +4,13 @@ import Link from "next/link"
 import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Über Jörg Glinka | AI-Driven Growth & E-Commerce",
+  title: "Über Jörg Glinka | Erfahrung in E-Commerce, Transformation & KI",
 
   description:
     "Erfahren Sie mehr über Jörg Glinka, Executive Advisor für KI-gestütztes Wachstum, digitale Transformation und moderne Commerce-Strategien.",
 
-  alternates: {
-    canonical: "/about",
+   alternates: {
+    canonical: "https://www.glinka.tech/about",
   },
 
   openGraph: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Erfahren Sie mehr über Jörg Glinka, Executive Advisor für KI-gestütztes Wachstum, digitale Transformation und moderne Commerce-Strategien.",
 
-    url: "https://glinka.tech/about",
+    url: "https://www.glinka.tech/about",
 
     images: ["/og-image.jpg"],
   },

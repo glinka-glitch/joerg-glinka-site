@@ -9,8 +9,8 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
 
-    sitemap: "https://glinka.tech/sitemap.xml",
+    sitemap: "https://www.glinka.tech/sitemap.xml",
 
-    host: "https://glinka.tech",
+    host: "https://www.glinka.tech",
   };
 }

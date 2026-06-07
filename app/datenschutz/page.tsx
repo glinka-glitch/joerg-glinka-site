@@ -12,12 +12,23 @@ async function getPrivacyData() {
 
   return data.story?.content || {}
 }
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Datenschutzerklärung | Jörg Glinka",
+
+  description:
+    "Informationen zur Verarbeitung personenbezogener Daten und zu Ihren Datenschutzrechten auf glinka.tech.",
+
   robots: {
     index: false,
     follow: true,
   },
-}
+
+  alternates: {
+    canonical: "https://www.glinka.tech/datenschutz",
+  },
+};
 export default async function DatenschutzPage() {
   const blok = await getPrivacyData()
 

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://glinka.tech";
+  const baseUrl = "https://www.glinka.tech";
 
   return [
     {

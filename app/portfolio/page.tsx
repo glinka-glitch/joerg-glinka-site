@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Ausgewählte Projekte, digitale Transformationen und AI-Driven Growth Initiativen von Jörg Glinka.",
 
   alternates: {
-    canonical: "https://glinka.tech/portfolio",
+    canonical: "https://www.glinka.tech/portfolio",
   },
 
   openGraph: {

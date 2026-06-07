@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     "Kontaktieren Sie Jörg Glinka für AI-Driven Growth, E-Commerce und digitale Transformationsprojekte.",
 
   alternates: {
-    canonical: "/contact",
+    canonical: "https://www.glinka.tech/contact",
   },
 
   openGraph: {
     title: "Kontakt | Jörg Glinka",
     description:
       "Jetzt Strategiegespräch mit Jörg Glinka vereinbaren.",
-    url: "https://glinka.tech/contact",
+    url: "https://www.glinka.tech/contact",
     images: [
       {
         url: "/og-image.jpg",

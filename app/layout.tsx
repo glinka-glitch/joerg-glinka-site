@@ -21,12 +21,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  metadataBase: new URL("https://glinka.tech"),
+  metadataBase: new URL("https://www.glinka.tech/"),
 
   title: "Jörg Glinka | AI-Driven Growth & E-Commerce",
 
   description:
-    "Executive Advisor für KI-gestütztes Wachstum, digitale Transformation und moderne Commerce-Strategien.",
+    "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
 
   robots: {
     index: true,
@@ -50,17 +50,13 @@ export const metadata: Metadata = {
     },
   ],
 
-  alternates: {
-    canonical: "/",
-  },
-
   openGraph: {
     title: "Jörg Glinka | AI-Driven Growth & E-Commerce",
 
     description:
-      "Executive Advisor für KI-gestütztes Wachstum, digitale Transformation und moderne Commerce-Strategien.",
+      "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
 
-    url: "https://glinka.tech",
+    url: "https://www.glinka.tech/",
 
     siteName: "Jörg Glinka",
 
@@ -83,7 +79,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | AI-Driven Growth & E-Commerce",
 
     description:
-      "Executive Advisor für KI-gestütztes Wachstum, digitale Transformation und moderne Commerce-Strategien.",
+      "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
 
     images: ["/og-image.jpg"],
   },
@@ -93,19 +89,19 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://glinka.tech/#person",
+      "@id": "https://www.glinka.tech//#person",
 
       name: "Jörg Glinka",
 
-      url: "https://glinka.tech",
+      url: "https://www.glinka.tech/",
 
-      image: "https://glinka.tech/og-image.jpg",
+      image: "https://www.glinka.tech//og-image.jpg",
 
       jobTitle:
         "Executive Advisor for AI-Driven Growth, E-Commerce & Digital Transformation",
 
       description:
-        "Executive Advisor für KI-gestütztes Wachstum, digitale Transformation, E-Commerce und AI Operations.",
+        "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
 
       knowsAbout: [
         "Artificial Intelligence",
@@ -127,11 +123,11 @@ const structuredData = {
 
     {
       "@type": "ConsultingService",
-      "@id": "https://glinka.tech/#service",
+      "@id": "https://www.glinka.tech//#service",
 
       name: "Jörg Glinka",
 
-      url: "https://glinka.tech",
+      url: "https://www.glinka.tech/",
 
       description:
         "Beratung für KI-gestütztes Wachstum, digitale Transformation, AI Operations und moderne Commerce-Strategien.",
@@ -142,41 +138,41 @@ const structuredData = {
       },
 
       founder: {
-        "@id": "https://glinka.tech/#person",
+        "@id": "https://www.glinka.tech//#person",
       },
     },
 
     {
       "@type": "Organization",
-      "@id": "https://glinka.tech/#organization",
+      "@id": "https://www.glinka.tech//#organization",
 
       name: "Jörg Glinka",
 
-      url: "https://glinka.tech",
+      url: "https://www.glinka.tech/",
 
       logo: {
         "@type": "ImageObject",
-        url: "https://glinka.tech/logo.png",
+        url: "https://www.glinka.tech//logo.png",
       },
 
       founder: {
-        "@id": "https://glinka.tech/#person",
+        "@id": "https://www.glinka.tech//#person",
       },
     },
 
     {
       "@type": "WebSite",
-      "@id": "https://glinka.tech/#website",
+      "@id": "https://www.glinka.tech//#website",
 
-      url: "https://glinka.tech",
+      url: "https://www.glinka.tech/",
 
       name: "Jörg Glinka",
 
       description:
-        "Executive Advisor für KI-gestütztes Wachstum, digitale Transformation und moderne Commerce-Strategien.",
+        "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
 
       publisher: {
-        "@id": "https://glinka.tech/#organization",
+        "@id": "https://www.glinka.tech//#organization",
       },
 
       inLanguage: "de-DE",
@@ -226,21 +222,30 @@ export default function RootLayout({
       {/* Right */}
       <div className="flex flex-wrap gap-6 text-sm uppercase tracking-wide text-zinc-400">
 
-        <Link
-          href="/impressum"
-          className="hover:text-fuchsia-500 transition"
-        >
-          Impressum
-        </Link>
+  <a
+    href="https://www.linkedin.com/in/joerg-glinka"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-fuchsia-500 transition"
+  >
+    LinkedIn
+  </a>
 
-        <Link
-          href="/datenschutz"
-          className="hover:text-fuchsia-500 transition"
-        >
-          Datenschutz
-        </Link>
+  <Link
+    href="/impressum"
+    className="hover:text-fuchsia-500 transition"
+  >
+    Impressum
+  </Link>
 
-      </div>
+  <Link
+    href="/datenschutz"
+    className="hover:text-fuchsia-500 transition"
+  >
+    Datenschutz
+  </Link>
+
+</div>
 
     </div>
 
