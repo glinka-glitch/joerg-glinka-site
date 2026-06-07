@@ -31,7 +31,10 @@ export default async function PortfolioPage() {
   const blok = await fetchStory("portfolio")
 
   return (
-    <main className="relative min-h-screen bg-black text-white overflow-hidden">
+   <main
+  id="page-top"
+  className="relative min-h-screen bg-black text-white overflow-hidden scroll-mt-24 md:scroll-mt-28"
+>
 
       {/* Glow Effects */}
       <div className="absolute top-[-300px] left-[-200px] w-[700px] h-[700px] bg-fuchsia-600/20 blur-[180px] rounded-full -z-10"></div>
@@ -40,10 +43,6 @@ export default async function PortfolioPage() {
 
 {/* HERO */}
 <section className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden">
-<div
-  id="page-top"
-  className="scroll-mt-24 md:scroll-mt-28"
-/>
   {/* Background Glow */}
   <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full"></div>
 
@@ -468,13 +467,13 @@ max-w-none
     <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
 
       <Link
-        href="/contact"
+        href="/contact#contact-form"
         className="inline-flex items-center bg-yellow-400 text-black px-8 py-4 font-black uppercase tracking-wide rounded-full hover:scale-105 transition-all duration-300"
       >
         Strategiegespräch vereinbaren
       </Link>
 
-      <a
+     <a
   href="#page-top"
   className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
 >
