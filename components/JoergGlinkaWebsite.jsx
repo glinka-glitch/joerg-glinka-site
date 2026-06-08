@@ -54,7 +54,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     name: "CJD",
     logo: "/logos/cjd.svg",
     url: "https://www.cjd.de",
-    size: "h-7 md:h-8",
+    size: "h-8 md:h-12",
   },
 ]
 
@@ -206,34 +206,56 @@ export default function JoergGlinkaWebsite({ blok }) {
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 items-center">
 
-    {companies.map((company) => (
+   {companies.map((company) => (
   <a
     key={company.name}
     href={company.url}
     target="_blank"
     rel="noopener noreferrer"
-    title={company.name}
-    aria-label={`Website von ${company.name} öffnen`}
+    title={`${company.name} (öffnet in neuem Tab)`}
+    aria-label={`${company.name} öffnen (neuer Tab)`}
     className="
-  flex
-  items-center
-  justify-center
-  h-16
-  md:h-20
-  opacity-90
-  hover:opacity-100
-  hover:-translate-y-1
-  transition-all
-  duration-300
-"
+      group
+      flex
+      items-center
+      justify-center
+      h-16
+      md:h-20
+      opacity-90
+      hover:opacity-100
+      hover:-translate-y-1
+      transition-all
+      duration-300
+    "
   >
-    <Image
-  src={company.logo}
-  alt={company.name}
-  width={240}
-  height={80}
-  className={`${company.size} w-auto max-w-full object-contain`}
-/>
+    <div className="relative">
+
+      <Image
+        src={company.logo}
+        alt={company.name}
+        width={240}
+        height={80}
+        className={`${company.size} w-auto max-w-full object-contain`}
+      />
+
+      <span
+        className="
+          absolute
+          -top-2
+          -right-3
+          text-fuchsia-500
+          text-xs
+          font-bold
+          opacity-0
+          group-hover:opacity-100
+          transition-opacity
+          duration-300
+        "
+      >
+        ↗
+      </span>
+
+    </div>
   </a>
 ))}
 
