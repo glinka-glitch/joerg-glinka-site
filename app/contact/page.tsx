@@ -153,15 +153,6 @@ export default async function ContactPage() {
 
   <div className="max-w-7xl mx-auto">
 
-    <h3 className="text-2xl md:text-3xl font-black uppercase mb-4">
-      Zurück zur Startseite
-    </h3>
-
-    <p className="text-zinc-400 max-w-2xl mb-10">
-      Vielen Dank für Ihr Interesse. Erfahren Sie mehr über meine Expertise,
-      Projekte und Strategien für nachhaltiges digitales Wachstum.
-    </p>
-
     <div className="flex flex-col items-start gap-4">
 
       <Link

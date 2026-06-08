@@ -1,3 +1,5 @@
+"use client";
+
 export default function FadeIn({ children }) {
-  return children
+  return <>{children}</>;
 }
