@@ -1,62 +1,10 @@
 import Image from "next/image"
-import { renderRichText } from "@storyblok/react"
 import FadeIn from './animations/FadeIn'
 import Link from "next/link";
-import { Menu } from 'lucide-react'
 
 export default function JoergGlinkaWebsite({ blok }) {
   const methodologyItems = blok?.methodology_items || []
   const portfolioItems = blok?.portfolio_items || []
-  const companies = [
-  {
-    name: "Trusted Shops",
-    logo: "/logos/trusted-shops.svg",
-    url: "https://www.trustedshops.de",
-    size: "h-8 md:h-10",
-  },
-  {
-    name: "BNP Paribas",
-    logo: "/logos/bnp-paribas.svg",
-    url: "https://group.bnpparibas",
-    size: "h-8 md:h-10",
-  },
-  {
-    name: "Lautsprecher Teufel",
-    logo: "/logos/teufel.svg",
-    url: "https://teufel.de",
-    size: "h-10 md:h-12",
-  },
-  {
-    name: "Fritz Berger",
-    logo: "/logos/fritz-berger.svg",
-    url: "https://www.fritz-berger.de",
-    size: "h-10 md:h-12",
-  },
-  {
-    name: "Fahrrad XXL",
-    logo: "/logos/fahrrad-xxl.svg",
-    url: "https://www.fahrrad-xxl.de",
-    size: "h-8 md:h-10",
-  },
-  {
-    name: "Bike Discount",
-    logo: "/logos/bike-discount.svg",
-    url: "https://www.bike-discount.de",
-    size: "h-8 md:h-10",
-  },
-  {
-    name: "SCHELL",
-    logo: "/logos/schell.svg",
-    url: "https://www.schell.eu",
-    size: "h-6 md:h-8",
-  },
-  {
-    name: "CJD",
-    logo: "/logos/cjd.svg",
-    url: "https://www.cjd.de",
-    size: "h-8 md:h-12",
-  },
-]
 
   return (
 <main
@@ -77,7 +25,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden"
 >
 
-  <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-20 items-start">
+  <div className="relative z-10 max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-16 md:gap-28 items-start">
 
     {/* LEFT */}
 
@@ -88,29 +36,29 @@ export default function JoergGlinkaWebsite({ blok }) {
       </div>
 
       <h1
-        className="
-        text-[2.9rem]
-        sm:text-6xl
-        md:text-7xl
-        lg:text-8xl
-        font-black
-        uppercase
-        leading-[0.82]
-        tracking-[-0.06em]
-        whitespace-pre-line
-        "
-      >
+  className="
+  text-[2.9rem]
+  sm:text-6xl
+  md:text-7xl
+  lg:text-8xl
+  font-black
+  uppercase
+  leading-[0.88]
+  tracking-[-0.045em]
+  whitespace-pre-line
+  "
+>
         {`${blok?.hero_title_line_1 || "Digitales"}\n${blok?.hero_title_line_2 || "Wachstum"}\n${blok?.hero_title_line_3 || "neu denken"}`}
       </h1>
 
       <div className="mt-8 w-24 h-[4px] bg-fuchsia-600 rounded-full"></div>
 
-      <p className="mt-8 max-w-[32ch] md:max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+      <p className="mt-8 max-w-2xl text-lg md:text-xl text-zinc-300 leading-8">
         {blok?.hero_text ||
           "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
       </p>
       {blok.hero_subtext && (
-  <p className="mt-5 text-sm md:text-base text-zinc-500 leading-relaxed max-w-[42ch]">
+ <p className="mt-5 text-base text-zinc-500 leading-7 max-w-2xl">
     {blok.hero_subtext}
   </p>
 )}
@@ -163,7 +111,7 @@ export default function JoergGlinkaWebsite({ blok }) {
  </div>
     {/* RIGHT */}
 
-    <div className="relative w-full max-w-[620px] mx-auto order-1 lg:order-2">
+    <div className="relative w-full max-w-[720px] mx-auto order-1 lg:order-2">
 
       <div className="absolute -inset-4 border-4 border-fuchsia-600 rounded-3xl"></div>
 
@@ -187,97 +135,48 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
 
 </section>
-       {/* EXPERIENCE */}
-{blok?.experience_headline && (
-<section className="px-4 md:px-6 pt-8 md:pt-10 pb-14 md:pb-16">
 
-    <div className="max-w-7xl mx-auto">
+{/* TRUST BUILDING */}
+<section className="px-4 md:px-6 pt-10 pb-16">
+  <div className="max-w-[1440px] mx-auto">
 
-      <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-        Trusted By
-      </div>
-
-      <h2 className="text-[1.9rem] sm:text-[2.2rem] md:text-6xl lg:text-7xl font-black uppercase leading-[0.88] tracking-[-0.03em] break-words">
-  {blok.experience_headline}
-</h2>
-   
-    {blok.experience_companies && (
-<div className="mt-10">
-
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 items-center">
-
-   {companies.map((company) => (
-  <a
-    key={company.name}
-    href={company.url}
-    target="_blank"
-    rel="noopener noreferrer"
-    title={`${company.name} (öffnet in neuem Tab)`}
-    aria-label={`${company.name} öffnen (neuer Tab)`}
-    className="
-      group
-      flex
-      items-center
-      justify-center
-      h-16
-      md:h-20
-      opacity-90
-      hover:opacity-100
-      hover:-translate-y-1
-      transition-all
-      duration-300
-    "
-  >
-    <div className="relative">
-
-      <Image
-        src={company.logo}
-        alt={company.name}
-        width={240}
-        height={80}
-        className={`${company.size} w-auto max-w-full object-contain`}
-      />
-
-      <span
-        className="
-          absolute
-          -top-2
-          -right-3
-          text-fuchsia-500
-          text-xs
-          font-bold
-          opacity-0
-          group-hover:opacity-100
-          transition-opacity
-          duration-300
-        "
-      >
-        ↗
-      </span>
-
+    <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+      Erfahrung
     </div>
-  </a>
-))}
+
+    <h2 className="
+text-[2.4rem]
+sm:text-5xl
+md:text-6xl
+lg:text-7xl
+font-black
+uppercase
+leading-[0.92]
+tracking-[-0.04em]
+max-w-6xl
+">
+      Mehr als 25 Jahre digitale Transformation
+    </h2>
+
+    <p className="
+mt-8
+text-zinc-300
+text-lg
+md:text-xl
+leading-8
+max-w-5xl
+">
+      Begleitung von Unternehmen unterschiedlicher Größenordnungen in den Bereichen
+      E-Commerce, digitale Geschäftsmodelle, Plattformstrategien, Wachstum und KI-gestützte Transformation.
+    </p>
 
   </div>
-  {blok.experience_text && (
-  <div className="mt-8 mb-10 text-zinc-300 text-lg leading-relaxed max-w-[40ch] md:max-w-4xl">
-  <div className="mt-10 max-w-4xl">
-  <p className="text-zinc-300 text-lg md:text-xl leading-relaxed">
-    Mehr als 25 Jahre Erfahrung in E-Commerce, digitaler Transformation und Wachstum.
-  </p>
-</div>
-</div>
-)}
-</div>
-
-
-)}  
+</section>
 
 {/* ICP SECTION */}
 
 <section className="relative px-4 md:px-6 py-14 md:py-20">
-  <div className="max-w-7xl mx-auto">
+  <div className="max-w-[1440px] mx-auto">
 
     {/* Eyebrow */}
     <div className="inline-block bg-fuchsia-600 text-white text-xs md:text-sm font-bold uppercase tracking-[0.15em] px-4 py-2 mb-6">
@@ -285,12 +184,13 @@ export default function JoergGlinkaWebsite({ blok }) {
     </div>
 
     {/* Headline */}
-    <h2 className="text-5xl md:text-7xl font-black uppercase leading-[0.9] max-w-5xl">
+    <h2 className="text-5xl md:text-7xl font-black uppercase leading-[0.92] tracking-[-0.04em] max-w-6xl">
       {blok.icp_headline}
     </h2>
 
     {/* Intro */}
-    <p className="mt-8 text-zinc-300 text-lg md:text-xl leading-relaxed max-w-4xl">
+    <p className="mt-8 text-zinc-300 text-lg md:text-xl leading-relaxed max-w-5xl
+leading-8">
       {blok.icp_text}
     </p>
   </div>
@@ -298,28 +198,39 @@ export default function JoergGlinkaWebsite({ blok }) {
 
 {/* Services */}
 <section className="relative px-4 md:px-6 py-10 md:py-16">
-  <div className="max-w-7xl mx-auto">
+  <div className="max-w-[1440px] mx-auto">
    <div className="mb-10 md:mb-12">
 
   <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
     Services
   </div>
 
-  <h2 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.9] tracking-[-0.03em]">
+  <h2 className="
+text-[2.4rem]
+sm:text-5xl
+md:text-6xl
+lg:text-7xl
+font-black
+uppercase
+leading-[0.92]
+tracking-[-0.04em]
+max-w-6xl
+">
     {blok?.services_headline || "Leistungen & Expertise"}
   </h2>
 
-  <p className="mt-6 text-lg md:text-xl text-zinc-300 leading-relaxed max-w-4xl font-semibold">    {blok?.services_text ||
+  <p className="mt-6 text-lg md:text-xl text-zinc-300 leading-relaxed max-w-5xl
+leading-8 font-semibold">    {blok?.services_text ||
       "KI-gestützte Wachstumsstrategien, Commerce-Transformation und moderne digitale Systeme für nachhaltige Skalierung."}
   </p>
 
 </div>   
 
 
-    <div className="mt-10 md:mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
       {blok?.services?.map((service) => (
         <FadeIn key={service._uid}>
-          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-10 md:p-12 h-full">            <div
+          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-12 md:p-14 h-full">            <div
   className="
   inline-block
   bg-fuchsia-600
@@ -352,14 +263,10 @@ export default function JoergGlinkaWebsite({ blok }) {
     </div>
   </div>
   </section>
-    </div>
-
-  </section>
-)}
 
       {/* Testimonials */}
 <section className="relative px-4 md:px-6 py-10 md:py-16">
-  <div className="max-w-7xl mx-auto">
+  <div className="max-w-[1440px] mx-auto">
     <FadeIn>
       <div className="mb-6 md:mb-8">
         <div className="
@@ -415,7 +322,7 @@ mb-8
 {/* Page Navigation */}
 <section className="px-4 md:px-6 py-8 md:py-16">
 
-  <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
+  <div className="max-w-[1440px] mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
     <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.95] mb-4">
       Lernen Sie die Person hinter den Ergebnissen kennen
