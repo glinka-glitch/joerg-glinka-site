@@ -25,7 +25,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden"
 >
 
-  <div className="relative z-10 max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-16 md:gap-28 items-start">
+  <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 md:gap-24 items-start">
 
     {/* LEFT */}
 
@@ -138,7 +138,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
 {/* TRUST BUILDING */}
 <section className="px-4 md:px-6 pt-10 pb-16">
-  <div className="max-w-[1440px] mx-auto">
+  <div className="max-w-7xl mx-auto">
 
     <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
       Erfahrung
@@ -176,7 +176,7 @@ max-w-5xl
 {/* ICP SECTION */}
 
 <section className="relative px-4 md:px-6 py-14 md:py-20">
-  <div className="max-w-[1440px] mx-auto">
+  <div className="max-w-7xl mx-auto">
 
     {/* Eyebrow */}
     <div className="inline-block bg-fuchsia-600 text-white text-xs md:text-sm font-bold uppercase tracking-[0.15em] px-4 py-2 mb-6">
@@ -198,7 +198,7 @@ leading-8">
 
 {/* Services */}
 <section className="relative px-4 md:px-6 py-10 md:py-16">
-  <div className="max-w-[1440px] mx-auto">
+  <div className="max-w-7xl mx-auto">
    <div className="mb-10 md:mb-12">
 
   <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
@@ -266,7 +266,7 @@ leading-8 font-semibold">    {blok?.services_text ||
 
       {/* Testimonials */}
 <section className="relative px-4 md:px-6 py-10 md:py-16">
-  <div className="max-w-[1440px] mx-auto">
+  <div className="max-w-7xl mx-auto">
     <FadeIn>
       <div className="mb-6 md:mb-8">
         <div className="
@@ -322,7 +322,7 @@ mb-8
 {/* Page Navigation */}
 <section className="px-4 md:px-6 py-8 md:py-16">
 
-  <div className="max-w-[1440px] mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
+  <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
     <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.95] mb-4">
       Lernen Sie die Person hinter den Ergebnissen kennen
