@@ -35,16 +35,17 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok?.hero_badge || "KI-gestützte Commerce-Transformation"}
       </div>
 
-      <h1
+     <h1
   className="
-  text-[2.9rem]
-  sm:text-6xl
-  md:text-7xl
-  lg:text-8xl
+  max-w-[620px]
+  text-[2.8rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-[5rem]
   font-black
   uppercase
-  leading-[0.88]
-  tracking-[-0.045em]
+  leading-[0.95]
+  tracking-[-0.03em]
   whitespace-pre-line
   "
 >
@@ -146,7 +147,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
    <h2
   className="
-  text-[1.8rem]
+  text-[2rem]
   sm:text-5xl
   md:text-6xl
   lg:text-7xl
@@ -162,14 +163,16 @@ export default function JoergGlinkaWebsite({ blok }) {
       Transformation, die Wirkung erzeugt
     </h2>
 
-    <p className="
-mt-8
-text-zinc-300
-text-lg
-md:text-xl
-leading-8
-max-w-5xl
-">
+    <p
+  className="
+  mt-8
+  text-zinc-300
+  text-base
+  md:text-xl
+  leading-relaxed
+  max-w-5xl
+  "
+>
       Von E-Commerce über Plattformstrategien bis zu KI-gestützter Transformation:
       Ich begleite Unternehmen dabei, Technologie nicht nur einzuführen, sondern in nachhaltigen Geschäftswert zu übersetzen.
       25+ Jahre Erfahrung sind dabei kein Selbstzweck, sondern die Grundlage für bessere Entscheidungen in komplexen Veränderungssituationen.
