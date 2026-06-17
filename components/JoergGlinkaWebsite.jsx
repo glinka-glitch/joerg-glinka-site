@@ -155,7 +155,7 @@ leading-[0.92]
 tracking-[-0.04em]
 max-w-6xl
 ">
-      Mehr als 25 Jahre digitale Transformation
+      Transformation, die Wirkung erzeugt
     </h2>
 
     <p className="
@@ -166,8 +166,10 @@ md:text-xl
 leading-8
 max-w-5xl
 ">
-      Begleitung von Unternehmen unterschiedlicher Größenordnungen in den Bereichen
-      E-Commerce, digitale Geschäftsmodelle, Plattformstrategien, Wachstum und KI-gestützte Transformation.
+      Von E-Commerce über Plattformstrategien bis zu KI-gestützter Transformation:
+      Ich begleite Unternehmen dabei, Technologie nicht nur einzuführen, sondern in nachhaltigen Geschäftswert zu übersetzen.
+      25+ Jahre Erfahrung sind dabei kein Selbstzweck, sondern die Grundlage für bessere Entscheidungen in komplexen Veränderungssituationen.
+
     </p>
 
   </div>
@@ -194,6 +196,89 @@ leading-8">
       {blok.icp_text}
     </p>
   </div>
+</section>
+
+{/* CHALLENGES */}
+
+<section className="px-4 md:px-6 py-14 md:py-20 border-t border-white/10">
+
+  <div className="max-w-7xl mx-auto">
+
+    <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+      {blok.challenge_badge}
+    </div>
+
+    <h2
+      className="
+      text-[2.4rem]
+      sm:text-5xl
+      md:text-6xl
+      lg:text-7xl
+      font-black
+      uppercase
+      leading-[0.92]
+      tracking-[-0.04em]
+      max-w-6xl
+      "
+    >
+      {blok.challenge_headline}
+    </h2>
+
+    <p
+      className="
+      mt-8
+      text-zinc-300
+      text-lg
+      md:text-xl
+      leading-8
+      max-w-5xl
+      "
+    >
+      {blok.challenge_intro}
+    </p>
+
+    <div className="mt-14 grid md:grid-cols-2 gap-6">
+
+      {blok.challenge_items?.map((item) => (
+
+        <div
+          key={item._uid}
+          className="
+          border
+          border-white/10
+          rounded-3xl
+          p-8
+          bg-zinc-900/50
+          "
+        >
+
+          <div className="flex items-start gap-4">
+
+            <div
+              className="
+              w-3
+              h-3
+              rounded-full
+              bg-fuchsia-600
+              mt-3
+              flex-shrink-0
+              "
+            />
+
+            <p className="text-xl md:text-2xl font-bold leading-relaxed">
+              {item.text}
+            </p>
+
+          </div>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
 </section>
 
 {/* Services */}
