@@ -144,17 +144,21 @@ export default function JoergGlinkaWebsite({ blok }) {
       Erfahrung
     </div>
 
-    <h2 className="
-text-[2.4rem]
-sm:text-5xl
-md:text-6xl
-lg:text-7xl
-font-black
-uppercase
-leading-[0.92]
-tracking-[-0.04em]
-max-w-6xl
-">
+   <h2
+  className="
+  text-[1.8rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
+  font-black
+  uppercase
+  leading-[0.92]
+  tracking-[-0.04em]
+  break-words
+  max-w-full
+  md:max-w-6xl
+  "
+>
       Transformation, die Wirkung erzeugt
     </h2>
 
@@ -186,7 +190,10 @@ max-w-5xl
     </div>
 
     {/* Headline */}
-    <h2 className="text-5xl md:text-7xl font-black uppercase leading-[0.92] tracking-[-0.04em] max-w-6xl">
+    <h2 className="
+text-4xl
+sm:text-5xl
+md:text-7xl font-black uppercase leading-[0.92] tracking-[-0.04em] max-w-6xl">
       {blok.icp_headline}
     </h2>
 
@@ -209,20 +216,22 @@ leading-8">
     </div>
 
     <h2
-      className="
-      text-[2.4rem]
-      sm:text-5xl
-      md:text-6xl
-      lg:text-7xl
-      font-black
-      uppercase
-      leading-[0.92]
-      tracking-[-0.04em]
-      max-w-6xl
-      "
-    >
-      {blok.challenge_headline}
-    </h2>
+  className="
+  text-[1.8rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
+  font-black
+  uppercase
+  leading-[0.92]
+  tracking-[-0.04em]
+  break-words
+  max-w-full
+  md:max-w-6xl
+  "
+>
+  {blok.challenge_headline}
+</h2>
 
     <p
       className="
@@ -290,17 +299,21 @@ leading-8">
     Services
   </div>
 
-  <h2 className="
-text-[2.4rem]
-sm:text-5xl
-md:text-6xl
-lg:text-7xl
-font-black
-uppercase
-leading-[0.92]
-tracking-[-0.04em]
-max-w-6xl
-">
+ <h2
+  className="
+  text-[1.8rem]
+  sm:text-5xl
+  md:text-6xl
+  lg:text-7xl
+  font-black
+  uppercase
+  leading-[0.92]
+  tracking-[-0.04em]
+  break-words
+  max-w-full
+  md:max-w-6xl
+  "
+>
     {blok?.services_headline || "Leistungen & Expertise"}
   </h2>
 
