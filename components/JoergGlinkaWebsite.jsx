@@ -25,7 +25,18 @@ export default function JoergGlinkaWebsite({ blok }) {
   className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden"
 >
 
-  <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 md:gap-24 items-start">
+  <div
+  className="
+  relative z-10
+  max-w-7xl
+  mx-auto
+  grid
+  lg:grid-cols-[1.15fr_0.85fr]
+  gap-12
+  xl:gap-20
+  items-start
+  "
+>
 
     {/* LEFT */}
 
@@ -112,7 +123,7 @@ export default function JoergGlinkaWebsite({ blok }) {
  </div>
     {/* RIGHT */}
 
-    <div className="relative w-full max-w-[720px] mx-auto order-1 lg:order-2">
+    <div className="relative w-full max-w-[620px] xl:max-w-[680px] mx-auto order-1 lg:order-2">
 
       <div className="absolute -inset-4 border-4 border-fuchsia-600 rounded-3xl"></div>
 
@@ -160,7 +171,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   md:max-w-6xl
   "
 >
-      Transformation, die Wirkung erzeugt
+      Digitale Transformation
     </h2>
 
     <p
