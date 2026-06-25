@@ -29,8 +29,8 @@ export default function CookieBanner() {
         lineHeight: "1.6",
       }}
       buttonStyle={{
-        background: "#c026d3",
-        color: "#ffffff",
+        background: "#facc15",
+        color: "#000000",
         borderRadius: "9999px",
         padding: "10px 18px",
         fontWeight: 700,

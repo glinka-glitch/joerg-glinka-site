@@ -27,8 +27,13 @@ img {
 /* H1-Farbe außerhalb @layer utilities — zuverlässigere Spezifität in Tailwind v4 */
 h1.type-h1,
 h1.type-display {
-  text-transform: uppercase;
   color: #f4f4f5; /* zinc-100 */
+}
+
+/* Globale Überlaufverhinderung für alle Überschriften */
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .editorial-card {
@@ -156,13 +161,13 @@ h1.type-display {
   @media (min-width: 768px)  { .type-h1 { font-size: 3.75rem; } }
   @media (min-width: 1024px) { .type-h1 { font-size: 4.5rem; } }
 
-  /* h2: Groß-/Kleinschreibung, etwas kleiner */
+  /* h2: Groß-/Kleinschreibung, eine Stufe kleiner als h1 */
   h2.type-h1 {
     text-transform: none;
     letter-spacing: -0.02em;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
-  @media (min-width: 640px)  { h2.type-h1 { font-size: 2rem; } }
+  @media (min-width: 640px)  { h2.type-h1 { font-size: 2.25rem; } }
   @media (min-width: 768px)  { h2.type-h1 { font-size: 2.75rem; } }
   @media (min-width: 1024px) { h2.type-h1 { font-size: 3.25rem; } }
 
@@ -170,7 +175,6 @@ h1.type-display {
   .type-h2 {
     font-size: 1.5rem;
     font-weight: 900;
-    text-transform: uppercase;
     line-height: 0.95;
     letter-spacing: -0.03em;
   }
@@ -182,7 +186,6 @@ h1.type-display {
   .type-h3 {
     font-size: 1.25rem;
     font-weight: 900;
-    text-transform: uppercase;
     line-height: 1.2;
   }
   @media (min-width: 768px) { .type-h3 { font-size: 1.875rem; } }

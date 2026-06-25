@@ -264,7 +264,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     <div className="mt-10 md:mt-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
       {blok?.services?.map((service) => (
         <FadeIn key={service._uid}>
-          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-12 md:p-14 h-full">            <div
+          <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-10 h-full">            <div
   className="
   inline-block
   bg-cyan-400
@@ -282,13 +282,13 @@ export default function JoergGlinkaWebsite({ blok }) {
   {service.tag}
 </div>
 
-            <h3 className="text-2xl md:text-3xl font-black uppercase leading-[0.95] break-words">
+            <h3 className="type-h3 break-words">
               <span className="whitespace-pre-line">
   {service.title}
 </span>
             </h3>
 
-            <p className="mt-6 text-zinc-400 leading-relaxed">
+            <p className="mt-6 type-body">
               {service.description}
             </p>
           </div>
@@ -317,11 +317,11 @@ export default function JoergGlinkaWebsite({ blok }) {
     <FadeIn key={item._uid}>
       <div className="border-t border-white/10 pt-8">
 
-        <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.95] mb-4">
+        <h3 className="type-h2 mb-4">
           {item.Headline}
         </h3>
 
-        <p className="text-zinc-400 text-xl leading-relaxed max-w-3xl">
+        <p className="type-body max-w-3xl">
   {item.Text}
 </p>
 
@@ -336,11 +336,11 @@ export default function JoergGlinkaWebsite({ blok }) {
 
   <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
-    <h3 className="text-3xl md:text-4xl font-black uppercase leading-[0.95] mb-4">
+    <h3 className="type-h2 mb-4">
       Lernen Sie die Person hinter den Ergebnissen kennen
     </h3>
 
-    <p className="text-zinc-400 max-w-[36ch] md:max-w-2xl mb-8 leading-relaxed">
+    <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">
       Erfahren Sie mehr über meinen Werdegang, meine Erfahrungen und die Prinzipien,
       die erfolgreiche digitale Transformation und nachhaltiges Wachstum ermöglichen.
     </p>

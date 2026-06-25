@@ -69,7 +69,7 @@ export default async function PortfolioPage() {
 {blok.hero_headline && (
   <div className="max-w-none md:max-w-none">
 
-   <h1 className="type-display max-w-none text-balance">
+   <h1 className="type-display max-w-none break-words hyphens-auto">
       {blok.hero_headline}
     </h1>
 
@@ -383,8 +383,8 @@ Technologie und Führung.
 
   <div className="max-w-7xl mx-auto">
 
-    <h3 className="type-h1">
-      Wo liegen Ihre größten wachstumshebel?
+    <h3 className="type-h2">
+      Wo liegen Ihre größten Wachstumshebel?
     </h3>
 
     <p className="type-body max-w-4xl mb-10">

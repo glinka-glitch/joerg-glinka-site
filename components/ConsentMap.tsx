@@ -8,11 +8,11 @@ export default function ConsentMap() {
 
   useEffect(() => {
     const consent = Cookies.get("glinka_cookie_consent")
+    setAccepted(consent === "true" || consent === "yes")
 
-    setAccepted(
-      consent === "true" ||
-      consent === "yes"
-    )
+    const handleAccept = () => setAccepted(true)
+    window.addEventListener("cookie-consent-accepted", handleAccept)
+    return () => window.removeEventListener("cookie-consent-accepted", handleAccept)
   }, [])
 
   if (!accepted) {
@@ -36,13 +36,14 @@ export default function ConsentMap() {
   return (
     <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_20px_80px_rgba(0,0,0,0.45)]">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18..."
+        src="https://maps.google.com/maps?q=51.01701,7.8533303&z=16&output=embed"
         width="100%"
         height="450"
         style={{ border: 0 }}
         loading="lazy"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
+        title="Standort Jörg Glinka – Manfred-Schöne-Straße 12, 57462 Olpe"
       />
     </div>
   )
