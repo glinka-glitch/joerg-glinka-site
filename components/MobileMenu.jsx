@@ -10,7 +10,7 @@ export default function MobileMenu() {
   const pathname = usePathname()
 
 const active =
-  "text-fuchsia-400 text-2xl font-black uppercase flex items-center gap-3"
+  "text-white text-2xl font-black uppercase flex items-center gap-3"
 
 const inactive =
   "text-white text-2xl font-black uppercase flex items-center gap-3"
@@ -36,7 +36,7 @@ const inactive =
   className={pathname === "/" ? active : inactive}
 >
   {pathname === "/" && (
-    <span className="w-2 h-2 rounded-full bg-fuchsia-500"></span>
+    <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
   )}
   Home
 </Link>
@@ -47,7 +47,7 @@ const inactive =
   className={pathname === "/about" ? active : inactive}
 >
   {pathname === "/about" && (
-    <span className="w-2 h-2 rounded-full bg-fuchsia-500"></span>
+    <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
   )}
   About
 </Link>
@@ -58,7 +58,7 @@ const inactive =
   className={pathname === "/portfolio" ? active : inactive}
 >
   {pathname === "/portfolio" && (
-    <span className="w-2 h-2 rounded-full bg-fuchsia-500"></span>
+    <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
   )}
   Portfolio
 </Link>
@@ -69,7 +69,7 @@ const inactive =
   className={pathname === "/contact" ? active : inactive}
 >
   {pathname === "/contact" && (
-    <span className="w-2 h-2 rounded-full bg-fuchsia-500"></span>
+    <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
   )}
   Contact
 </Link>
@@ -78,7 +78,7 @@ const inactive =
             href="https://calendly.com/glinka-ylcr/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-fuchsia-600 hover:bg-fuchsia-500 transition-all duration-300 px-6 py-4 rounded-full text-center text-sm font-bold uppercase tracking-wide"
+            className="inline-flex btn-cta justify-center w-full"
           >
             Termin vereinbaren
           </a>

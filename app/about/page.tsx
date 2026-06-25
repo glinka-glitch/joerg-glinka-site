@@ -39,7 +39,7 @@ export default async function AboutPage() {
   {/* Navigation */}
 
       {/* Glow Effects */}
-      <div className="absolute -z-10 top-[-200px] left-[-200px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[90px] rounded-full"></div>
+      <div className="absolute -z-10 top-[-200px] left-[-200px] w-[600px] h-[600px] bg-cyan-400/15 blur-[90px] rounded-full"></div>
 
       <div className="absolute -z-10 bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-yellow-400/10 blur-[100px] rounded-full"></div>
 
@@ -61,35 +61,20 @@ export default async function AboutPage() {
           <div className="order-2 lg:order-1">
 
             {/* Badge */}
-            <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+            <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
               {blok.hero_badge || "About"}
             </div>
 
             {/* Headline */}
-            <h1
-  className="
-  max-w-[18ch]
-  md:max-w-5xl
-  text-[1.9rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  tracking-[-0.04em]
-  leading-[0.9]
-  whitespace-pre-line
-  break-words
-  "
->
+            <h1 className="type-h1 max-w-[18ch] md:max-w-5xl whitespace-pre-line break-words">
               {blok.hero_headline || "Strategy\nGrowth\nTransformation"}
             </h1>
 
             {/* Divider */}
-            <div className="mt-8 w-24 h-[4px] bg-fuchsia-600 rounded-full"></div>
+            <div className="mt-8 w-24 h-[4px] bg-cyan-400 rounded-full"></div>
 
             {/* Text */}
-            <div className="mt-8 max-w-[38ch] md:max-w-4xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+            <div className="type-lead mt-8 max-w-[38ch] md:max-w-4xl">
               {blok.hero_text?.content ? (
                 blok.hero_text.content.map((item: any, index: number) => (
                   <p key={index} className="mb-6">
@@ -107,7 +92,7 @@ export default async function AboutPage() {
           {/* RIGHT */}
           <div className="relative w-full max-w-[620px] mx-auto order-1 lg:order-2">
 
-            <div className="absolute -inset-4 border-4 border-fuchsia-600 rounded-3xl"></div>
+            <div className="absolute -inset-4 border-4 border-cyan-400 rounded-3xl"></div>
 
             {blok.image?.filename && (
               <div className="relative z-10 overflow-hidden rounded-3xl">
@@ -118,7 +103,7 @@ export default async function AboutPage() {
                   height={800}
                   priority
                   fetchPriority="high"
-                  className="w-full h-auto object-cover shadow-[0_20px_60px_rgba(217,70,239,0.25)]"
+                  className="w-full h-auto object-cover shadow-[0_20px_60px_rgba(34,211,238,0.2)]"
                 />
               </div>
             )}
@@ -134,31 +119,16 @@ export default async function AboutPage() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+          <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
             {blok.story_badge || "Executive Story"}
           </div>
 
-          <h2
-  className="
-  max-w-none
-  md:max-w-none
-  text-[1.9rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  tracking-[-0.04em]
-  leading-[0.9]
-  whitespace-pre-line
-  break-words
-  "
->
+          <h2 className="type-h1 whitespace-pre-line break-words">
   {blok.story_headline ||
     "Digitale Transformation mit unternehmerischem Fokus"}
 </h2>
 
-          <div className="mt-6 max-w-[40ch] md:max-w-4xl text-zinc-300 text-lg leading-relaxed">
+          <div className="type-lead mt-6 max-w-[40ch] md:max-w-4xl">
             {blok.story_text?.content ? (
               blok.story_text.content.map((item: any, index: number) => (
                 <p key={index} className="mb-6">
@@ -181,25 +151,15 @@ export default async function AboutPage() {
 
   <div className="max-w-7xl mx-auto">
 
-    <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+    <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
       {blok.focus_badge}
     </div>
 
-    <h2
-  className="
-  max-w-none
-  text-5xl
-  md:text-6xl
-  font-black
-  uppercase
-  tracking-[-0.04em]
-  leading-[0.9]
-  "
->
+    <h2 className="type-h1">
       {blok.focus_headline}
     </h2>
 
-    <p className="mt-8 max-w-none text-zinc-400 text-lg leading-relaxed">
+    <p className="type-body mt-8">
       {blok.focus_intro}
     </p>
 
@@ -211,17 +171,17 @@ export default async function AboutPage() {
           className="grid md:grid-cols-[120px_1fr] gap-8 py-10 border-b border-white/10"
         >
 
-          <div className="text-5xl md:text-6xl font-black text-fuchsia-600">
+          <div className="text-5xl md:text-6xl font-black text-cyan-400">
             {blok[`focus_${i}_number`]}
           </div>
 
           <div>
 
-            <h3 className="text-3xl md:text-4xl font-black uppercase">
+            <h3 className="type-h2">
               {blok[`focus_${i}_title`]}
             </h3>
 
-            <p className="mt-4 text-zinc-400 text-lg leading-relaxed max-w-3xl">
+            <p className="type-body mt-4 max-w-3xl">
               {blok[`focus_${i}_text`]}
             </p>
 
@@ -240,38 +200,26 @@ export default async function AboutPage() {
 
         <div className="max-w-7xl mx-auto">
 
-          <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+          <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
             Journey
           </div>
 
-          <h2
-  className="
-  max-w-none
-  text-[2.2rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  tracking-[-0.04em]
-  leading-[0.9]
-  "
->
+          <h2 className="type-h1">
             Was meine Arbeit geprägt hat
           </h2>
 
-          <div className="mt-10 md:mt-12 max-w-5xl space-y-8 md:space-y-12 border-l border-fuchsia-500/30 pl-6 md:pl-10">
+          <div className="mt-10 md:mt-12 max-w-5xl space-y-8 md:space-y-12 border-l border-cyan-400/30 pl-6 md:pl-10">
 
             {blok.timeline_items?.map((item: any) => (
               <div key={item._uid} className="relative">
 
-                <div className="absolute -left-[31px] md:-left-[49px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-fuchsia-600"></div>
+                <div className="absolute -left-[31px] md:-left-[49px] top-1 w-4 h-4 md:w-5 md:h-5 rounded-full bg-cyan-400"></div>
 
-                <h3 className="text-xl md:text-3xl font-black uppercase leading-tight">
+                <h3 className="type-h3">
                   {item.title}
                 </h3>
 
-                <p className="mt-4 text-zinc-400 text-base md:text-lg leading-relaxed">
+                <p className="type-body mt-4">
                   {item.text}
                 </p>
 
@@ -294,22 +242,11 @@ export default async function AboutPage() {
 
       <div className="max-w-4xl">
 
-        <h3
-  className="
-  max-w-[12ch]
-  md:max-w-none
-  text-3xl
-  md:text-4xl
-  font-black
-  uppercase
-  leading-[0.9]
-  tracking-[-0.04em]
-  mb-4
-">
+        <h3 className="type-h2 max-w-[12ch] md:max-w-none mb-4">
           Lassen Sie uns über Ihre Themen sprechen
         </h3>
 
-        <p className="text-zinc-400 max-w-[36ch] md:max-w-2xl leading-relaxed">
+        <p className="type-body max-w-[36ch] md:max-w-2xl">
           Ob digitale Transformation, KI-Integration,
           operative Skalierung oder Wachstum –
           gemeinsam identifizieren wir die Maßnahmen
@@ -324,36 +261,14 @@ export default async function AboutPage() {
 
         <Link
           href="/contact"
-          className="
-          inline-flex
-          items-center
-          justify-center
-          bg-yellow-400
-          text-black
-          px-6
-          py-4
-          font-black
-          uppercase
-          tracking-wide
-          rounded-full
-          hover:scale-105
-          transition-all
-          duration-300
-          "
+          className="inline-flex btn-primary"
         >
           Strategiegespräch vereinbaren
         </Link>
 
         <Link
           href="#page-top"
-          className="
-          font-bold
-          uppercase
-          tracking-wide
-          text-yellow-400
-          hover:text-yellow-300
-          transition-colors
-          "
+          className="btn-ghost"
         >
           ↑ Nach oben
         </Link>

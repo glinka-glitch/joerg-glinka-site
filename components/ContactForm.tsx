@@ -95,7 +95,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={loading}
-        className="inline-flex items-center justify-center gap-3 bg-fuchsia-600 hover:bg-fuchsia-500 transition duration-300 px-6 md:px-10 py-4 md:py-5 rounded-full uppercase tracking-wide font-bold w-full sm:w-auto"
+        className="inline-flex btn-secondary gap-3 w-full sm:w-auto"
       >
         {loading ? "Wird gesendet..." : "Anfrage senden"}
       </button>

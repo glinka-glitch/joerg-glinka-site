@@ -49,9 +49,9 @@ export default async function ContactPage() {
   className="scroll-mt-24 md:scroll-mt-28"
 />
       {/* Glow Effects */}
-      <div className="absolute top-[-250px] left-[-150px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-[-250px] left-[-150px] w-[600px] h-[600px] bg-cyan-400/15 blur-[160px] rounded-full pointer-events-none"></div>
 
-<div className="absolute bottom-[-300px] right-[-150px] w-[600px] h-[600px] bg-fuchsia-500/10 blur-[180px] rounded-full pointer-events-none"></div>
+<div className="absolute bottom-[-300px] right-[-150px] w-[600px] h-[600px] bg-cyan-400/10 blur-[180px] rounded-full pointer-events-none"></div>
 
       {/* HERO */}
       <section className="relative isolate px-4 md:px-6 pt-8 md:pt-20 pb-10 md:pb-16 overflow-hidden">
@@ -68,33 +68,20 @@ export default async function ContactPage() {
         <div className="relative z-10 max-w-7xl mx-auto">
 
           {/* Badge */}
-          <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
+          <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
             Kontakt
           </div>
 
           {/* Headline */}
-          <h1
- className="
-  max-w-none
-  md:max-w-5xl
-  text-[2.6rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  leading-[0.9]
-  tracking-[-0.04em]
-  "
->
+          <h1 className="type-h1 max-w-none md:max-w-5xl">
             {blok.headline}
           </h1>
 
           {/* Divider */}
-          <div className="mt-6 w-20 h-[4px] bg-fuchsia-600 rounded-full"></div>
+          <div className="mt-6 w-20 h-[4px] bg-cyan-400 rounded-full"></div>
 
           {/* Text */}
-          <p className="mt-6 text-zinc-300 text-lg leading-relaxed max-w-[38ch] md:max-w-4xl">
+          <p className="type-lead mt-6 max-w-[38ch] md:max-w-4xl">
             {blok.text}
           </p>
 
@@ -111,7 +98,7 @@ export default async function ContactPage() {
 
             {/* EMAIL */}
             <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">
+              <p className="type-label">
                 E-Mail
               </p>
 
@@ -123,7 +110,7 @@ export default async function ContactPage() {
             {/* LOCATION */}
             <div className="mt-10 md:mt-14">
 
-              <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">
+              <p className="type-label">
                 Standort
               </p>
 
@@ -157,14 +144,14 @@ export default async function ContactPage() {
 
       <Link
         href="/"
-        className="inline-flex items-center bg-yellow-400 text-black px-8 py-4 font-black uppercase tracking-wide rounded-full hover:scale-105 transition-all duration-300"
+        className="inline-flex btn-primary"
       >
         Zur Startseite
       </Link>
 
       <a
         href="#page-top"
-        className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
+        className="btn-ghost"
       >
         ↑ Nach oben
       </a>

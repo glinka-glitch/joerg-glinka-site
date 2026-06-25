@@ -37,16 +37,16 @@ export default async function PortfolioPage() {
 >
 
       {/* Glow Effects */}
-      <div className="absolute top-[-300px] left-[-200px] w-[700px] h-[700px] bg-fuchsia-600/20 blur-[180px] rounded-full -z-10"></div>
+      <div className="absolute top-[-300px] left-[-200px] w-[700px] h-[700px] bg-cyan-400/15 blur-[180px] rounded-full -z-10"></div>
 
-      <div className="absolute bottom-[-300px] right-[-200px] w-[700px] h-[700px] bg-fuchsia-500/10 blur-[200px] rounded-full -z-10"></div>
+      <div className="absolute bottom-[-300px] right-[-200px] w-[700px] h-[700px] bg-cyan-400/10 blur-[200px] rounded-full -z-10"></div>
 
 {/* HERO */}
 <section className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden">
   {/* Background Glow */}
-  <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[160px] rounded-full"></div>
+  <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] bg-cyan-400/15 blur-[160px] rounded-full"></div>
 
-  <div className="absolute top-[200px] right-[-200px] w-[500px] h-[500px] bg-fuchsia-500/10 blur-[180px] rounded-full"></div>
+  <div className="absolute top-[200px] right-[-200px] w-[500px] h-[500px] bg-cyan-400/10 blur-[180px] rounded-full"></div>
 
   {/* Background Typography */}
   <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -61,7 +61,7 @@ export default async function PortfolioPage() {
 
 {/* Badge */}
 {blok.hero_badge && (
-  <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
+  <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
     {blok.hero_badge}
   </div>
 )}
@@ -69,21 +69,7 @@ export default async function PortfolioPage() {
 {blok.hero_headline && (
   <div className="max-w-none md:max-w-none">
 
-   <h1
-  className="
- max-w-none
-md:max-w-none
-text-[2.4rem]
-sm:text-5xl
-md:text-6xl
-lg:text-[6.5rem]
-font-black
-uppercase
-tracking-[-0.04em]
-leading-[0.9]
-text-balance
-  "
->
+   <h1 className="type-display max-w-none text-balance">
       {blok.hero_headline}
     </h1>
 
@@ -91,19 +77,12 @@ text-balance
 )}
 
     {/* Divider */}
-    <div className="mt-6 md:mt-10 w-24 md:w-32 h-[4px] bg-fuchsia-600 rounded-full"></div>
+    <div className="mt-6 md:mt-10 w-24 md:w-32 h-[4px] bg-cyan-400 rounded-full"></div>
 
     {/* Text */}
     {blok.hero_text && (
   <div
-    className="
-    mt-10
-    max-w-[90ch]
-    text-zinc-300
-    text-lg
-    md:text-xl
-    leading-relaxed
-    "
+    className="type-lead mt-10 max-w-[90ch]"
     dangerouslySetInnerHTML={{
       __html: renderRichText(blok.hero_text) || "",
     }}
@@ -145,24 +124,11 @@ text-balance
 
     <div className="mb-10">
 
-      <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+      <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
         Impact
       </div>
 
-      <h2
-  className="
-  max-w-none
-  md:max-w-none
-  text-[1.65rem]
-  sm:text-4xl
-  md:text-5xl
-  lg:text-[5rem]
-  font-black
-  uppercase
-  tracking-[-0.04em]
-  leading-[0.9]
-  "
->
+      <h2 className="type-h1">
         Messbare Wirkung
       </h2>
 
@@ -183,7 +149,7 @@ text-balance
   "
 >
 
-        <div className="text-4xl md:text-5xl font-black text-fuchsia-500">
+        <div className="text-4xl md:text-5xl font-black text-cyan-400">
           {item.value}
         </div>
 
@@ -209,24 +175,11 @@ text-balance
           <div className="max-w-7xl mx-auto">
 
             <div className="mb-24">
-             <h2
-className="
-max-w-none
-md:max-w-none
-text-[2.2rem]
-sm:text-5xl
-md:text-6xl
-lg:text-7xl
-font-black
-uppercase
-tracking-[-0.04em]
-leading-[0.95]
-"
->
+             <h2 className="type-h1">
   Die drei Hebel für nachhaltiges Wachstum
 </h2>
 
-<p className="mt-6 max-w-4xl text-zinc-300 text-base md:text-xl leading-relaxed">
+<p className="type-lead mt-6 max-w-4xl">
   Wachstum entsteht nicht durch einzelne Maßnahmen.
 Sondern durch das Zusammenspiel von Geschäftsmodell,
 Technologie und Führung.
@@ -268,26 +221,13 @@ Technologie und Führung.
                   <div className="w-full">
 
                     {item.category && (
-                      <div className="text-fuchsia-500 uppercase tracking-[0.2em] text-sm font-bold">
+                      <div className="text-cyan-400 uppercase tracking-[0.2em] text-sm font-bold">
                         {item.category}
                       </div>
                     )}
 
                     {item.title && (
-                      <h3
-className="
-mt-4
-md:mt-6
-text-[2.3rem]
-md:text-5xl
-lg:text-6xl
-font-black
-uppercase
-leading-[0.88]
-tracking-[-0.04em]
-max-w-none
-"
->
+                      <h3 className="type-h1 mt-4 md:mt-6">
                         {item.title}
                       </h3>
                     )}
@@ -296,11 +236,11 @@ max-w-none
 
                       {item.challenge && (
                         <div>
-                          <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3">
+                          <div className="type-label mb-3">
                             Focus
                           </div>
 
-                          <p className="mt-3 max-w-none text-zinc-300 text-base md:text-lg leading-relaxed">
+                          <p className="type-body mt-3">
                             {item.challenge}
                           </p>
                         </div>
@@ -308,11 +248,11 @@ max-w-none
 
                       {item.outcome && (
                         <div>
-                          <div className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-3">
+                          <div className="type-label mb-3">
                             Impact
                           </div>
 
-                          <p className="mt-3 max-w-none text-zinc-300 text-base md:text-lg leading-relaxed">
+                          <p className="type-body mt-3">
                             {item.outcome}
                           </p>
                         </div>
@@ -326,7 +266,7 @@ max-w-none
                         {item.tags.map((tag: any, index: number) => (
                           <div
                             key={index}
-                            className="px-5 py-2 rounded-full bg-fuchsia-600/20 text-fuchsia-400 text-xs uppercase tracking-[0.15em]"
+                            className="px-5 py-2 rounded-full bg-cyan-400/15 text-cyan-400 text-xs uppercase tracking-[0.15em]"
                           >
                             {tag}
                           </div>
@@ -351,7 +291,7 @@ max-w-none
     <div className="max-w-7xl mx-auto">
 
       {blok.philosophy_badge && (
-        <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
+        <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
           {blok.philosophy_badge}
         </div>
       )}
@@ -360,9 +300,7 @@ max-w-none
 
         <div>
           {blok.philosophy_headline && (
-            <h2
-              className="max-w-none md:max-w-5xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
-            >
+            <h2 className="type-h1 max-w-none md:max-w-5xl">
               {blok.philosophy_headline}
             </h2>
           )}
@@ -371,7 +309,7 @@ max-w-none
         <div>
           {blok.philosophy_text && (
             <div
-              className="mt-6 lg:mt-0 max-w-none text-zinc-300 text-base md:text-xl leading-relaxed prose prose-invert prose-p:text-zinc-300"
+              className="type-lead mt-6 lg:mt-0 max-w-none prose prose-invert prose-p:text-zinc-300"
               dangerouslySetInnerHTML={{
                 __html: renderRichText(blok.philosophy_text) || "",
               }}
@@ -393,7 +331,7 @@ max-w-none
     <div className="max-w-7xl mx-auto">
 
       {blok.cta_badge && (
-        <div className="inline-block bg-fuchsia-600 text-white px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
+        <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-10">
           {blok.cta_badge}
         </div>
       )}
@@ -404,9 +342,7 @@ max-w-none
         <div>
 
           {blok.cta_headline && (
-            <h2
-             className="max-w-none md:max-w-5xl text-[1.65rem] sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-[-0.03em] leading-[0.95]"
-            >
+            <h2 className="type-h1 max-w-none md:max-w-5xl">
               {blok.cta_headline}
             </h2>
           )}
@@ -418,7 +354,7 @@ max-w-none
 
           {blok.cta_text && (
             <div
-              className="mt-6 lg:mt-0 max-w-[34ch] text-zinc-300 text-base md:text-xl leading-relaxed prose prose-invert prose-p:text-zinc-300"
+              className="type-lead mt-6 lg:mt-0 max-w-[34ch] prose prose-invert prose-p:text-zinc-300"
               dangerouslySetInnerHTML={{
                 __html: renderRichText(blok.cta_text) || "",
               }}
@@ -428,7 +364,7 @@ max-w-none
           <div className="mt-10 md:mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-3 bg-fuchsia-600 hover:bg-fuchsia-500 transition duration-300 px-5 md:px-10 py-3 md:py-5 rounded-full uppercase tracking-wide font-bold text-sm w-full sm:w-auto"
+              className="inline-flex btn-secondary gap-3 w-full sm:w-auto"
             >
               Jetzt Kontakt aufnehmen!
             </Link>
@@ -447,20 +383,11 @@ max-w-none
 
   <div className="max-w-7xl mx-auto">
 
-    <h3 className="
-text-[1.65rem]
-md:text-5xl
-lg:text-6xl
-font-black
-uppercase
-leading-[0.9]
-tracking-[-0.04em]
-max-w-none
-">
+    <h3 className="type-h1">
       Wo liegen Ihre größten wachstumshebel?
     </h3>
 
-    <p className="text-zinc-400 max-w-4xl mb-10 text-lg leading-relaxed">
+    <p className="type-body max-w-4xl mb-10">
       Ob digitale Transformation, KI-Integration, operative Skalierung oder Wachstum – gemeinsam identifizieren wir die Maßnahmen mit der größten Wirkung für Ihr Unternehmen.
     </p>
 
@@ -468,15 +395,12 @@ max-w-none
 
       <Link
         href="/contact#contact-form"
-        className="inline-flex items-center bg-yellow-400 text-black px-8 py-4 font-black uppercase tracking-wide rounded-full hover:scale-105 transition-all duration-300"
+        className="inline-flex btn-primary"
       >
         Strategiegespräch vereinbaren
       </Link>
 
-     <a
-  href="#page-top"
-  className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
->
+     <a href="#page-top" className="btn-ghost">
   ↑ Nach oben
 </a>
 

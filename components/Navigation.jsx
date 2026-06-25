@@ -8,10 +8,10 @@ export default function Navigation() {
   const pathname = usePathname()
 
   const active =
-    "bg-fuchsia-600 text-white px-4 py-2 rounded-full font-bold uppercase tracking-wide shadow-lg"
+    "bg-white text-black px-4 py-2 rounded-full font-bold uppercase tracking-wide shadow-lg"
 
   const inactive =
-    "text-sm uppercase tracking-wide text-white hover:text-fuchsia-500 transition"
+    "text-sm uppercase tracking-wide text-white/60 hover:text-white transition"
 
   return (
     <nav className="hidden md:flex items-center gap-8">

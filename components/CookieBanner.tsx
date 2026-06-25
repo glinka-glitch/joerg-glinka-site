@@ -49,7 +49,7 @@ export default function CookieBanner() {
       Bereitstellung von Funktionen. Weitere Informationen finden Sie in der{" "}
       <Link
         href="/datenschutz"
-        className="text-fuchsia-400 hover:text-fuchsia-300 underline"
+        className="text-cyan-400 hover:text-cyan-300 underline"
       >
         Datenschutzerklärung
       </Link>.

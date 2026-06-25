@@ -46,7 +46,7 @@ export default function Header() {
     href="https://calendly.com/glinka-ylcr/30min"
     target="_blank"
     rel="noopener noreferrer"
-    className="hidden md:inline-flex bg-fuchsia-600 hover:bg-fuchsia-500 transition-all duration-300 px-6 py-3 rounded-full text-sm font-bold uppercase tracking-wide shadow-2xl hover:scale-105"
+    className="hidden md:inline-flex btn-cta"
   >
     Termin vereinbaren
   </a>

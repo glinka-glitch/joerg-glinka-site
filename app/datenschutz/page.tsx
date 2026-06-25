@@ -36,7 +36,7 @@ export default async function DatenschutzPage() {
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
 
       {/* Glow Effects */}
-      <div className="absolute top-[-200px] left-[-200px] w-[600px] h-[600px] bg-fuchsia-600/20 blur-[90px] rounded-full"></div>
+      <div className="absolute top-[-200px] left-[-200px] w-[600px] h-[600px] bg-cyan-400/15 blur-[90px] rounded-full"></div>
 
       <div className="absolute bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-yellow-400/10 blur-[100px] rounded-full"></div>
 
@@ -52,17 +52,17 @@ export default async function DatenschutzPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto">
 
-          <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
+          <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
             DSGVO
           </div>
 
-          <h1 className="max-w-5xl text-4xl sm:text-5xl md:text-7xl lg:text-[6.5rem] font-black uppercase leading-[0.88] tracking-[-0.06em]">
+          <h1 className="type-h1 max-w-5xl">
             Datenschutz
           </h1>
 
-          <div className="mt-6 md:mt-10 w-24 md:w-32 h-[4px] bg-fuchsia-600 rounded-full"></div>
+          <div className="mt-6 md:mt-10 w-24 md:w-32 h-[4px] bg-cyan-400 rounded-full"></div>
 
-          <p className="mt-6 md:mt-12 text-zinc-300 text-lg md:text-2xl leading-relaxed max-w-4xl">
+          <p className="type-lead mt-6 md:mt-12 max-w-4xl">
             Informationen zur Verarbeitung personenbezogener Daten auf dieser Website gemäß DSGVO.
           </p>
 
@@ -86,7 +86,7 @@ export default async function DatenschutzPage() {
                     className="border-b border-white/10 pb-10 md:pb-16"
                   >
 
-                    <h2 className="max-w-5xl text-2xl sm:text-3xl md:text-5xl font-black uppercase leading-[0.92] tracking-[-0.04em] text-white">
+                    <h2 className="type-h2 max-w-5xl">
                       {section.headline}
                     </h2>
 
@@ -101,9 +101,9 @@ export default async function DatenschutzPage() {
                         prose-headings:text-white
                         prose-strong:text-white
                         prose-li:text-zinc-300
-                        prose-a:text-fuchsia-400
+                        prose-a:text-cyan-400
                         prose-a:no-underline
-                        prose-a:hover:text-fuchsia-300
+                        prose-a:hover:text-cyan-300
                         prose-ul:my-6
                         prose-ol:my-6
                         prose-p:leading-8

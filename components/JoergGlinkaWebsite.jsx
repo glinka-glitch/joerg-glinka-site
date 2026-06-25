@@ -14,11 +14,11 @@ export default function JoergGlinkaWebsite({ blok }) {
   id="page-top"
   className="scroll-mt-24 md:scroll-mt-28"
 />
-    <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-fuchsia-600/15 blur-[20px] rounded-full"></div>
+    <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-cyan-400/15 blur-[20px] rounded-full"></div>
 
 <div className="absolute -z-10 top-[25%] right-[-120px] w-[380px] h-[380px] bg-yellow-400/10 blur-[20px] rounded-full"></div>
 
-<div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-fuchsia-500/10 blur-[20px] rounded-full"></div>
+<div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-cyan-400/10 blur-[20px] rounded-full"></div>
       {/* Navigation */}
 {/* HERO */}
 <section
@@ -42,30 +42,17 @@ export default function JoergGlinkaWebsite({ blok }) {
 
     <div className="order-2 lg:order-1">
 
-      <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+      <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
         {blok?.hero_badge || "KI-gestützte Commerce-Transformation"}
       </div>
 
-     <h1
-  className="
-  max-w-[620px]
-  text-[2.8rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-[5rem]
-  font-black
-  uppercase
-  leading-[0.95]
-  tracking-[-0.03em]
-  whitespace-pre-line
-  "
->
+     <h1 className="type-display max-w-[620px] whitespace-pre-line">
         {`${blok?.hero_title_line_1 || "Digitales"}\n${blok?.hero_title_line_2 || "Wachstum"}\n${blok?.hero_title_line_3 || "neu denken"}`}
       </h1>
 
-      <div className="mt-8 w-24 h-[4px] bg-fuchsia-600 rounded-full"></div>
+      <div className="mt-8 w-24 h-[4px] bg-cyan-400 rounded-full"></div>
 
-      <p className="mt-8 max-w-2xl text-lg md:text-xl text-zinc-300 leading-8">
+      <p className="type-lead mt-8 max-w-2xl">
         {blok?.hero_text ||
           "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
       </p>
@@ -87,7 +74,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok.stat_1_value}
       </div>
 
-      <div className="text-zinc-500 uppercase tracking-[0.12em] text-sm mt-2">
+      <div className="type-label mt-2">
         {blok.stat_1_label}
       </div>
     </div>
@@ -100,7 +87,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok.stat_2_value}
       </div>
 
-      <div className="text-zinc-500 uppercase tracking-[0.12em] text-sm mt-2">
+      <div className="type-label mt-2">
         {blok.stat_2_label}
       </div>
     </div>
@@ -113,7 +100,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok.stat_3_value}
       </div>
 
-      <div className="text-zinc-500 uppercase tracking-[0.12em] text-sm mt-2">
+      <div className="type-label mt-2">
         {blok.stat_3_label}
       </div>
     </div>
@@ -125,7 +112,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
     <div className="relative w-full max-w-[620px] xl:max-w-[680px] mx-auto order-1 lg:order-2">
 
-      <div className="absolute -inset-4 border-4 border-fuchsia-600 rounded-3xl"></div>
+      <div className="absolute -inset-4 border-4 border-cyan-400 rounded-3xl"></div>
 
       {blok?.hero_image?.filename && (
         <div className="relative z-10 overflow-hidden rounded-3xl">
@@ -136,7 +123,7 @@ export default function JoergGlinkaWebsite({ blok }) {
             width={800}
             height={800}
             priority
-            className="w-full h-auto object-cover shadow-[0_20px_60px_rgba(217,70,239,0.25)]"
+            className="w-full h-auto object-cover shadow-[0_20px_60px_rgba(34,211,238,0.2)]"
           />
 
         </div>
@@ -152,38 +139,15 @@ export default function JoergGlinkaWebsite({ blok }) {
 <section className="px-4 md:px-6 pt-10 pb-16">
   <div className="max-w-7xl mx-auto">
 
-    <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+    <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
       Erfahrung
     </div>
 
-   <h2
-  className="
-  text-[2rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  leading-[0.92]
-  tracking-[-0.04em]
-  break-words
-  max-w-full
-  md:max-w-6xl
-  "
->
+   <h2 className="type-h1 break-words max-w-full md:max-w-6xl">
       Digitale Transformation
     </h2>
 
-    <p
-  className="
-  mt-8
-  text-zinc-300
-  text-base
-  md:text-xl
-  leading-relaxed
-  max-w-5xl
-  "
->
+    <p className="type-lead mt-8 max-w-5xl">
       Von E-Commerce über Plattformstrategien bis zu KI-gestützter Transformation:
       Ich begleite Unternehmen dabei, Technologie nicht nur einzuführen, sondern in nachhaltigen Geschäftswert zu übersetzen.
       25+ Jahre Erfahrung sind dabei kein Selbstzweck, sondern die Grundlage für bessere Entscheidungen in komplexen Veränderungssituationen.
@@ -199,21 +163,17 @@ export default function JoergGlinkaWebsite({ blok }) {
   <div className="max-w-7xl mx-auto">
 
     {/* Eyebrow */}
-    <div className="inline-block bg-fuchsia-600 text-white text-xs md:text-sm font-bold uppercase tracking-[0.15em] px-4 py-2 mb-6">
+    <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
       {blok.icp_eyebrow}
     </div>
 
     {/* Headline */}
-    <h2 className="
-text-4xl
-sm:text-5xl
-md:text-7xl font-black uppercase leading-[0.92] tracking-[-0.04em] max-w-6xl">
+    <h2 className="type-h1 max-w-6xl">
       {blok.icp_headline}
     </h2>
 
     {/* Intro */}
-    <p className="mt-8 text-zinc-300 text-lg md:text-xl leading-relaxed max-w-5xl
-leading-8">
+    <p className="type-lead mt-8 max-w-5xl">
       {blok.icp_text}
     </p>
   </div>
@@ -225,38 +185,15 @@ leading-8">
 
   <div className="max-w-7xl mx-auto">
 
-    <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+    <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
       {blok.challenge_badge}
     </div>
 
-    <h2
-  className="
-  text-[1.8rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  leading-[0.92]
-  tracking-[-0.04em]
-  break-words
-  max-w-full
-  md:max-w-6xl
-  "
->
+    <h2 className="type-h1 break-words max-w-full md:max-w-6xl">
   {blok.challenge_headline}
 </h2>
 
-    <p
-      className="
-      mt-8
-      text-zinc-300
-      text-lg
-      md:text-xl
-      leading-8
-      max-w-5xl
-      "
-    >
+    <p className="type-lead mt-8 max-w-5xl">
       {blok.challenge_intro}
     </p>
 
@@ -282,7 +219,7 @@ leading-8">
               w-3
               h-3
               rounded-full
-              bg-fuchsia-600
+              bg-cyan-400
               mt-3
               flex-shrink-0
               "
@@ -309,30 +246,15 @@ leading-8">
   <div className="max-w-7xl mx-auto">
    <div className="mb-10 md:mb-12">
 
-  <div className="inline-block bg-yellow-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+  <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
     Services
   </div>
 
- <h2
-  className="
-  text-[1.8rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  leading-[0.92]
-  tracking-[-0.04em]
-  break-words
-  max-w-full
-  md:max-w-6xl
-  "
->
+ <h2 className="type-h1 break-words max-w-full md:max-w-6xl">
     {blok?.services_headline || "Leistungen & Expertise"}
   </h2>
 
-  <p className="mt-6 text-lg md:text-xl text-zinc-300 leading-relaxed max-w-5xl
-leading-8 font-semibold">    {blok?.services_text ||
+  <p className="type-lead mt-6 max-w-5xl font-semibold">    {blok?.services_text ||
       "KI-gestützte Wachstumsstrategien, Commerce-Transformation und moderne digitale Systeme für nachhaltige Skalierung."}
   </p>
 
@@ -345,8 +267,8 @@ leading-8 font-semibold">    {blok?.services_text ||
           <div className="editorial-card bg-zinc-900 border border-white/10 rounded-3xl p-12 md:p-14 h-full">            <div
   className="
   inline-block
-  bg-fuchsia-600
-  text-white
+  bg-cyan-400
+  text-black
   px-4
   py-2
   text-xs
@@ -381,33 +303,11 @@ leading-8 font-semibold">    {blok?.services_text ||
   <div className="max-w-7xl mx-auto">
     <FadeIn>
       <div className="mb-6 md:mb-8">
-        <div className="
-inline-block
-bg-fuchsia-600
-text-white
-px-4
-py-2
-text-xs
-font-black
-uppercase
-tracking-[0.18em]
-rotate-[-2deg]
-mb-8
-">
+        <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
           Trust & Impact
         </div>
 
-        <h2 className="
-  text-[2.2rem]
-  sm:text-5xl
-  md:text-6xl
-  lg:text-7xl
-  font-black
-  uppercase
-  leading-[0.9]
-  tracking-[-0.03em]
-  max-w-none
-">
+        <h2 className="type-h1">
   Warum Kunden mit mir arbeiten
 </h2>
       </div>
@@ -449,14 +349,14 @@ mb-8
 
       <Link
         href="/about"
-        className="inline-flex items-center bg-yellow-400 text-black px-8 py-4 font-black uppercase tracking-wide rounded-full hover:scale-105 transition-all duration-300"
+        className="inline-flex btn-primary"
       >
         Erfahren Sie mehr über mich
       </Link>
 
 <a
   href="#page-top"
-  className="font-bold uppercase tracking-wide text-yellow-400 hover:text-yellow-300 transition-colors"
+  className="btn-ghost"
 >
   ↑ Nach oben
 </a>

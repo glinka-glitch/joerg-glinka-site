@@ -1,29 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Tailwind v4 theme — Geist-Fonts als font-sans / font-mono verfügbar machen */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -34,22 +16,19 @@ body {
 }
 
 ::selection {
-  background: #d946ef;
-  color: white;
+  background: #22d3ee; /* cyan-400 */
+  color: #000;
 }
 
 img {
   user-select: none;
 }
 
-.section-spacing {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-.editorial-title {
-  letter-spacing: -0.06em;
-  line-height: 0.9;
+/* H1-Farbe außerhalb @layer utilities — zuverlässigere Spezifität in Tailwind v4 */
+h1.type-h1,
+h1.type-display {
+  text-transform: uppercase;
+  color: #f4f4f5; /* zinc-100 */
 }
 
 .editorial-card {
@@ -61,9 +40,175 @@ img {
 
 .editorial-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(217, 70, 239, 0.5);
-  box-shadow: 0 20px 60px rgba(217, 70, 239, 0.15);
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow: 0 20px 60px rgba(34, 211, 238, 0.15);
 }
-html {
-  scroll-behavior: smooth;
+
+/* ─── Buttons ──────────────────────────────────────────────────────────────
+ *  btn-primary   Gelber CTA-Button (Haupt-Aktion)
+ *  btn-secondary Cyan-Button (Aktion / Navigation)
+ *  btn-cta       Fuchsia-Button — NUR "Termin vereinbaren"
+ *  btn-ghost     Textlink-Button (z.B. "↑ Nach oben")
+ * ─────────────────────────────────────────────────────────────────────────── */
+
+@layer utilities {
+
+  /* Nur visuelle Eigenschaften — kein display, damit hidden/inline-flex etc. nicht kollidieren */
+  .btn-primary {
+    align-items: center;
+    justify-content: center;
+    background-color: #facc15; /* yellow-400 */
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 900;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 9999px;
+    transition: transform 0.3s ease;
+  }
+  .btn-primary:hover { transform: scale(1.05); }
+
+  .btn-secondary {
+    align-items: center;
+    justify-content: center;
+    background-color: #22d3ee; /* cyan-400 */
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 900;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 9999px;
+    box-shadow: 0 10px 40px rgba(34, 211, 238, 0.25);
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .btn-secondary:hover {
+    background-color: #06b6d4; /* cyan-500 */
+    transform: scale(1.05);
+    box-shadow: 0 20px 60px rgba(34, 211, 238, 0.4);
+  }
+
+  .btn-cta {
+    align-items: center;
+    justify-content: center;
+    background-color: #facc15; /* yellow-400 — Termin vereinbaren */
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 900;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 9999px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .btn-cta:hover {
+    background-color: #fde047; /* yellow-300 */
+    transform: scale(1.05);
+  }
+
+  .btn-ghost {
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #facc15; /* yellow-400 */
+    transition: color 0.2s ease;
+  }
+  .btn-ghost:hover { color: #fde047; /* yellow-300 */ }
+
+}
+
+/* ─── Typography Scale ─────────────────────────────────────────────────────
+ *  Single source of truth für alle Schriftgrößen.
+ *  Referenz: Startseite (JoergGlinkaWebsite.jsx)
+ *
+ *  type-display  Hero-Headline (nur Home)
+ *  type-h1       Seitentitel / Haupt-Sektionsüberschriften
+ *  type-h2       Unter-Sektionsüberschriften
+ *  type-h3       Karten- / Listen-Überschriften
+ *  type-lead     Einleitungs-Absätze (zinc-300)
+ *  type-body     Fließtext (zinc-400)
+ *  type-label    Labels / Eyebrow-Text (zinc-500)
+ * ─────────────────────────────────────────────────────────────────────────── */
+
+@layer utilities {
+
+  /* Hero-Headline — nur Startseite */
+  .type-display {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+  @media (min-width: 640px)  { .type-display { font-size: 3rem; } }
+  @media (min-width: 768px)  { .type-display { font-size: 3.75rem; } }
+  @media (min-width: 1024px) { .type-display { font-size: 5rem; } }
+
+  /* Seitentitel & Haupt-Sektionsüberschriften */
+  .type-h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+  }
+  @media (min-width: 640px)  { .type-h1 { font-size: 3rem; } }
+  @media (min-width: 768px)  { .type-h1 { font-size: 3.75rem; } }
+  @media (min-width: 1024px) { .type-h1 { font-size: 4.5rem; } }
+
+  /* h2: Groß-/Kleinschreibung, etwas kleiner */
+  h2.type-h1 {
+    text-transform: none;
+    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+  }
+  @media (min-width: 640px)  { h2.type-h1 { font-size: 2rem; } }
+  @media (min-width: 768px)  { h2.type-h1 { font-size: 2.75rem; } }
+  @media (min-width: 1024px) { h2.type-h1 { font-size: 3.25rem; } }
+
+  /* Unter-Sektionsüberschriften */
+  .type-h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+  }
+  @media (min-width: 640px)  { .type-h2 { font-size: 1.875rem; } }
+  @media (min-width: 768px)  { .type-h2 { font-size: 2.25rem; } }
+  @media (min-width: 1024px) { .type-h2 { font-size: 3rem; } }
+
+  /* Karten- / Listen-Überschriften */
+  .type-h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+  @media (min-width: 768px) { .type-h3 { font-size: 1.875rem; } }
+
+  /* Einleitungs-Absätze */
+  .type-lead {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: rgb(212 212 216); /* zinc-300 */
+  }
+  @media (min-width: 768px) { .type-lead { font-size: 1.25rem; } }
+
+  /* Fließtext */
+  .type-body {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgb(161 161 170); /* zinc-400 */
+  }
+  @media (min-width: 768px) { .type-body { font-size: 1.125rem; } }
+
+  /* Labels / Eyebrow-Text */
+  .type-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgb(113 113 122); /* zinc-500 */
+  }
+
 }

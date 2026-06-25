@@ -226,21 +226,21 @@ export default function RootLayout({
     href="https://www.linkedin.com/in/joerg-glinka"
     target="_blank"
     rel="noopener noreferrer"
-    className="hover:text-fuchsia-500 transition"
+    className="hover:text-cyan-400 transition"
   >
     LinkedIn
   </a>
 
   <Link
     href="/impressum"
-    className="hover:text-fuchsia-500 transition"
+    className="hover:text-cyan-400 transition"
   >
     Impressum
   </Link>
 
   <Link
     href="/datenschutz"
-    className="hover:text-fuchsia-500 transition"
+    className="hover:text-cyan-400 transition"
   >
     Datenschutz
   </Link>
