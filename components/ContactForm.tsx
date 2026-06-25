@@ -55,8 +55,8 @@ export default function ContactForm() {
           Anfrage senden
         </p>
 
-        <h2 className="text-3xl md:text-5xl font-black uppercase leading-[0.9] tracking-[-0.05em]">
-          Lassen Sie uns über Ihr Projekt sprechen.
+        <h2 className="text-3xl md:text-5xl font-black leading-[0.9] tracking-[-0.05em]">
+          Ihre Nachricht an mich
         </h2>
       </div>
 

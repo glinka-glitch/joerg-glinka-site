@@ -236,7 +236,7 @@ Technologie und Führung.
 
                       {item.challenge && (
                         <div>
-                          <div className="type-label mb-3">
+                          <div className="type-label !text-cyan-400 mb-3">
                             Focus
                           </div>
 
@@ -248,7 +248,7 @@ Technologie und Führung.
 
                       {item.outcome && (
                         <div>
-                          <div className="type-label mb-3">
+                          <div className="type-label !text-cyan-400 mb-3">
                             Impact
                           </div>
 
