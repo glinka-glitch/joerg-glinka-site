@@ -74,12 +74,12 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok.stat_1_value}
       </div>
 
-      <div className="type-label mt-2">
+      <div className="type-label !text-cyan-400 mt-2">
         {blok.stat_1_label}
       </div>
     </div>
 
-    <div className="hidden lg:block w-px h-12 bg-white/10" />
+    <div className="hidden lg:block w-px h-12 bg-cyan-400" />
 
     {/* ITEM 2 */}
     <div>
@@ -87,12 +87,12 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok.stat_2_value}
       </div>
 
-      <div className="type-label mt-2">
+      <div className="type-label !text-cyan-400 mt-2">
         {blok.stat_2_label}
       </div>
     </div>
 
-    <div className="hidden lg:block w-px h-12 bg-white/10" />
+    <div className="hidden lg:block w-px h-12 bg-cyan-400" />
 
     {/* ITEM 3 */}
     <div>
@@ -100,7 +100,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok.stat_3_value}
       </div>
 
-      <div className="type-label mt-2">
+      <div className="type-label !text-cyan-400 mt-2">
         {blok.stat_3_label}
       </div>
     </div>
@@ -197,39 +197,22 @@ export default function JoergGlinkaWebsite({ blok }) {
       {blok.challenge_intro}
     </p>
 
-    <div className="mt-14 grid md:grid-cols-2 gap-6">
+    <div className="mt-14 flex flex-col">
 
       {blok.challenge_items?.map((item) => (
 
         <div
           key={item._uid}
-          className="
-          border
-          border-white/10
-          rounded-3xl
-          p-8
-          bg-zinc-900/50
-          "
+          className="flex items-start gap-5 py-5 border-b border-white/10"
         >
 
-          <div className="flex items-start gap-4">
+          <span className="text-2xl md:text-3xl font-black text-cyan-400 flex-shrink-0 leading-snug">
+            →
+          </span>
 
-            <div
-              className="
-              w-3
-              h-3
-              rounded-full
-              bg-cyan-400
-              mt-3
-              flex-shrink-0
-              "
-            />
-
-            <p className="text-xl md:text-2xl font-bold leading-relaxed">
-              {item.text}
-            </p>
-
-          </div>
+          <p className="text-xl md:text-2xl font-bold leading-relaxed text-cyan-400">
+            {item.text}
+          </p>
 
         </div>
 

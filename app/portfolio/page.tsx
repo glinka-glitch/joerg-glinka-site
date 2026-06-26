@@ -221,7 +221,7 @@ Technologie und Führung.
                   <div className="w-full">
 
                     {item.category && (
-                      <div className="text-cyan-400 uppercase tracking-[0.2em] text-sm font-bold">
+                      <div className="text-cyan-400 uppercase tracking-[0.2em] text-base md:text-lg font-bold">
                         {item.category}
                       </div>
                     )}
@@ -236,7 +236,7 @@ Technologie und Führung.
 
                       {item.challenge && (
                         <div>
-                          <div className="type-label !text-cyan-400 mb-3">
+                          <div className="type-label !text-cyan-400 !text-base md:!text-lg mb-3">
                             Focus
                           </div>
 
@@ -248,7 +248,7 @@ Technologie und Führung.
 
                       {item.outcome && (
                         <div>
-                          <div className="type-label !text-cyan-400 mb-3">
+                          <div className="type-label !text-cyan-400 !text-base md:!text-lg mb-3">
                             Impact
                           </div>
 
