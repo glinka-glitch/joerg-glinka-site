@@ -80,7 +80,7 @@ const inactive =
             rel="noopener noreferrer"
             className="inline-flex btn-cta justify-center w-full"
           >
-            Termin vereinbaren
+            Gespräch vereinbaren
           </a>
         </div>
       )}

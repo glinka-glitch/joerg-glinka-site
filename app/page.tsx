@@ -2,21 +2,20 @@ import type { Metadata } from "next";
 import JoergGlinkaWebsite from "@/components/JoergGlinkaWebsite";
 
 export const metadata: Metadata = {
-  title: "Jörg Glinka | Executive Advisor für KI, Transformation & Wachstum",
+  title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
   description:
-    "Digitale Transformation, KI-gestützte Prozesse und nachhaltiges Wachstum. Über 25 Jahre Erfahrung in E-Commerce, Technologie und Unternehmensentwicklung.",
+    "Führungskraft mit 25 Jahren Erfahrung in digitaler Transformation und KI-Integration. Ich übersetze KI-Investitionen in messbaren Geschäftswert – und suche die passende Festposition.",
 
   alternates: {
     canonical: "https://www.glinka.tech/",
   },
 
   openGraph: {
-    title:
-      "Jörg Glinka | Executive Advisor für KI, Transformation & Wachstum",
+    title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
     description:
-      "Digitale Transformation, KI-gestützte Prozesse und nachhaltiges Wachstum. Über 25 Jahre Erfahrung in E-Commerce, Technologie und Unternehmensentwicklung.",
+      "Führungskraft mit 25 Jahren Erfahrung in digitaler Transformation und KI-Integration. Ich übersetze KI-Investitionen in messbaren Geschäftswert – und suche die passende Festposition.",
 
     url: "https://www.glinka.tech/",
 

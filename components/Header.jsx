@@ -27,11 +27,11 @@ export default function Header() {
 
             <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1 leading-tight">
   <span className="md:hidden">
-    AI-Driven Growth
+    KI & Transformation
   </span>
 
   <span className="hidden md:inline">
-    AI-Driven Growth & E-Commerce
+    KI-Prozessmanagement & Digitale Transformation
   </span>
 </p>
           </div>
@@ -48,7 +48,7 @@ export default function Header() {
     rel="noopener noreferrer"
     className="hidden md:inline-flex btn-cta"
   >
-    Termin vereinbaren
+    Gespräch vereinbaren
   </a>
 
   <MobileMenu />

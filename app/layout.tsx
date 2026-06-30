@@ -23,10 +23,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.glinka.tech/"),
 
-  title: "Jörg Glinka | AI-Driven Growth & E-Commerce",
+  title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
   description:
-    "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
+    "25 Jahre Erfahrung in digitaler Transformation und KI-Integration. Jetzt auf der Suche nach einer Führungsposition, in der ich KI-Investitionen in messbaren Geschäftswert übersetze.",
 
   robots: {
     index: true,
@@ -40,8 +40,10 @@ export const metadata: Metadata = {
     "E-Commerce",
     "Marketplace Growth",
     "Growth Strategy",
-    "Executive Advisor",
     "KI Management",
+    "Führungskraft",
+    "CDO",
+    "CTO",
   ],
 
   authors: [
@@ -51,10 +53,10 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Jörg Glinka | AI-Driven Growth & E-Commerce",
+    title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
     description:
-      "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
+      "25 Jahre Erfahrung in digitaler Transformation und KI-Integration. Jetzt auf der Suche nach einer Führungsposition, in der ich KI-Investitionen in messbaren Geschäftswert übersetze.",
 
     url: "https://www.glinka.tech/",
 
@@ -76,10 +78,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Jörg Glinka | AI-Driven Growth & E-Commerce",
+    title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
     description:
-      "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
+      "25 Jahre Erfahrung in digitaler Transformation und KI-Integration. Jetzt auf der Suche nach einer Führungsposition, in der ich KI-Investitionen in messbaren Geschäftswert übersetze.",
 
     images: ["/og-image.jpg"],
   },
@@ -98,7 +100,7 @@ const structuredData = {
       image: "https://www.glinka.tech//og-image.jpg",
 
       jobTitle:
-        "Executive Advisor for AI-Driven Growth, E-Commerce & Digital Transformation",
+        "KI-Prozessmanagement & Digitale Transformation",
 
       description:
         "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
@@ -212,7 +214,7 @@ export default function RootLayout({
       {/* Left */}
       <div>
         <p className="text-zinc-500 text-sm">
-          © 2026 Jörg Glinka · AI-Driven Growth & E-Commerce
+          © 2026 Jörg Glinka · KI-Prozessmanagement & Digitale Transformation
         </p>
 
         <p className="mt-3 text-xs text-zinc-600 max-w-md leading-relaxed">

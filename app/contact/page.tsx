@@ -17,18 +17,19 @@ import Link from "next/link"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Kontakt | Jörg Glinka",
+  title: "Gespräch vereinbaren | Jörg Glinka",
+
   description:
-    "Kontaktieren Sie Jörg Glinka für AI-Driven Growth, E-Commerce und digitale Transformationsprojekte.",
+    "Suchen Sie jemanden, der KI-Transformation operativ und strategisch umsetzt? Lassen Sie uns sprechen – ich freue mich auf das Gespräch.",
 
   alternates: {
     canonical: "https://www.glinka.tech/contact",
   },
 
   openGraph: {
-    title: "Kontakt | Jörg Glinka",
+    title: "Gespräch vereinbaren | Jörg Glinka",
     description:
-      "Jetzt Strategiegespräch mit Jörg Glinka vereinbaren.",
+      "Suchen Sie jemanden, der KI-Transformation operativ und strategisch umsetzt? Lassen Sie uns sprechen – ich freue mich auf das Gespräch.",
     url: "https://www.glinka.tech/contact",
     images: [
       {

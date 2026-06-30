@@ -4,19 +4,20 @@ import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 import Link from "next/link"
 export const metadata: Metadata = {
-  title: "Portfolio | Projekte, Transformation & Wachstum",
+  title: "Referenzen | Jörg Glinka – KI, Transformation & Commerce",
+
   description:
-    "Ausgewählte Projekte, digitale Transformationen und AI-Driven Growth Initiativen von Jörg Glinka.",
+    "Ausgewählte Transformationsprojekte mit messbaren Ergebnissen: KI-Integration, Wachstumsskalierung und digitale Strategie aus über zwei Jahrzehnten Führungsverantwortung.",
 
   alternates: {
     canonical: "https://www.glinka.tech/portfolio",
   },
 
   openGraph: {
-    title: "Portfolio | Jörg Glinka",
+    title: "Referenzen | Jörg Glinka – KI, Transformation & Commerce",
     description:
-      "Digitale Transformation, Commerce-Wachstum und AI Operations.",
-    url: "/portfolio",
+      "Ausgewählte Transformationsprojekte mit messbaren Ergebnissen: KI-Integration, Wachstumsskalierung und digitale Strategie aus über zwei Jahrzehnten Führungsverantwortung.",
+    url: "https://www.glinka.tech/portfolio",
     images: [
       {
         url: "/og-image.jpg",
