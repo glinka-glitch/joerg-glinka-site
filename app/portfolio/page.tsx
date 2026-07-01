@@ -365,7 +365,7 @@ export default async function PortfolioPage() {
               href="/contact"
               className="inline-flex btn-secondary gap-3 w-full sm:w-auto"
             >
-              Jetzt Kontakt aufnehmen!
+              Gespräch vereinbaren
             </Link>
           </div>
 
