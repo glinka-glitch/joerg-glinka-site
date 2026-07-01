@@ -177,13 +177,11 @@ export default async function PortfolioPage() {
 
             <div className="mb-24">
              <h2 className="type-h1">
-  Die drei Hebel für nachhaltiges Wachstum
+  Vier Felder, in denen ich nachweislich Wirkung erzeugt habe
 </h2>
 
 <p className="type-lead mt-6 max-w-4xl">
-  Wachstum entsteht nicht durch einzelne Maßnahmen.
-Sondern durch das Zusammenspiel von Geschäftsmodell,
-Technologie und Führung.
+  Keine Konzepte, sondern gelebte Verantwortung — aus 25 Jahren als Gründer und Geschäftsführer.
 </p>
             </div>
 

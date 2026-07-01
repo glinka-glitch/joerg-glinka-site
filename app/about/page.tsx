@@ -201,7 +201,7 @@ export default async function AboutPage() {
         <div className="max-w-7xl mx-auto">
 
           <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-            Journey
+            Werdegang
           </div>
 
           <h2 className="type-h1">
