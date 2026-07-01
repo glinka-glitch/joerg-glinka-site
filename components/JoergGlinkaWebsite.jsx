@@ -135,28 +135,6 @@ export default function JoergGlinkaWebsite({ blok }) {
 
 </section>
 
-{/* TRUST BUILDING */}
-<section className="px-4 md:px-6 pt-10 pb-16">
-  <div className="max-w-7xl mx-auto">
-
-    <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-      Erfahrung
-    </div>
-
-   <h2 className="type-h1 break-words max-w-full md:max-w-6xl">
-      Digitale Transformation
-    </h2>
-
-    <p className="type-lead mt-8 max-w-5xl">
-      Von E-Commerce über Plattformstrategien bis zu KI-gestützter Transformation:
-      Ich begleite Unternehmen dabei, Technologie nicht nur einzuführen, sondern in nachhaltigen Geschäftswert zu übersetzen.
-      25+ Jahre Erfahrung sind dabei kein Selbstzweck, sondern die Grundlage für bessere Entscheidungen in komplexen Veränderungssituationen.
-
-    </p>
-
-  </div>
-</section>
-
 {/* ICP SECTION */}
 
 <section className="relative px-4 md:px-6 py-14 md:py-20">
@@ -230,7 +208,7 @@ export default function JoergGlinkaWebsite({ blok }) {
    <div className="mb-10 md:mb-12">
 
   <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-    Services
+    Kompetenzen
   </div>
 
  <h2 className="type-h1 break-words max-w-full md:max-w-6xl">
@@ -287,11 +265,11 @@ export default function JoergGlinkaWebsite({ blok }) {
     <FadeIn>
       <div className="mb-6 md:mb-8">
         <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
-          Trust & Impact
+          Referenzen
         </div>
 
         <h2 className="type-h1">
-  Warum Kunden mit mir arbeiten
+  Was andere über mich sagen
 </h2>
       </div>
     </FadeIn>
@@ -320,12 +298,12 @@ export default function JoergGlinkaWebsite({ blok }) {
   <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
     <h3 className="type-h2 mb-4">
-      Lernen Sie die Person hinter den Ergebnissen kennen
+      Mein Werdegang & Motivation
     </h3>
 
     <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">
-      Erfahren Sie mehr über meinen Werdegang, meine Erfahrungen und die Prinzipien,
-      die erfolgreiche digitale Transformation und nachhaltiges Wachstum ermöglichen.
+      25 Jahre als Gründer und Geschäftsführer — warum ich jetzt eine Führungsposition
+      in Festanstellung suche und was mich dabei antreibt.
     </p>
 
     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -334,7 +312,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         href="/about"
         className="inline-flex btn-primary"
       >
-        Erfahren Sie mehr über mich
+        Mein Werdegang
       </Link>
 
 <a

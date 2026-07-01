@@ -250,6 +250,6 @@ rm /Users/jorgglinka/joerg-glinka-site/.git/HEAD.lock
 ## Bekannte offene Punkte
 
 1. **Dead Code:** `methodology_items` und `portfolio_items` in `JoergGlinkaWebsite.jsx` (Zeilen 6–7) werden geladen aber nie gerendert. Kann entfernt werden.
-2. **Storyblok-Bereinigung:** Felder `subtitle` und `hero_subtext` in der Home-Story werden nicht mehr gebraucht.
+2. **Storyblok-Bereinigung:** Felder `subtitle`, `hero_subtext`, `icp_card_1/2/3`, `results_*`, `experience_*` in der Home-Story werden nicht mehr gerendert — können in Storyblok geleert oder gelöscht werden.
 3. **Timeline-Items (About):** Noch mit Placeholder-Daten — echte CV-Daten eintragen.
 4. **Portfolio-Items:** Noch mit alten Inhalten — auf neue Positionierung (Kandidatensprache) aktualisieren.
