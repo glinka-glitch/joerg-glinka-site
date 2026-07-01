@@ -380,31 +380,8 @@ export default async function PortfolioPage() {
 {/* Page Navigation */}
 <section className="px-6 md:px-6 py-12 md:py-16 border-t border-white/10">
 
-  <div className="max-w-7xl mx-auto">
-
-    <h3 className="type-h2">
-      Bereit für das erste Gespräch?
-    </h3>
-
-    <p className="type-body max-w-4xl mb-10">
-      Wenn Sie jemanden suchen, der KI-Transformation operativ und strategisch umsetzt – lassen Sie uns sprechen.
-    </p>
-
-    <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-
-      <Link
-        href="/contact#contact-form"
-        className="inline-flex btn-primary"
-      >
-        Gespräch vereinbaren
-      </Link>
-
-     <a href="#page-top" className="btn-ghost">
-  ↑ Nach oben
-</a>
-
-    </div>
-
+  <div className="max-w-7xl mx-auto flex justify-end">
+    <a href="#page-top" className="btn-ghost">↑ Nach oben</a>
   </div>
 
 </section>
