@@ -66,8 +66,8 @@ export default async function AboutPage() {
             </div>
 
             {/* Headline */}
-            <h1 className="type-h1 max-w-[18ch] md:max-w-5xl whitespace-pre-line break-words">
-              {blok.hero_headline || "Strategy\nGrowth\nTransformation"}
+            <h1 className="type-h1 max-w-[18ch] md:max-w-5xl whitespace-pre-line break-words hyphens-auto" lang="de">
+              {blok.hero_headline || "Digitale Transformation als Lebenswerk"}
             </h1>
 
             {/* Divider */}
@@ -243,14 +243,13 @@ export default async function AboutPage() {
       <div className="max-w-4xl">
 
         <h3 className="type-h2 max-w-[12ch] md:max-w-none mb-4">
-          Lassen Sie uns über Ihre Themen sprechen
+          Bereit für das erste Gespräch?
         </h3>
 
         <p className="type-body max-w-[36ch] md:max-w-2xl">
-          Ob digitale Transformation, KI-Integration,
-          operative Skalierung oder Wachstum –
-          gemeinsam identifizieren wir die Maßnahmen
-          mit der größten Wirkung für Ihr Unternehmen.
+          Wenn Sie jemanden suchen, der KI-Transformation
+          nicht nur versteht, sondern auch operativ und
+          strategisch umsetzt – lassen Sie uns sprechen.
         </p>
 
       </div>
@@ -263,7 +262,7 @@ export default async function AboutPage() {
           href="/contact"
           className="inline-flex btn-primary"
         >
-          Strategiegespräch vereinbaren
+          Gespräch vereinbaren
         </Link>
 
         <Link

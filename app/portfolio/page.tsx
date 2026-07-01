@@ -385,11 +385,11 @@ Technologie und Führung.
   <div className="max-w-7xl mx-auto">
 
     <h3 className="type-h2">
-      Wo liegen Ihre größten Wachstumshebel?
+      Bereit für das erste Gespräch?
     </h3>
 
     <p className="type-body max-w-4xl mb-10">
-      Ob digitale Transformation, KI-Integration, operative Skalierung oder Wachstum – gemeinsam identifizieren wir die Maßnahmen mit der größten Wirkung für Ihr Unternehmen.
+      Wenn Sie jemanden suchen, der KI-Transformation operativ und strategisch umsetzt – lassen Sie uns sprechen.
     </p>
 
     <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -398,7 +398,7 @@ Technologie und Führung.
         href="/contact#contact-form"
         className="inline-flex btn-primary"
       >
-        Strategiegespräch vereinbaren
+        Gespräch vereinbaren
       </Link>
 
      <a href="#page-top" className="btn-ghost">
