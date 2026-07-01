@@ -259,39 +259,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
   </section>
 
-      {/* Testimonials */}
-<section className="relative px-4 md:px-6 py-10 md:py-16">
-  <div className="max-w-7xl mx-auto">
-    <FadeIn>
-      <div className="mb-6 md:mb-8">
-        <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-8">
-          Referenzen
-        </div>
-
-        <h2 className="type-h1">
-  Was andere über mich sagen
-</h2>
-      </div>
-    </FadeIn>
-  <div className="max-w-5xl space-y-10">
-  {blok?.testimonials?.map((item) => (
-    <FadeIn key={item._uid}>
-      <div className="border-t border-white/10 pt-8">
-
-        <h3 className="type-h2 mb-4">
-          {item.Headline}
-        </h3>
-
-        <p className="type-body max-w-3xl">
-  {item.Text}
-</p>
-
-      </div>
-    </FadeIn>
-  ))}
-</div>
-  </div>
-</section>
+      {/* Testimonials — entfernt, bis echte Referenzen vorhanden */}
 {/* Page Navigation */}
 <section className="px-4 md:px-6 py-8 md:py-16">
 
