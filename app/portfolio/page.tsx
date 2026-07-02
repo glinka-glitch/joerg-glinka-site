@@ -4,19 +4,19 @@ import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 import Link from "next/link"
 export const metadata: Metadata = {
-  title: "Referenzen | Jörg Glinka – KI, Transformation & Commerce",
+  title: "Kompetenzen | Jörg Glinka – KI, Transformation & Commerce",
 
   description:
-    "Ausgewählte Transformationsprojekte mit messbaren Ergebnissen: KI-Integration, Wachstumsskalierung und digitale Strategie aus über zwei Jahrzehnten Führungsverantwortung.",
+    "Vier Kompetenzfelder aus über zwei Jahrzehnten Führungsverantwortung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
 
   alternates: {
     canonical: "https://www.glinka.tech/portfolio",
   },
 
   openGraph: {
-    title: "Referenzen | Jörg Glinka – KI, Transformation & Commerce",
+    title: "Kompetenzen | Jörg Glinka – KI, Transformation & Commerce",
     description:
-      "Ausgewählte Transformationsprojekte mit messbaren Ergebnissen: KI-Integration, Wachstumsskalierung und digitale Strategie aus über zwei Jahrzehnten Führungsverantwortung.",
+      "Vier Kompetenzfelder aus über zwei Jahrzehnten Führungsverantwortung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
@@ -191,11 +191,11 @@ export default async function PortfolioPage() {
 
             <div className="mb-24">
              <h2 className="type-h1">
-  Vier Felder. Messbare Ergebnisse.
+  Vier Kompetenzfelder.
 </h2>
 
 <p className="type-lead mt-6 max-w-4xl">
-  25 Jahre Führungsverantwortung. Umgesetzt, nicht konzipiert.
+  Was ich in eine Führungsposition einbringe — aus 25 Jahren operativer Verantwortung.
 </p>
             </div>
 
@@ -250,7 +250,7 @@ export default async function PortfolioPage() {
                       {item.challenge && (
                         <div>
                           <div className="type-label !text-cyan-400 !text-base md:!text-lg mb-3">
-                            Focus
+                            Ansatz
                           </div>
 
                           <p className="type-body mt-3">
@@ -262,7 +262,7 @@ export default async function PortfolioPage() {
                       {item.outcome && (
                         <div>
                           <div className="type-label !text-cyan-400 !text-base md:!text-lg mb-3">
-                            Impact
+                            Was ich einbringe
                           </div>
 
                           <p className="type-body mt-3">
