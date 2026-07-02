@@ -1,26 +1,23 @@
 # Jörg Glinka
 
-KI-Prozessmanagement & Digitale Transformation. 25 Jahre Erfahrung als Gründer und Geschäftsführer – jetzt auf der Suche nach einer Führungsposition.
-
-Website:
-https://www.glinka.tech
+> KI-Prozessmanagement & Digitale Transformation. 25 Jahre Erfahrung als Gründer und Geschäftsführer – jetzt auf der Suche nach einer Führungsposition in Festanstellung.
 
 ## Expertise
 
-* KI-Prozessmanagement
-* Digitale Transformation
-* E-Commerce & Marketplace
-* AI Operations
-* Führung & Change Management
-* Commerce-Skalierung
+- KI-Strategie & KI-Adoption
+- Digitale Transformation
+- E-Commerce & Marketplace
+- Prozessautomatisierung
+- Führung & Change Management
+- Commerce-Skalierung
 
-## Important Pages
+## Seiten
 
-https://www.glinka.tech/
-https://www.glinka.tech/about
-https://www.glinka.tech/portfolio
-https://www.glinka.tech/contact
+- [Startseite](https://www.glinka.tech/)
+- [Über mich & Werdegang](https://www.glinka.tech/about)
+- [Kompetenzen](https://www.glinka.tech/portfolio)
+- [Kontakt](https://www.glinka.tech/contact)
 
-## Contact
+## Kontakt
 
-https://www.glinka.tech/contact
+- [Gespräch vereinbaren](https://www.glinka.tech/contact)

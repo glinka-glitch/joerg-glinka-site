@@ -20,6 +20,7 @@ const inactive =
       <button
         onClick={() => setOpen(!open)}
         className="text-white"
+        aria-label={open ? "Menü schließen" : "Menü öffnen"}
       >
         {open ? (
           <X className="w-8 h-8" />
