@@ -195,6 +195,72 @@ export default async function AboutPage() {
   </div>
 
 </section>
+
+      {/* SKILLS */}
+      <section className="px-4 md:px-6 py-16 md:py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+
+          <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+            Skills
+          </div>
+
+          <h2 className="type-h1 mb-16">Kompetenzen & Tools</h2>
+
+          <div className="grid md:grid-cols-3 gap-10 md:gap-16">
+
+            <div>
+              <p className="type-label !text-cyan-400 mb-6">KI & Prozessmanagement</p>
+              <div className="flex flex-wrap gap-3">
+                {["KI-Strategie & KI-Adoption", "KI-Implementierung & Use Case Discovery", "KI-gestützte Prozessoptimierung", "Prozessautomatisierung", "KI Governance"].map(skill => (
+                  <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-base leading-snug">
+                    {skill}
+                  </span>
+                ))}
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-600 text-sm">+</span>
+              </div>
+            </div>
+
+            <div>
+              <p className="type-label !text-cyan-400 mb-6">Transformation & Beratung</p>
+              <div className="flex flex-wrap gap-3">
+                {["Digitale Transformation", "Change Management", "Stakeholder Management", "Workshop-Moderation", "Business-IT-Alignment", "Systemintegration"].map(skill => (
+                  <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-base leading-snug">
+                    {skill}
+                  </span>
+                ))}
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-600 text-sm">+</span>
+              </div>
+            </div>
+
+            <div>
+              <p className="type-label !text-cyan-400 mb-6">Organisation & Steuerung</p>
+              <div className="flex flex-wrap gap-3">
+                {["Operating Models", "KPI-basierte Unternehmenssteuerung", "Datengetriebene Entscheidungsfindung", "Organisationsentwicklung", "Prompt Engineering"].map(skill => (
+                  <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-base leading-snug">
+                    {skill}
+                  </span>
+                ))}
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-600 text-sm">+</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-14 pt-10 border-t border-white/10">
+            <p className="type-label !text-cyan-400 mb-6">Tools & Technologien</p>
+            <div className="flex flex-wrap gap-3">
+              {["ChatGPT", "Claude", "Gemini", "Microsoft Copilot", "Langdock", "Veritas One", "n8n", "Lovable", "DeepL"].map(tool => (
+                <span key={tool} className="px-4 py-2 rounded-full bg-cyan-400/15 text-cyan-400 text-sm uppercase tracking-[0.12em]">
+                  {tool}
+                </span>
+              ))}
+              <span className="px-4 py-2 rounded-full border border-dashed border-cyan-400/25 text-cyan-400/30 text-xs uppercase tracking-[0.12em]">+</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* TIMELINE */}
       <section className="px-4 md:px-6 py-16 md:py-20 border-t border-white/10">
 
