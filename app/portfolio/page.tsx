@@ -177,11 +177,11 @@ export default async function PortfolioPage() {
 
             <div className="mb-24">
              <h2 className="type-h1">
-  Vier Felder, in denen ich nachweislich Wirkung erzeugt habe
+  Vier Felder. Messbare Ergebnisse.
 </h2>
 
 <p className="type-lead mt-6 max-w-4xl">
-  Keine Konzepte, sondern gelebte Verantwortung — aus 25 Jahren als Gründer und Geschäftsführer.
+  25 Jahre Führungsverantwortung. Umgesetzt, nicht konzipiert.
 </p>
             </div>
 
@@ -240,7 +240,9 @@ export default async function PortfolioPage() {
                           </div>
 
                           <p className="type-body mt-3">
-                            {item.challenge}
+                            {item.title === "Führung & Transformation"
+                              ? "Führung von Management-Teams in Transformations- und Wachstumsphasen."
+                              : item.challenge}
                           </p>
                         </div>
                       )}
