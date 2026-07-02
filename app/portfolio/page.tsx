@@ -52,16 +52,12 @@ export default async function PortfolioPage() {
 >
 
       {/* Glow Effects */}
-      <div className="absolute top-[-300px] left-[-200px] w-[700px] h-[700px] bg-cyan-400/15 blur-[180px] rounded-full -z-10"></div>
+      <div className="absolute top-[-300px] left-[-200px] w-[900px] h-[900px] bg-cyan-400/25 blur-[250px] rounded-full pointer-events-none"></div>
 
-      <div className="absolute bottom-[-300px] right-[-200px] w-[700px] h-[700px] bg-cyan-400/10 blur-[200px] rounded-full -z-10"></div>
+      <div className="absolute bottom-[-400px] right-[-200px] w-[900px] h-[900px] bg-cyan-400/20 blur-[300px] rounded-full pointer-events-none"></div>
 
 {/* HERO */}
 <section className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden">
-  {/* Background Glow */}
-  <div className="absolute top-[-200px] left-[-100px] w-[600px] h-[600px] bg-cyan-400/15 blur-[160px] rounded-full"></div>
-
-  <div className="absolute top-[200px] right-[-200px] w-[500px] h-[500px] bg-cyan-400/10 blur-[180px] rounded-full"></div>
 
   {/* Background Typography */}
   <div className="absolute inset-0 pointer-events-none overflow-hidden">

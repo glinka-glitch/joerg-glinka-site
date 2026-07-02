@@ -14,11 +14,11 @@ export default function JoergGlinkaWebsite({ blok }) {
   id="page-top"
   className="scroll-mt-24 md:scroll-mt-28"
 />
-    <div className="absolute -z-10 top-[-120px] left-[-120px] w-[320px] h-[320px] bg-cyan-400/15 blur-[20px] rounded-full"></div>
+    <div className="absolute pointer-events-none top-[-200px] left-[-200px] w-[800px] h-[800px] bg-cyan-400/30 blur-[130px] rounded-full"></div>
 
-<div className="absolute -z-10 top-[25%] right-[-120px] w-[380px] h-[380px] bg-yellow-400/10 blur-[20px] rounded-full"></div>
+<div className="absolute pointer-events-none top-[20%] right-[-200px] w-[800px] h-[800px] bg-yellow-400/20 blur-[140px] rounded-full"></div>
 
-<div className="absolute -z-10 bottom-[-120px] left-[20%] w-[280px] h-[280px] bg-cyan-400/10 blur-[20px] rounded-full"></div>
+<div className="absolute pointer-events-none bottom-[-200px] left-[20%] w-[700px] h-[700px] bg-cyan-400/25 blur-[130px] rounded-full"></div>
       {/* Navigation */}
 {/* HERO */}
 <section

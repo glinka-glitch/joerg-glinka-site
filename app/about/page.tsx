@@ -39,9 +39,9 @@ export default async function AboutPage() {
   {/* Navigation */}
 
       {/* Glow Effects */}
-      <div className="absolute -z-10 top-[-200px] left-[-200px] w-[600px] h-[600px] bg-cyan-400/15 blur-[90px] rounded-full"></div>
+      <div className="absolute pointer-events-none top-[-200px] left-[-200px] w-[800px] h-[800px] bg-cyan-400/25 blur-[200px] rounded-full"></div>
 
-      <div className="absolute -z-10 bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-yellow-400/10 blur-[100px] rounded-full"></div>
+      <div className="absolute pointer-events-none bottom-[-200px] right-[-200px] w-[900px] h-[900px] bg-yellow-400/15 blur-[220px] rounded-full"></div>
 
       {/* HERO */}
       <section className="relative isolate px-4 md:px-6 pt-4 md:pt-8 pb-6 md:pb-10 overflow-hidden">

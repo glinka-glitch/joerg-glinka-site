@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Gespräch vereinbaren | Jörg Glinka",
 
   description:
-    "Suchen Sie jemanden, der KI-Transformation operativ und strategisch umsetzt? Lassen Sie uns sprechen – ich freue mich auf das Gespräch.",
+    "Sie suchen eine Führungskraft für KI-Prozessmanagement und digitale Transformation. Ich suche genau diese Position. Schreiben Sie mir.",
 
   alternates: {
     canonical: "https://www.glinka.tech/contact",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gespräch vereinbaren | Jörg Glinka",
     description:
-      "Suchen Sie jemanden, der KI-Transformation operativ und strategisch umsetzt? Lassen Sie uns sprechen – ich freue mich auf das Gespräch.",
+      "Sie suchen eine Führungskraft für KI-Prozessmanagement und digitale Transformation. Ich suche genau diese Position. Schreiben Sie mir.",
     url: "https://www.glinka.tech/contact",
     images: [
       {
@@ -50,9 +50,9 @@ export default async function ContactPage() {
   className="scroll-mt-24 md:scroll-mt-28"
 />
       {/* Glow Effects */}
-      <div className="absolute top-[-250px] left-[-150px] w-[600px] h-[600px] bg-cyan-400/15 blur-[160px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-[-250px] left-[-150px] w-[800px] h-[800px] bg-cyan-400/30 blur-[200px] rounded-full pointer-events-none"></div>
 
-<div className="absolute bottom-[-300px] right-[-150px] w-[600px] h-[600px] bg-cyan-400/10 blur-[180px] rounded-full pointer-events-none"></div>
+<div className="absolute bottom-[-300px] right-[-150px] w-[800px] h-[800px] bg-cyan-400/25 blur-[220px] rounded-full pointer-events-none"></div>
 
       {/* HERO */}
       <section className="relative isolate px-4 md:px-6 pt-8 md:pt-20 pb-10 md:pb-16 overflow-hidden">
