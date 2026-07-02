@@ -177,18 +177,18 @@ export default function JoergGlinkaWebsite({ blok }) {
 
     <div className="mt-14 flex flex-col">
 
-      {blok.challenge_items?.map((item) => (
+      {blok.challenge_items?.map((item, index) => (
 
         <div
           key={item._uid}
-          className="flex items-start gap-5 py-5 border-b border-white/10"
+          className="grid grid-cols-[48px_1fr] md:grid-cols-[72px_1fr] gap-6 md:gap-10 py-7 md:py-9 border-b border-white/10"
         >
 
-          <span className="text-2xl md:text-3xl font-black text-cyan-400 flex-shrink-0 leading-snug">
-            →
-          </span>
+          <div className="text-3xl md:text-5xl font-black text-cyan-400 leading-none tabular-nums">
+            {String(index + 1).padStart(2, '0')}
+          </div>
 
-          <p className="text-xl md:text-2xl font-bold leading-relaxed text-cyan-400">
+          <p className="text-xl md:text-2xl font-bold leading-relaxed text-white self-center">
             {item.text}
           </p>
 
