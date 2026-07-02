@@ -247,9 +247,7 @@ export default async function AboutPage() {
         </h3>
 
         <p className="type-body max-w-[36ch] md:max-w-2xl">
-          Wenn Sie jemanden suchen, der KI-Transformation
-          nicht nur versteht, sondern auch operativ und
-          strategisch umsetzt – lassen Sie uns sprechen.
+          Sie suchen jemanden, der KI-Transformation auch operativ umsetzt. Ich tue das seit Jahren. Lassen Sie uns sprechen.
         </p>
 
       </div>
