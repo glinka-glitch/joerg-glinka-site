@@ -28,6 +28,20 @@ export const metadata: Metadata = {
   },
 }
 
+const outcomeOverrides: Record<string, string> = {
+  "Digitales Geschäftsmodell skalieren":
+    "Wettbewerbsvorteile durch Skalierung und Automatisierung, mit klarem Fokus auf profitables Wachstum.",
+}
+
+const challengeOverrides: Record<string, string> = {
+  "Profitables Wachstum":
+    "Aufbau skalierbarer Commerce-Strukturen, die Umsatz und Profitabilität gemeinsam steigern.",
+  "KI in operative Ergebnisse übersetzen":
+    "KI dort einsetzen, wo sie operative Wirkung entfaltet: in Marketing, Analyse und Entscheidungsprozessen.",
+  "Führung & Transformation":
+    "Führung von Management-Teams in Transformations- und Wachstumsphasen.",
+}
+
 export default async function PortfolioPage() {
   const blok = await fetchStory("portfolio")
 
@@ -240,9 +254,7 @@ export default async function PortfolioPage() {
                           </div>
 
                           <p className="type-body mt-3">
-                            {item.title === "Führung & Transformation"
-                              ? "Führung von Management-Teams in Transformations- und Wachstumsphasen."
-                              : item.challenge}
+                            {challengeOverrides[item.title] ?? item.challenge}
                           </p>
                         </div>
                       )}
@@ -254,7 +266,7 @@ export default async function PortfolioPage() {
                           </div>
 
                           <p className="type-body mt-3">
-                            {item.outcome}
+                            {outcomeOverrides[item.title] ?? item.outcome}
                           </p>
                         </div>
                       )}
