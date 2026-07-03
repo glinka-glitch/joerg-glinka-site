@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
   description:
-    "Führungskraft mit 25 Jahren Erfahrung in digitaler Transformation und KI-Integration. Ich übersetze KI-Investitionen in messbaren Geschäftswert – und suche die passende Festposition.",
+    "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
 
   alternates: {
     canonical: "https://www.glinka.tech/",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
     description:
-      "Führungskraft mit 25 Jahren Erfahrung in digitaler Transformation und KI-Integration. Ich übersetze KI-Investitionen in messbaren Geschäftswert – und suche die passende Festposition.",
+      "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
 
     url: "https://www.glinka.tech/",
 

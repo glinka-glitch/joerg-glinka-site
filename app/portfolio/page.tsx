@@ -191,7 +191,7 @@ export default async function PortfolioPage() {
 </h2>
 
 <p className="type-lead mt-6 max-w-4xl">
-  Was ich in eine Führungsposition einbringe — aus 25 Jahren operativer Verantwortung.
+  Was ich einbringe — aus 25 Jahren operativer Verantwortung.
 </p>
             </div>
 

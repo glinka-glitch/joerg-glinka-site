@@ -12,7 +12,6 @@ async function getContactData() {
 }
 
 import type { Metadata } from "next"
-import ConsentMap from "@/components/ConsentMap"
 import Link from "next/link"
 import ContactForm from "@/components/ContactForm"
 
@@ -20,7 +19,7 @@ export const metadata: Metadata = {
   title: "Gespräch vereinbaren | Jörg Glinka",
 
   description:
-    "Sie suchen eine Führungskraft für KI-Prozessmanagement und digitale Transformation. Ich suche genau diese Position. Schreiben Sie mir.",
+    "Sie suchen einen KI-Prozessmanager mit Erfahrung in digitaler Transformation. Ich suche genau diese Stelle. Schreiben Sie mir.",
 
   alternates: {
     canonical: "https://www.glinka.tech/contact",
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gespräch vereinbaren | Jörg Glinka",
     description:
-      "Sie suchen eine Führungskraft für KI-Prozessmanagement und digitale Transformation. Ich suche genau diese Position. Schreiben Sie mir.",
+      "Sie suchen einen KI-Prozessmanager mit Erfahrung in digitaler Transformation. Ich suche genau diese Stelle. Schreiben Sie mir.",
     url: "https://www.glinka.tech/contact",
     images: [
       {
@@ -108,23 +107,23 @@ export default async function ContactPage() {
               </p>
             </div>
 
-            {/* LOCATION */}
-            <div className="mt-10 md:mt-14">
+            {/* CTA */}
+            <div className="mt-10 md:mt-14 rounded-[2rem] bg-cyan-400/5 border border-cyan-400/20 p-8 md:p-10 flex flex-col gap-6">
 
-              <p className="type-label">
-                Standort
+              <p className="type-label !text-cyan-400 mb-3">Direkttermin</p>
+
+              <p className="text-zinc-300 text-lg leading-relaxed">
+                Oder buchen Sie direkt einen Termin — ohne das Formular abzuschicken.
               </p>
 
-              <p className="mt-3 text-xl md:text-3xl font-black break-words">
-                {blok.location}
-              </p>
-
-            </div>
-
-            {/* MAP */}
-            <div className="mt-10 md:mt-14 rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_20px_80px_rgba(0,0,0,0.45)]">
-
-              <ConsentMap />
+              <a
+                href="https://calendly.com/glinka-ylcr/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex btn-primary self-start"
+              >
+                Gespräch vereinbaren
+              </a>
 
             </div>
 

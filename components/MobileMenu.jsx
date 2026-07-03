@@ -76,10 +76,9 @@ const inactive =
 </Link>
 
           <a
-            href="https://calendly.com/glinka-ylcr/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex btn-cta justify-center w-full"
+            href="/contact"
+            onClick={() => setOpen(false)}
+            className="inline-flex btn-primary justify-center w-full"
           >
             Gespräch vereinbaren
           </a>

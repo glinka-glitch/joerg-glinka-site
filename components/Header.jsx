@@ -42,15 +42,6 @@ export default function Header() {
 
   <Navigation />
 
-  <a
-    href="https://calendly.com/glinka-ylcr/30min"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hidden md:inline-flex btn-cta"
-  >
-    Gespräch vereinbaren
-  </a>
-
   <MobileMenu />
 
 </div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Werdegang | Jörg Glinka – Gründer, Geschäftsführer, KI & Transformation",
 
   description:
-    "Von E-Commerce bis KI-gestützter Transformation: Mein Weg über 25 Jahre als Gründer und Geschäftsführer – und warum ich jetzt eine Führungsposition suche.",
+    "Von E-Commerce bis KI-gestützter Transformation: Mein Weg über 25 Jahre als Gründer und Geschäftsführer – und warum ich jetzt als KI-Prozessmanager in Festanstellung wechsle.",
 
   alternates: {
     canonical: "https://www.glinka.tech/about",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Werdegang | Jörg Glinka – Gründer, Geschäftsführer, KI & Transformation",
 
     description:
-      "Von E-Commerce bis KI-gestützter Transformation: Mein Weg über 25 Jahre als Gründer und Geschäftsführer – und warum ich jetzt eine Führungsposition suche.",
+      "Von E-Commerce bis KI-gestützter Transformation: Mein Weg über 25 Jahre als Gründer und Geschäftsführer – und warum ich jetzt als KI-Prozessmanager in Festanstellung wechsle.",
 
     url: "https://www.glinka.tech/about",
 

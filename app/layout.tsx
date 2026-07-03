@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
   description:
-    "25 Jahre Erfahrung in digitaler Transformation und KI-Integration. Jetzt auf der Suche nach einer Führungsposition, in der ich KI-Investitionen in messbaren Geschäftswert übersetze.",
+    "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
 
   robots: {
     index: true,
@@ -34,16 +34,15 @@ export const metadata: Metadata = {
   },
 
   keywords: [
-    "AI Operations",
-    "Künstliche Intelligenz",
-    "Digital Transformation",
+    "KI-Prozessmanager",
+    "KI-Prozessmanagement",
+    "Prozessautomatisierung",
+    "KI-Adoption",
+    "Digitale Transformation",
+    "KI-Integration",
     "E-Commerce",
-    "Marketplace Growth",
-    "Growth Strategy",
-    "KI Management",
-    "Führungskraft",
-    "CDO",
-    "CTO",
+    "Change Management",
+    "Festanstellung",
   ],
 
   authors: [
@@ -56,7 +55,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
     description:
-      "25 Jahre Erfahrung in digitaler Transformation und KI-Integration. Jetzt auf der Suche nach einer Führungsposition, in der ich KI-Investitionen in messbaren Geschäftswert übersetze.",
+      "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
 
     url: "https://www.glinka.tech/",
 
@@ -81,7 +80,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
 
     description:
-      "25 Jahre Erfahrung in digitaler Transformation und KI-Integration. Jetzt auf der Suche nach einer Führungsposition, in der ich KI-Investitionen in messbaren Geschäftswert übersetze.",
+      "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
 
     images: ["/og-image.jpg"],
   },
