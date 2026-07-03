@@ -313,7 +313,7 @@ export default async function AboutPage() {
         </h3>
 
         <p className="type-body max-w-[36ch] md:max-w-2xl">
-          Sie suchen jemanden, der KI-Transformation auch operativ umsetzt. Ich tue das seit Jahren. Lassen Sie uns sprechen.
+          Sie suchen jemanden, der digitale Transformation operativ umsetzt. Ich tue das seit Jahren. Lassen Sie uns sprechen.
         </p>
 
       </div>
