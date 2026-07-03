@@ -95,15 +95,15 @@ export default async function AboutPage() {
             <div className="absolute -inset-4 border-4 border-cyan-400 rounded-3xl"></div>
 
             {blok.image?.filename && (
-              <div className="relative z-10 overflow-hidden rounded-3xl">
+              <div className="relative z-10 overflow-hidden rounded-3xl aspect-[4/5]">
                 <Image
                   src={blok.image.filename}
                   alt="Jörg Glinka"
                   width={800}
-                  height={800}
+                  height={1000}
                   priority
                   fetchPriority="high"
-                  className="w-full h-auto object-cover shadow-[0_20px_60px_rgba(34,211,238,0.2)]"
+                  className="w-full h-full object-cover shadow-[0_20px_60px_rgba(34,211,238,0.2)]"
                 />
               </div>
             )}
