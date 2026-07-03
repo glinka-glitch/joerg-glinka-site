@@ -270,7 +270,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     </h3>
 
     <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">
-      25 Jahre Erfahrung in digitaler Transformation und KI. Was mich antreibt und warum ich jetzt eine Festanstellung suche.
+      25 Jahre Erfahrung in digitaler Transformation. Was mich antreibt und warum ich jetzt eine Festanstellung suche.
     </p>
 
     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
