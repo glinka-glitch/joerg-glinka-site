@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Kompetenzen | Jörg Glinka – KI, Transformation & Commerce",
 
   description:
-    "Vier Kompetenzfelder aus über zwei Jahrzehnten Führungsverantwortung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
+    "Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
 
   alternates: {
     canonical: "https://www.glinka.tech/portfolio",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kompetenzen | Jörg Glinka – KI, Transformation & Commerce",
     description:
-      "Vier Kompetenzfelder aus über zwei Jahrzehnten Führungsverantwortung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
+      "Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
@@ -39,7 +39,7 @@ const challengeOverrides: Record<string, string> = {
   "KI in operative Ergebnisse übersetzen":
     "KI dort einsetzen, wo sie operative Wirkung entfaltet: in Marketing, Analyse und Entscheidungsprozessen.",
   "Führung & Transformation":
-    "Führung von Management-Teams in Transformations- und Wachstumsphasen.",
+    "Steuerung von Transformationsprozessen in Wachstums- und Veränderungsphasen.",
 }
 
 export default async function PortfolioPage() {

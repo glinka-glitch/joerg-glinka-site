@@ -4,20 +4,20 @@ import Link from "next/link"
 import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Werdegang | Jörg Glinka – Gründer, Geschäftsführer, KI & Transformation",
+  title: "Werdegang | Jörg Glinka – 25 Jahre KI & Digitale Transformation",
 
   description:
-    "Von E-Commerce bis KI-gestützter Transformation: Mein Weg über 25 Jahre als Gründer und Geschäftsführer – und warum ich jetzt als KI-Prozessmanager in Festanstellung wechsle.",
+    "Von E-Commerce bis KI: Mein Weg über 25 Jahre in digitaler Transformation – und warum ich jetzt in Festanstellung wechsle.",
 
   alternates: {
     canonical: "https://www.glinka.tech/about",
   },
 
   openGraph: {
-    title: "Werdegang | Jörg Glinka – Gründer, Geschäftsführer, KI & Transformation",
+    title: "Werdegang | Jörg Glinka – 25 Jahre KI & Digitale Transformation",
 
     description:
-      "Von E-Commerce bis KI-gestützter Transformation: Mein Weg über 25 Jahre als Gründer und Geschäftsführer – und warum ich jetzt als KI-Prozessmanager in Festanstellung wechsle.",
+      "Von E-Commerce bis KI: Mein Weg über 25 Jahre in digitaler Transformation – und warum ich jetzt in Festanstellung wechsle.",
 
     url: "https://www.glinka.tech/about",
 
