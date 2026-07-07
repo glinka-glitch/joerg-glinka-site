@@ -146,12 +146,12 @@ export default function JoergGlinkaWebsite({ blok }) {
     </div>
 
     {/* Headline */}
-    <h2 className="type-h1 max-w-6xl">
+    <h2 className="type-h1">
       {blok.icp_headline}
     </h2>
 
     {/* Intro */}
-    <p className="type-lead mt-8 max-w-5xl">
+    <p className="type-lead mt-8">
       {blok.icp_text}
     </p>
 
