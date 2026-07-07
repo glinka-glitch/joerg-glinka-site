@@ -177,6 +177,25 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
 </section>
 
+{/* ARCHITECTURE GRAPHIC */}
+{blok.architecture_image?.filename && (
+  <section className="px-4 md:px-6 pb-4 md:pb-6">
+    <div className="max-w-7xl mx-auto">
+      <div className="overflow-hidden rounded-[2rem] border border-white/10">
+        <Image
+          src={blok.architecture_image.filename}
+          alt="KI-Management Architektur – Sieben Ebenen"
+          width={1720}
+          height={1120}
+          sizes="(max-width: 1280px) 100vw, 1280px"
+          quality={85}
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  </section>
+)}
+
 {/* CHALLENGES */}
 
 <section className="px-4 md:px-6 py-14 md:py-20 border-t border-white/10">
