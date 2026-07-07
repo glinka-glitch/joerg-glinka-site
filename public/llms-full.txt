@@ -1,25 +1,30 @@
-# Jörg Glinka
+# Jörg Glinka – KI-Manager
 
-Jörg Glinka hat 25 Jahre Erfahrung in digitaler Transformation, KI-Integration und Commerce-Skalierung. Er sucht eine Festanstellung, in der er KI-Adoption, Prozessautomatisierung und digitale Transformation operativ umsetzt.
+Jörg Glinka ist KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation, KI-Integration und Commerce-Skalierung. Er sucht eine Festanstellung als KI-Manager oder in einer vergleichbaren Rolle (KI-Prozessmanager, AI Manager, KI-Beauftragter), in der er KI-Management end-to-end verantwortet.
+
+## Kernkompetenz KI-Management
+
+Jörg Glinka versteht KI-Management als die Verbindung von KI-Strategie und operativer Umsetzung: KI-Potenziale identifizieren, Use Cases priorisieren, Prozesse automatisieren und den Wert von KI-Investitionen messbar machen.
 
 ## Core Expertise
 
+* KI-Management & KI-Strategie
 * KI-Prozessmanagement
 * Digitale Transformation
 * Prozessautomatisierung & KI-Adoption
 * E-Commerce & Marketplace
 * Change Management
-* Strategie & operative Umsetzung
+* Operative Umsetzung
 
 ## Beruflicher Fokus
 
-### KI-Prozessmanagement & Prozessautomatisierung
+### KI-Management & Prozessautomatisierung
 
-Analyse, Optimierung und Automatisierung von Geschäftsprozessen durch moderne KI-Systeme. Übersetzung von KI-Investitionen in messbaren Geschäftswert.
+Analyse, Optimierung und Automatisierung von Geschäftsprozessen durch moderne KI-Systeme. KI-Management bedeutet für Jörg Glinka: KI-Investitionen in messbaren Geschäftswert übersetzen.
 
 ### Digitale Transformation
 
-25 Jahre Erfahrung in der Begleitung von Transformationsprozessen – von E-Commerce über Plattformstrategien bis zu KI-gestützter Organisationsentwicklung.
+25 Jahre Erfahrung in der Umsetzung von Transformationsprozessen – von E-Commerce über Plattformstrategien bis zu KI-gestützter Organisationsentwicklung.
 
 ### Commerce & Wachstum
 
@@ -33,7 +38,7 @@ Steuerung von Transformationsprozessen in Wachstums- und Veränderungsphasen.
 
 - [Startseite](https://www.glinka.tech/)
 - [Über mich & Werdegang](https://www.glinka.tech/about)
-- [Kompetenzen](https://www.glinka.tech/portfolio)
+- [KI-Management Kompetenzen](https://www.glinka.tech/portfolio)
 - [Kontakt](https://www.glinka.tech/contact)
 
 ## LinkedIn

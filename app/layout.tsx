@@ -23,10 +23,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.glinka.tech/"),
 
-  title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
+  title: "Jörg Glinka | KI-Manager & Digitale Transformation",
 
   description:
-    "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
+    "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation. Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
 
   robots: {
     index: true,
@@ -34,8 +34,12 @@ export const metadata: Metadata = {
   },
 
   keywords: [
+    "KI-Manager",
+    "KI-Management",
     "KI-Prozessmanager",
     "KI-Prozessmanagement",
+    "AI Manager",
+    "KI-Beauftragter",
     "Prozessautomatisierung",
     "KI-Adoption",
     "Digitale Transformation",
@@ -52,10 +56,10 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
+    title: "Jörg Glinka | KI-Manager & Digitale Transformation",
 
     description:
-      "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
+      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation. Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
 
     url: "https://www.glinka.tech/",
 
@@ -77,10 +81,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Jörg Glinka | KI-Prozessmanagement & Digitale Transformation",
+    title: "Jörg Glinka | KI-Manager & Digitale Transformation",
 
     description:
-      "KI-Prozessmanager mit 25 Jahren Erfahrung in digitaler Transformation. Ich baue KI-Prozesse auf, automatisiere Abläufe und übersetze KI-Investitionen in messbaren Geschäftswert.",
+      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation. Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
 
     images: ["/og-image.jpg"],
   },
@@ -98,22 +102,21 @@ const structuredData = {
 
       image: "https://www.glinka.tech//og-image.jpg",
 
-      jobTitle:
-        "KI-Prozessmanagement & Digitale Transformation",
+      jobTitle: "KI-Manager",
 
       description:
-        "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
+        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation.",
 
       knowsAbout: [
+        "KI-Management",
+        "KI-Manager",
         "Artificial Intelligence",
         "AI Operations",
+        "KI-Prozessmanagement",
         "Process Automation",
         "Digital Transformation",
         "E-Commerce",
-        "Marketplace Growth",
-        "Growth Strategy",
-        "AI Marketing",
-        "Commerce Transformation",
+        "Change Management",
         "Business Process Optimization",
       ],
 
@@ -123,7 +126,7 @@ const structuredData = {
     },
 
     {
-      "@type": "ConsultingService",
+      "@type": "ProfessionalService",
       "@id": "https://www.glinka.tech//#service",
 
       name: "Jörg Glinka",
@@ -131,7 +134,7 @@ const structuredData = {
       url: "https://www.glinka.tech/",
 
       description:
-        "Beratung für KI-gestütztes Wachstum, digitale Transformation, AI Operations und moderne Commerce-Strategien.",
+        "KI-Management, Prozessautomatisierung und digitale Transformation. Jörg Glinka ist KI-Manager mit 25 Jahren operativer Erfahrung.",
 
       areaServed: {
         "@type": "Country",
@@ -170,7 +173,7 @@ const structuredData = {
       name: "Jörg Glinka",
 
       description:
-        "KI-gestützte Prozessoptimierung, digitale Transformation und moderne Commerce-Strategien.",
+        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation.",
 
       publisher: {
         "@id": "https://www.glinka.tech//#organization",
@@ -196,6 +199,41 @@ export default function RootLayout({
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify(structuredData),
+  }}
+/>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was macht ein KI-Manager?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein KI-Manager identifiziert KI-Potenziale im Unternehmen, entwickelt KI-Strategien und verantwortet deren operative Umsetzung. Dazu gehören KI-Adoption, Prozessautomatisierung, Change Management und die Messung von KI-Investitionen in Geschäftswert."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was ist KI-Management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KI-Management umfasst die strategische Planung, Implementierung und Steuerung von KI-Initiativen in Unternehmen. Es verbindet technisches Verständnis mit operativer Umsetzungskompetenz und Change Management."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Erfahrung bringt Jörg Glinka als KI-Manager mit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Jörg Glinka ist KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation, E-Commerce und KI-Integration. Er hat KI-Prozesse aufgebaut, Automatisierungsprojekte verantwortet und KI-Investitionen in messbaren Geschäftswert übersetzt."
+          }
+        }
+      ]
+    }),
   }}
 />
     <Header />    

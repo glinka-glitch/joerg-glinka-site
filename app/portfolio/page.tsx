@@ -4,19 +4,19 @@ import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 import Link from "next/link"
 export const metadata: Metadata = {
-  title: "Kompetenzen | Jörg Glinka – KI, Transformation & Commerce",
+  title: "KI-Management & Kompetenzen | Jörg Glinka",
 
   description:
-    "Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
+    "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung in KI-Integration, E-Commerce und Transformation.",
 
   alternates: {
     canonical: "https://www.glinka.tech/portfolio",
   },
 
   openGraph: {
-    title: "Kompetenzen | Jörg Glinka – KI, Transformation & Commerce",
+    title: "KI-Management & Kompetenzen | Jörg Glinka",
     description:
-      "Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung: E-Commerce-Wachstum, KI-Integration, Plattformstrategie und Transformation.",
+      "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung in KI-Integration, E-Commerce und Transformation.",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
