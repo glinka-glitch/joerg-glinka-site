@@ -187,7 +187,7 @@ export default async function PortfolioPage() {
 
             <div className="mb-24">
              <h2 className="type-h1">
-  Vier Kompetenzfelder.
+  Vier Kompetenzfelder
 </h2>
 
 <p className="type-lead mt-6 max-w-4xl">
