@@ -154,6 +154,26 @@ export default function JoergGlinkaWebsite({ blok }) {
     <p className="type-lead mt-8 max-w-5xl">
       {blok.icp_text}
     </p>
+
+    {/* Impact Cards */}
+    <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+      {[
+        "70 % weniger Bearbeitungszeit durch KI-gestützte Produktdatenpflege.",
+        "Automatisierte Produktübersetzungen in alle von DeepL unterstützten Zielsprachen.",
+        "+60 % Umsatzwachstum nach Einführung der etailer Suite durch integrierte End-to-End-Prozesse.",
+        "+200 % organische Sichtbarkeit durch konsequente Technical-SEO-Optimierung.",
+        "Nahtlose Systemintegration durch flexible API- und Schnittstellenanbindungen für Aufträge, Bestände, Preise sowie Kunden- und Produktdaten.",
+        "50 % niedrigere Kosten für den Betrieb der integrierten E-Commerce-Plattform gegenüber Satellitensystemen ohne Integration.",
+      ].map((text, i) => (
+        <div
+          key={i}
+          className="flex items-start gap-4 rounded-2xl border border-white/10 bg-zinc-900/60 px-6 py-5"
+        >
+          <span className="mt-1 shrink-0 text-cyan-400 text-lg font-black leading-none">→</span>
+          <p className="text-zinc-300 text-base md:text-lg leading-snug">{text}</p>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
 
