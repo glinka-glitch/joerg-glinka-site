@@ -1,6 +1,7 @@
 import Image from "next/image"
 import FadeIn from './animations/FadeIn'
-import Link from "next/link";
+import Link from "next/link"
+import { renderRichText } from "@storyblok/react"
 
 export default function JoergGlinkaWebsite({ blok }) {
   const methodologyItems = blok?.methodology_items || []
@@ -151,9 +152,10 @@ export default function JoergGlinkaWebsite({ blok }) {
     </h2>
 
     {/* Intro */}
-    <p className="type-lead mt-8">
-      {blok.icp_text}
-    </p>
+    <div
+      className="type-lead mt-8"
+      dangerouslySetInnerHTML={{ __html: renderRichText(blok.icp_text) || "" }}
+    />
 
     {/* Impact Cards */}
     <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
