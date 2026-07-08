@@ -154,7 +154,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
     {/* Intro */}
     <div
-      className="type-lead mt-8"
+      className="type-lead mt-8 rich-text"
       dangerouslySetInnerHTML={{ __html: renderRichText(blok.icp_text) || "" }}
     />
 

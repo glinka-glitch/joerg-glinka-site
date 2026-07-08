@@ -103,7 +103,7 @@ export default async function PortfolioPage() {
     {/* Text */}
     {blok.hero_text && (
   <div
-    className="type-lead mt-10 max-w-[90ch]"
+    className="type-lead mt-10 max-w-[90ch] rich-text"
     dangerouslySetInnerHTML={{
       __html: renderRichText(blok.hero_text) || "",
     }}
@@ -328,7 +328,7 @@ export default async function PortfolioPage() {
         <div>
           {blok.philosophy_text && (
             <div
-              className="type-lead mt-6 lg:mt-0 max-w-none prose prose-invert prose-p:text-zinc-300"
+              className="type-lead mt-6 lg:mt-0 max-w-none prose prose-invert prose-p:text-zinc-300 rich-text"
               dangerouslySetInnerHTML={{
                 __html: renderRichText(blok.philosophy_text) || "",
               }}
@@ -373,7 +373,7 @@ export default async function PortfolioPage() {
 
           {blok.cta_text && (
             <div
-              className="type-lead mt-6 lg:mt-0 max-w-[34ch] prose prose-invert prose-p:text-zinc-300"
+              className="type-lead mt-6 lg:mt-0 max-w-[34ch] prose prose-invert prose-p:text-zinc-300 rich-text"
               dangerouslySetInnerHTML={{
                 __html: renderRichText(blok.cta_text) || "",
               }}

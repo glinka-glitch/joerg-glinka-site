@@ -36,6 +36,21 @@ h1, h2, h3, h4, h5, h6 {
   word-break: break-word;
 }
 
+/* Links innerhalb von Storyblok-Rich-Text (renderRichText) — außerhalb
+   @layer utilities aus dem gleichen Spezifitätsgrund wie h1.type-h1 oben.
+   Farbgebung identisch zu .btn-ghost, damit interne Links wie der
+   "↑ Nach oben"-Link wirken. */
+.rich-text a {
+  color: #facc15; /* yellow-400 */
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(250, 204, 21, 0.35);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.rich-text a:hover {
+  color: #fde047; /* yellow-300 */
+  text-decoration-color: #fde047;
+}
+
 .editorial-card {
   transition:
     transform 0.4s ease,

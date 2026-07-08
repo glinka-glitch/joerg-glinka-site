@@ -108,6 +108,7 @@ export default async function DatenschutzPage() {
                         prose-ol:my-6
                         prose-p:leading-8
                         max-w-none
+                        rich-text
                       "
                       dangerouslySetInnerHTML={{
                         __html: renderRichText(section.content) || "",
