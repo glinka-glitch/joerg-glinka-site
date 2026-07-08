@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: rgb(113 113 122); /* zinc-500 */
+    color: rgb(161 161 170); /* zinc-400 — zinc-500 lag mit ~4:1 unter WCAG AA (4.5:1) */
   }
 
 }

@@ -51,7 +51,7 @@ export default function ContactForm() {
       className="editorial-card bg-zinc-900 border border-white/10 rounded-[2rem] p-6 md:p-10 space-y-5 md:space-y-6"
     >
       <div>
-        <p className="text-sm uppercase tracking-[0.2em] text-zinc-500 mb-6">
+        <p className="text-sm uppercase tracking-[0.2em] text-zinc-400 mb-6">
           Anfrage senden
         </p>
 

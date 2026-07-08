@@ -26,7 +26,7 @@ export default function ConsentMap() {
           Die Karte wird erst nach Zustimmung zu externen Diensten geladen.
         </p>
 
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-zinc-400">
           Bitte akzeptieren Sie Cookies, um die Karte anzuzeigen.
         </p>
       </div>

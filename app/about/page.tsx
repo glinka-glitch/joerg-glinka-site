@@ -226,7 +226,7 @@ export default async function AboutPage() {
                     {skill}
                   </span>
                 ))}
-                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-600 text-sm">+</span>
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-400 text-sm">+</span>
               </div>
             </div>
 
@@ -238,7 +238,7 @@ export default async function AboutPage() {
                     {skill}
                   </span>
                 ))}
-                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-600 text-sm">+</span>
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-400 text-sm">+</span>
               </div>
             </div>
 
@@ -250,7 +250,7 @@ export default async function AboutPage() {
                     {skill}
                   </span>
                 ))}
-                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-600 text-sm">+</span>
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-400 text-sm">+</span>
               </div>
             </div>
 

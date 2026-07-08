@@ -59,7 +59,7 @@ export default function JoergGlinkaWebsite({ blok }) {
           "Ich unterstütze Unternehmen dabei, durch KI-gestützte Marketing-Systeme, moderne E-Commerce-Strategien und digitale Transformation nachhaltig zu wachsen."}
       </p>
       {blok.hero_subtext && (
- <p className="mt-5 text-base text-zinc-500 leading-7 max-w-2xl">
+ <p className="mt-5 text-base text-zinc-400 leading-7 max-w-2xl">
     {blok.hero_subtext}
   </p>
 )}
