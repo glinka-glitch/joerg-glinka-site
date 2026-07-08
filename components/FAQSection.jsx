@@ -14,6 +14,11 @@ const faqs = [
     answer:
       "Jörg Glinka ist KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation, E-Commerce und KI-Integration. Er hat KI-Prozesse aufgebaut, Automatisierungsprojekte verantwortet und KI-Investitionen in messbaren Geschäftswert übersetzt.",
   },
+  {
+    question: "Ist ein KI-Beauftragter dasselbe wie ein KI-Manager?",
+    answer:
+      "Die Begriffe werden im deutschsprachigen Raum weitgehend synonym verwendet. Ein KI-Beauftragter (englisch: AI Manager) übernimmt dieselbe Rolle wie ein KI-Manager: Verantwortung für KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten im Unternehmen.",
+  },
 ]
 
 const faqStructuredData = {
