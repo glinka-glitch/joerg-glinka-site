@@ -233,11 +233,11 @@ export default function RootLayout({
       {/* Left */}
       <div>
         <p className="text-zinc-500 text-sm">
-          © 2026 Jörg Glinka · KI-Prozessmanagement & Digitale Transformation
+          © 2026 Jörg Glinka · KI-Management & Digitale Transformation
         </p>
 
         <p className="mt-3 text-xs text-zinc-600 max-w-md leading-relaxed">
-          Teile der auf dieser Website verwendeten Visualisierungen wurden mit Unterstützung generativer KI (OpenAI ChatGPT) erstellt.
+          Teile dieser Website wurden mit Unterstützung generativer KI (OpenAI ChatGPT, Anthropic Claude) erstellt.
         </p>
       </div>
 
