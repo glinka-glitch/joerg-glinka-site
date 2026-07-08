@@ -75,6 +75,17 @@ const inactive =
   Contact
 </Link>
 
+          <Link
+  href="/ki-readiness-check"
+  onClick={() => setOpen(false)}
+  className={pathname === "/ki-readiness-check" ? active : inactive}
+>
+  {pathname === "/ki-readiness-check" && (
+    <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+  )}
+  KI-Check
+</Link>
+
           <a
             href="/contact"
             onClick={() => setOpen(false)}

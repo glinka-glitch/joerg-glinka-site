@@ -48,6 +48,14 @@ export default function Navigation() {
         Contact
       </Link>
 
+      <Link
+        href="/ki-readiness-check"
+        scroll={true}
+        className={pathname === "/ki-readiness-check" ? active : inactive}
+      >
+        KI-Check
+      </Link>
+
     </nav>
   )
 }
