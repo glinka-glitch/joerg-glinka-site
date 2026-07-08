@@ -2,6 +2,7 @@ import Image from "next/image"
 import FadeIn from './animations/FadeIn'
 import Link from "next/link"
 import { renderRichText } from "@storyblok/react"
+import FAQSection from "./FAQSection"
 
 export default function JoergGlinkaWebsite({ blok }) {
   const methodologyItems = blok?.methodology_items || []
@@ -315,6 +316,9 @@ export default function JoergGlinkaWebsite({ blok }) {
   </section>
 
       {/* Testimonials — entfernt, bis echte Referenzen vorhanden */}
+
+<FAQSection />
+
 {/* Page Navigation */}
 <section className="px-4 md:px-6 py-8 md:py-16">
 

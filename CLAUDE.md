@@ -41,7 +41,7 @@ Alle Fließtexte, Headlines, Badges, Bilder auf diesen Stories:
 - **Header:** Subline, Button-Text ("Gespräch vereinbaren"), Navigation
 - **Footer:** Text, Copyright
 - **Meta-Tags:** title, description, OG-Tags (je Page-Datei)
-- **Structured Data:** JSON-LD in `app/layout.tsx`
+- **Structured Data:** Person/ProfessionalService/Organization/WebSite JSON-LD in `app/layout.tsx` (site-wide). FAQPage JSON-LD in `components/FAQSection.jsx`, homepage-only, colocated mit dem sichtbaren FAQ-Content.
 - **About-Seite:** Seitennavigation CTA-Texte am Ende
 - **Portfolio-Seite:** Seitennavigation CTA-Texte am Ende, Cases-Überschrift
 - **Sitemap:** `app/sitemap.ts`
@@ -243,7 +243,7 @@ rm /Users/jorgglinka/joerg-glinka-site/.git/HEAD.lock
 - **Google Search Console:** Eigentümer glinka@gmail.com, Domain-Verifizierung via DNS TXT bei united-domains.de
 - **og-image:** `public/og-image.jpg` (1200×630)
 - **llms.txt:** `public/llms.txt` und `public/llms-full.txt` — kandidaten-sprachig
-- **Structured Data:** JSON-LD in `app/layout.tsx` (jobTitle: "KI-Prozessmanagement & Digitale Transformation")
+- **Structured Data:** Person-JSON-LD in `app/layout.tsx` (jobTitle: "KI-Prozessmanagement & Digitale Transformation"); FAQPage-JSON-LD in `components/FAQSection.jsx` mit sichtbarem Q&A-Content auf der Startseite
 
 ---
 
