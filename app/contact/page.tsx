@@ -21,6 +21,14 @@ export const metadata: Metadata = {
   description:
     "Sie suchen einen KI-Prozessmanager mit Erfahrung in digitaler Transformation. Ich suche genau diese Stelle. Schreiben Sie mir.",
 
+  keywords: [
+    "KI-Manager Kontakt",
+    "KI-Prozessmanager Festanstellung",
+    "KI-Manager einstellen",
+    "KI-Manager für Unternehmen",
+    "Gespräch vereinbaren KI-Manager",
+  ],
+
   alternates: {
     canonical: "https://www.glinka.tech/contact",
   },

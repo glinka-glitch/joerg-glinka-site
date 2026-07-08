@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   description:
     "KI-Manager mit 25 Jahren Erfahrung: Mein Weg von E-Commerce bis KI-Management – und warum ich jetzt in Festanstellung wechsle.",
 
+  keywords: [
+    "KI-Manager Werdegang",
+    "KI-Manager Lebenslauf",
+    "Digitale Transformation Erfahrung",
+    "E-Commerce Geschäftsführer",
+    "CEO Digitale Transformation",
+    "Change Management Erfahrung",
+    "KI-Manager Festanstellung",
+  ],
+
   alternates: {
     canonical: "https://www.glinka.tech/about",
   },

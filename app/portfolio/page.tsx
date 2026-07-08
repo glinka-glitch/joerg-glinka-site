@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   description:
     "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung in KI-Integration, E-Commerce und Transformation.",
 
+  keywords: [
+    "KI-Management Kompetenzen",
+    "KI-Integration Praxis",
+    "Digitale Transformation Projekte",
+    "E-Commerce Transformation",
+    "Prozessautomatisierung",
+    "KI Use Cases",
+    "Profitables Wachstum",
+  ],
+
   alternates: {
     canonical: "https://www.glinka.tech/portfolio",
   },
