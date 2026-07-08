@@ -215,8 +215,13 @@ cta_text           CTA-Text (Rich Text)
 headline           H1
 text               Lead-Text
 email              E-Mail-Adresse
-location           Standort-Text
+location           Standort-Text (wird jetzt gerendert, vorher nur im CMS ungenutzt)
 ```
+
+**Hardcodiert (nicht in Storyblok):** Der Pendelradius-Satz unter dem Standort
+("Deutschlandweit & remote verfügbar. Pendelradius: Region Köln / Dortmund /
+Siegen.") steht direkt in `app/contact/page.tsx`, da es dafür kein
+Storyblok-Feld gibt.
 
 ---
 

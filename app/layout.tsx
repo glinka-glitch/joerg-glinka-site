@@ -148,10 +148,15 @@ const structuredData = {
       description:
         "KI-Management, Prozessautomatisierung und digitale Transformation. Jörg Glinka ist KI-Manager mit 25 Jahren operativer Erfahrung.",
 
-      areaServed: {
-        "@type": "Country",
-        name: "Deutschland",
-      },
+      areaServed: [
+        {
+          "@type": "Country",
+          name: "Deutschland",
+        },
+        { "@type": "City", name: "Köln" },
+        { "@type": "City", name: "Dortmund" },
+        { "@type": "City", name: "Siegen" },
+      ],
 
       founder: {
         "@id": "https://www.glinka.tech//#person",

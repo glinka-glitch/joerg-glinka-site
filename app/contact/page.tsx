@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "KI-Manager einstellen",
     "KI-Manager für Unternehmen",
     "Gespräch vereinbaren KI-Manager",
+    "KI-Manager Köln",
+    "KI-Manager Dortmund",
+    "KI-Manager Siegen",
+    "KI-Manager remote",
   ],
 
   alternates: {
@@ -124,6 +128,10 @@ export default async function ContactPage() {
 
                 <p className="mt-3 text-xl md:text-3xl font-black break-words">
                   {blok.location}
+                </p>
+
+                <p className="mt-3 text-zinc-400 text-base leading-relaxed">
+                  Deutschlandweit & remote verfügbar. Pendelradius: Region Köln / Dortmund / Siegen.
                 </p>
               </div>
             )}
