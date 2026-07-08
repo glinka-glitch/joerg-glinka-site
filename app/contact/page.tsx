@@ -115,6 +115,19 @@ export default async function ContactPage() {
               </p>
             </div>
 
+            {/* LOCATION */}
+            {blok.location && (
+              <div className="mt-10">
+                <p className="type-label">
+                  Standort
+                </p>
+
+                <p className="mt-3 text-xl md:text-3xl font-black break-words">
+                  {blok.location}
+                </p>
+              </div>
+            )}
+
             {/* CTA */}
             <div className="mt-10 md:mt-14 rounded-[2rem] bg-cyan-400/5 border border-cyan-400/20 p-8 md:p-10 flex flex-col gap-6">
 

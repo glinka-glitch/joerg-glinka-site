@@ -124,6 +124,17 @@ const structuredData = {
         "https://www.linkedin.com/in/joerg-glinka",
         "https://www.xing.com/profile/Joerg_Glinka",
       ],
+
+      homeLocation: {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Olpe",
+          postalCode: "57462",
+          addressRegion: "Nordrhein-Westfalen",
+          addressCountry: "DE",
+        },
+      },
     },
 
     {
