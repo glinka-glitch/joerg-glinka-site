@@ -19,6 +19,11 @@ const faqs = [
     answer:
       "Die Begriffe werden im deutschsprachigen Raum weitgehend synonym verwendet. Ein KI-Beauftragter (englisch: AI Manager) übernimmt dieselbe Rolle wie ein KI-Manager: Verantwortung für KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten im Unternehmen.",
   },
+  {
+    question: "Ist Jörg Glinka als KI-Manager zertifiziert?",
+    answer:
+      "Ja. Jörg Glinka ist zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV.",
+  },
 ]
 
 const faqStructuredData = {

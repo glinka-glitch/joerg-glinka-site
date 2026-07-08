@@ -107,23 +107,6 @@ export default function JoergGlinkaWebsite({ blok }) {
       </div>
     </div>
 
-    <div className="hidden lg:block w-px h-12 bg-cyan-400" />
-
-    {/* ITEM 4 — zertifizierter KI-Manager */}
-    <div>
-      <div className="text-4xl md:text-5xl font-black text-white">
-        600+
-      </div>
-
-      <div className="type-label !text-cyan-400 mt-2">
-        Std. zertifizierter KI-Manager
-      </div>
-
-      <div className="text-xs text-zinc-400 mt-1">
-        LearnWise Academy
-      </div>
-    </div>
-
   </div>
   </div>
  </div>
