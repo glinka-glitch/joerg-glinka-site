@@ -122,6 +122,7 @@ const structuredData = {
 
       sameAs: [
         "https://www.linkedin.com/in/joerg-glinka",
+        "https://www.xing.com/profile/Joerg_Glinka",
       ],
     },
 
@@ -269,6 +270,15 @@ export default function RootLayout({
     className="hover:text-cyan-400 transition"
   >
     LinkedIn
+  </a>
+
+  <a
+    href="https://www.xing.com/profile/Joerg_Glinka"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-cyan-400 transition"
+  >
+    Xing
   </a>
 
   <Link

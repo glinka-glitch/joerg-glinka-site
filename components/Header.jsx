@@ -21,9 +21,9 @@ export default function Header() {
           />
 
           <div>
-            <h1 className="text-xl font-black tracking-tight">
+            <p className="text-xl font-black tracking-tight">
               JÖRG GLINKA
-            </h1>
+            </p>
 
             <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1 leading-tight">
   <span className="md:hidden">
