@@ -1,4 +1,3 @@
-import StoryblokProvider from "@/components/storyblok/StoryblokProvider"
 import Link from "next/link"
 import Image from "next/image"
 import MobileMenu from "@/components/MobileMenu"
@@ -226,10 +225,8 @@ export default function RootLayout({
 />
     <Header />
 <main className="flex-1">
-<StoryblokProvider>
-  <ScrollToTop />
-  {children}
-</StoryblokProvider>
+<ScrollToTop />
+{children}
 </main>
   <footer className="border-t border-white/10 px-4 md:px-6 py-10 md:py-12">
   <div className="max-w-7xl mx-auto">
