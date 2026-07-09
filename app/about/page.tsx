@@ -111,6 +111,7 @@ export default async function AboutPage() {
                   alt="Jörg Glinka"
                   width={800}
                   height={1000}
+                  sizes="(min-width: 640px) 620px, 100vw"
                   priority
                   fetchPriority="high"
                   className="w-full h-full object-cover shadow-[0_20px_60px_rgba(34,211,238,0.2)]"

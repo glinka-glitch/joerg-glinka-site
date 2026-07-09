@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ScrollToTop from "@/components/ScrollToTop"
 import { Geist, Geist_Mono } from "next/font/google";
-import CookieBanner from "@/components/CookieBanner"
+import dynamic from "next/dynamic"
 import Header from "@/components/Header"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -20,6 +20,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+// Not needed for first paint — code-split into its own chunk instead of the
+// main bundle. `ssr: false` isn't allowed here (Server Component), so it
+// still renders on the server but hydrates from a separate chunk.
+const CookieBanner = dynamic(() => import("@/components/CookieBanner"))
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.glinka.tech/"),
 
