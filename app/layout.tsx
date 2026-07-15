@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Manager & Digitale Transformation",
 
   description:
-    "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation. Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
+    "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation sucht Festanstellung (Remote, deutschlandweit). Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
 
   robots: {
     index: true,
@@ -40,6 +40,8 @@ export const metadata: Metadata = {
 
   keywords: [
     "KI-Manager",
+    "KI-Manager Festanstellung",
+    "KI-Manager Remote",
     "KI-Management",
     "KI-Prozessmanager",
     "KI-Prozessmanagement",
@@ -64,7 +66,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Manager & Digitale Transformation",
 
     description:
-      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation. Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
+      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation sucht Festanstellung (Remote, deutschlandweit). Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
 
     url: "https://www.glinka.tech/",
 
@@ -89,7 +91,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Manager & Digitale Transformation",
 
     description:
-      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation. Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
+      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation sucht Festanstellung (Remote, deutschlandweit). Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
 
     images: ["/og-image.jpg"],
   },
@@ -99,18 +101,29 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://www.glinka.tech//#person",
+      "@id": "https://www.glinka.tech/#person",
 
       name: "Jörg Glinka",
 
       url: "https://www.glinka.tech/",
 
-      image: "https://www.glinka.tech//og-image.jpg",
+      image: "https://www.glinka.tech/og-image.jpg",
 
       jobTitle: "KI-Manager",
 
       description:
-        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation.",
+        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation. Sucht Festanstellung, Remote (deutschlandweit).",
+
+      seeks: {
+        "@type": "Demand",
+        name: "Festanstellung als KI-Manager (Remote, deutschlandweit)",
+        description:
+          "Sucht eine Festanstellung als KI-Manager mit Fokus auf KI-Management, Prozessautomatisierung und digitale Transformation. Remote-Position, deutschlandweit.",
+        availableAtOrFrom: {
+          "@type": "Place",
+          name: "Remote (Deutschland)",
+        },
+      },
 
       knowsAbout: [
         "KI-Management",
@@ -179,34 +192,8 @@ const structuredData = {
     },
 
     {
-      "@type": "ProfessionalService",
-      "@id": "https://www.glinka.tech//#service",
-
-      name: "Jörg Glinka",
-
-      url: "https://www.glinka.tech/",
-
-      description:
-        "KI-Management, Prozessautomatisierung und digitale Transformation. Jörg Glinka ist KI-Manager mit 25 Jahren operativer Erfahrung.",
-
-      areaServed: [
-        {
-          "@type": "Country",
-          name: "Deutschland",
-        },
-        { "@type": "City", name: "Köln" },
-        { "@type": "City", name: "Dortmund" },
-        { "@type": "City", name: "Siegen" },
-      ],
-
-      founder: {
-        "@id": "https://www.glinka.tech//#person",
-      },
-    },
-
-    {
       "@type": "Organization",
-      "@id": "https://www.glinka.tech//#organization",
+      "@id": "https://www.glinka.tech/#organization",
 
       name: "Jörg Glinka",
 
@@ -214,27 +201,38 @@ const structuredData = {
 
       logo: {
         "@type": "ImageObject",
-        url: "https://www.glinka.tech//logo.png",
+        url: "https://www.glinka.tech/logo.png",
+      },
+
+      sameAs: [
+        "https://www.linkedin.com/in/joerg-glinka",
+        "https://www.xing.com/profile/Joerg_Glinka",
+      ],
+
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "business",
+        url: "https://www.glinka.tech/contact",
       },
 
       founder: {
-        "@id": "https://www.glinka.tech//#person",
+        "@id": "https://www.glinka.tech/#person",
       },
     },
 
     {
       "@type": "WebSite",
-      "@id": "https://www.glinka.tech//#website",
+      "@id": "https://www.glinka.tech/#website",
 
       url: "https://www.glinka.tech/",
 
       name: "Jörg Glinka",
 
       description:
-        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation.",
+        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation. Sucht Festanstellung, Remote (deutschlandweit).",
 
       publisher: {
-        "@id": "https://www.glinka.tech//#organization",
+        "@id": "https://www.glinka.tech/#organization",
       },
 
       inLanguage: "de-DE",

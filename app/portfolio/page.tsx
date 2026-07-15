@@ -7,10 +7,12 @@ export const metadata: Metadata = {
   title: "KI-Management & Kompetenzen | Jörg Glinka",
 
   description:
-    "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung in KI-Integration, E-Commerce und Transformation.",
+    "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung – als KI-Manager auf der Suche nach einer Festanstellung (Remote, deutschlandweit).",
 
   keywords: [
     "KI-Management Kompetenzen",
+    "KI-Manager Festanstellung",
+    "KI-Manager Remote",
     "KI-Integration Praxis",
     "Digitale Transformation Projekte",
     "E-Commerce Transformation",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KI-Management & Kompetenzen | Jörg Glinka",
     description:
-      "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung in KI-Integration, E-Commerce und Transformation.",
+      "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung – als KI-Manager auf der Suche nach einer Festanstellung (Remote, deutschlandweit).",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
@@ -48,9 +50,12 @@ const challengeOverrides: Record<string, string> = {
     "Aufbau skalierbarer Commerce-Strukturen, die Umsatz und Profitabilität gemeinsam steigern.",
   "KI in operative Ergebnisse übersetzen":
     "KI dort einsetzen, wo sie operative Wirkung entfaltet: in Marketing, Analyse und Entscheidungsprozessen.",
-  "Führung & Transformation":
+  "Transformation & Change":
     "Steuerung von Transformationsprozessen in Wachstums- und Veränderungsphasen.",
 }
+
+const ctaTextOverride =
+  "Sie suchen einen KI-Manager mit über 25 Jahren operativer Erfahrung für eine Festanstellung? Lassen Sie uns sprechen."
 
 export default async function PortfolioPage() {
   const blok = await fetchStory("portfolio")
@@ -371,14 +376,9 @@ export default async function PortfolioPage() {
         {/* RIGHT COLUMN */}
         <div>
 
-          {blok.cta_text && (
-            <div
-              className="type-lead mt-6 lg:mt-0 max-w-[34ch] prose prose-invert prose-p:text-zinc-300 rich-text"
-              dangerouslySetInnerHTML={{
-                __html: renderRichText(blok.cta_text) || "",
-              }}
-            />
-          )}
+          <p className="type-lead mt-6 lg:mt-0 max-w-[34ch] text-zinc-300">
+            {ctaTextOverride}
+          </p>
 
           <div className="mt-10 md:mt-12">
             <Link
