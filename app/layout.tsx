@@ -130,6 +130,42 @@ const structuredData = {
         "https://www.xing.com/profile/Joerg_Glinka",
       ],
 
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "certificate",
+          name: "KI-Manager:in",
+          recognizedBy: {
+            "@type": "Organization",
+            name: "LearnWise Academy",
+          },
+          description: "Zertifikatslehrgang, 400 Stunden",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "certificate",
+          name: "Prompt-Engineering",
+          description: "Weiterbildung, 50 Stunden",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "certificate",
+          name: "KI-basierte Tools und Techniken für Unternehmen",
+          description: "Weiterbildung, 50 Stunden",
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "certificate",
+          name: "Digitalisierte Arbeitswelt 4.0",
+        },
+      ],
+
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: "SAE Institute (SAE International Technology College)",
+        description: "Multimedia-Producer-Diplom, 1998",
+      },
+
       homeLocation: {
         "@type": "Place",
         address: {
@@ -216,6 +252,9 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="llms" href="/llms.txt" />
+      </head>
       <body className="min-h-full flex flex-col bg-black text-white">
         <script
   type="application/ld+json"
