@@ -34,17 +34,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/impressum`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.2,
-    },
-    {
-      url: `${baseUrl}/datenschutz`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.2,
-    },
+    // /impressum and /datenschutz carry a noindex meta tag (legal pages,
+    // not meant to rank) — listing noindexed URLs in the sitemap sends
+    // Google a mixed signal, so they're intentionally left out here.
   ];
 }
