@@ -26,6 +26,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Lighthouse's "valid-source-maps" Best Practices audit flags large
+  // first-party bundles without one; no proprietary logic here worth hiding.
+  productionBrowserSourceMaps: true,
   async headers() {
     return [
       {
