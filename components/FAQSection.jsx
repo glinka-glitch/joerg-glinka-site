@@ -2,7 +2,7 @@ const faqs = [
   {
     question: "Sucht Jörg Glinka eine Fachposition oder eine Führungsposition?",
     answer:
-      "Eine Führungsposition. Ich war zwölf Jahre Mitgründer und Geschäftsführer eines Unternehmens, dessen Plattform heute über 500 Millionen Euro Jahresumsatz für seine Kunden abwickelt. Jetzt suche ich eine Rolle, in der ich KI-Transformation auf genau dieser Ebene verantworte, nicht als operative Einzelaufgabe.",
+      "Eine Führungsposition. Ich war zwölf Jahre Mitgründer und Geschäftsführer eines Unternehmens, mit voller Verantwortung für Umsatz und Ergebnis. Jetzt suche ich eine Rolle, in der ich KI-Transformation auf genau dieser Ebene verantworte, nicht als operative Einzelaufgabe.",
   },
   {
     question: "Was macht ein KI-Manager?",
