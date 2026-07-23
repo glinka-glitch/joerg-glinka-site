@@ -94,6 +94,11 @@ async function listStories() {
   return data.stories || [];
 }
 
+async function listComponents() {
+  const data = await api(`/components?per_page=100`);
+  return data.components || [];
+}
+
 async function getStory(id) {
   const data = await api(`/stories/${id}`);
   return data.story;
@@ -105,6 +110,64 @@ async function putStory(id, content) {
     body: JSON.stringify({ story: { content } }),
   });
 }
+
+async function putComponent(component) {
+  return api(`/components/${component.id}`, {
+    method: "PUT",
+    body: JSON.stringify({ component }),
+  });
+}
+
+// Felder, die laut Code-Abgleich (Juli 2026) in keiner der vier aktiven
+// Seiten mehr gerendert werden. Nur diese drei Components werden angefasst,
+// contact_page hat keine toten Felder. Jede Entfernung wurde gegen den
+// tatsächlichen JSX-Code geprüft, nicht nur gegen die CLAUDE.md-Doku (die an
+// einer Stelle nachweislich veraltet war: hero_subtext wird durchaus
+// gerendert, wenn befüllt).
+const SCHEMA_CLEANUP = {
+  page: [
+    "name",
+    "subtitle",
+    "architecture_image",
+    "icp_card_1_headline",
+    "icp_card_1_text",
+    "icp_card_2_headline",
+    "icp_card_2_text",
+    "icp_card_3_headline",
+    "icp_card_3_text",
+    "results_eyebrow",
+    "results_headline",
+    "results_text",
+    "results_1_value",
+    "results_1_label",
+    "results_1_text",
+    "results_2_value",
+    "results_2_label",
+    "results_2_text",
+    "results_3_value",
+    "results_3_label",
+    "results_3_text",
+    "testimonials",
+    "experience_headline",
+    "experience_text",
+    "experience_companies",
+    "body",
+  ],
+  about_page: [
+    "headline",
+    "text",
+    "stat_1_value",
+    "stat_1_label",
+    "stat_2_value",
+    "stat_2_label",
+    "stat_3_value",
+    "stat_3_label",
+    "expertise_items",
+    "cta_badge",
+    "cta_headline",
+    "cta_text",
+  ],
+};
 
 async function resolveStory(candidateSlugs, allStories) {
   for (const slug of candidateSlugs) {
@@ -419,7 +482,121 @@ const STORIES = [
   { name: "contact", slugs: ["contact"], patch: patchContact },
 ];
 
+// Component-Name -> Story-Name, damit --clean-content weiß, welche Story zu
+// welcher SCHEMA_CLEANUP-Liste gehört.
+const COMPONENT_TO_STORY = { page: "home", about_page: "about" };
+
 async function main() {
+  if (process.argv.includes("--clean-content")) {
+    const allStories = await listStories();
+    for (const [componentName, fields] of Object.entries(SCHEMA_CLEANUP)) {
+      const storyName = COMPONENT_TO_STORY[componentName];
+      const target = STORIES.find((s) => s.name === storyName);
+      const match = await resolveStory(target.slugs, allStories);
+      if (!match) {
+        console.warn(`[${storyName}] Story nicht gefunden, übersprungen.`);
+        continue;
+      }
+
+      const story = await getStory(match.id);
+      const newContent = { ...story.content };
+      const removed = [];
+      for (const field of fields) {
+        if (field in newContent) {
+          delete newContent[field];
+          removed.push(field);
+        }
+      }
+
+      console.log(`\n== ${storyName} (Story-ID ${match.id}) ==`);
+      if (removed.length === 0) {
+        console.log("  Keine verwaisten Inhalte gefunden, schon sauber.");
+        continue;
+      }
+      console.log(`  Verwaiste Werte entfernt (${removed.length}): ${removed.join(", ")}`);
+
+      if (APPLY) {
+        await putStory(match.id, newContent);
+        console.log("  -> als Draft gespeichert. Bitte in Storyblok gegenlesen und veröffentlichen.");
+      } else {
+        console.log("  -> Dry Run, nichts geschrieben.");
+      }
+    }
+    if (!APPLY) {
+      console.log(
+        "\nDas war ein Dry Run. Wenn die Liste passt, nochmal mit --clean-content --apply aufrufen."
+      );
+    }
+    return;
+  }
+
+  if (process.argv.includes("--clean-schema")) {
+    const components = await listComponents();
+    for (const [name, fieldsToRemove] of Object.entries(SCHEMA_CLEANUP)) {
+      const component = components.find((c) => c.name === name);
+      if (!component) {
+        console.warn(`[${name}] Component nicht gefunden, übersprungen.`);
+        continue;
+      }
+
+      const newSchema = { ...component.schema };
+      const actuallyRemoved = [];
+      for (const field of fieldsToRemove) {
+        if (field in newSchema) {
+          delete newSchema[field];
+          actuallyRemoved.push(field);
+        }
+      }
+
+      console.log(`\n== ${name} (id ${component.id}) ==`);
+      if (actuallyRemoved.length === 0) {
+        console.log("  Nichts zu entfernen, Felder bereits weg oder nie vorhanden.");
+        continue;
+      }
+      console.log(`  Entfernt (${actuallyRemoved.length}): ${actuallyRemoved.join(", ")}`);
+      console.log(
+        `  Bleibt (${Object.keys(newSchema).length}): ${Object.keys(newSchema).join(", ")}`
+      );
+
+      if (APPLY) {
+        await putComponent({ ...component, schema: newSchema });
+        console.log("  -> Schema aktualisiert.");
+      } else {
+        console.log("  -> Dry Run, nichts geschrieben.");
+      }
+    }
+    if (!APPLY) {
+      console.log(
+        "\nDas war ein Dry Run. Wenn die Liste passt, nochmal mit --clean-schema --apply aufrufen."
+      );
+    }
+    return;
+  }
+
+  if (process.argv.includes("--dump-components")) {
+    const components = await listComponents();
+    for (const c of components) {
+      const fields = Object.keys(c.schema || {});
+      console.log(`\n=== ${c.name} (id ${c.id}) ===`);
+      console.log(fields.join(", "));
+    }
+    return;
+  }
+
+  const dumpComponentName = (
+    process.argv.find((a) => a.startsWith("--dump-component=")) || ""
+  ).replace("--dump-component=", "");
+  if (dumpComponentName) {
+    const components = await listComponents();
+    const match = components.find((c) => c.name === dumpComponentName);
+    if (!match) {
+      console.error(`Component "${dumpComponentName}" nicht gefunden.`);
+      process.exit(1);
+    }
+    console.log(JSON.stringify(match.schema, null, 2));
+    return;
+  }
+
   const allStories = await listStories();
 
   if (DUMP) {

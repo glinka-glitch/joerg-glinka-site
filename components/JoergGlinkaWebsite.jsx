@@ -210,7 +210,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         width={1720}
         height={1120}
         sizes="(max-width: 1280px) 100vw, 1280px"
-        quality={85}
+        quality={80}
         className="w-full h-auto"
       />
     </div>
