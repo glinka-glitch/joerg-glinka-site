@@ -402,14 +402,13 @@ function patchAbout(content) {
     if (nowEntry) {
       logDiff("about", "timeline: heute (Titel)", nowEntry.title, "2026 · KI-Transformation, heute");
       nowEntry.title = "2026 · KI-Transformation, heute";
-      if ((nowEntry.text || "").includes("IBM und AWS")) {
-        console.warn(
-          "  [ACHTUNG] Der Text dieses Eintrags erwähnt '600 Stunden bei LearnWise Academy, IBM und AWS'. " +
-            "Das deckt sich nicht mit deinem hinterlegten Profil (400h LearnWise + 50h + 50h + Digitalisierte " +
-            "Arbeitswelt 4.0, kein IBM/AWS). Skript ändert den Text NICHT automatisch, bitte erst klären, dann " +
-            "manuell in Storyblok anpassen oder mir Bescheid geben, dann ergänze ich es hier."
-        );
-      }
+      // Korrektur: "IBM und AWS" war falsch zugeordnet. Richtig ist die
+      // LearnWise Academy in Kooperation mit IBB und TÜV (400h Zertifikat
+      // KI-Manager:in), plus die beiden 50h-Weiterbildungen (Prompt
+      // Engineering, KI-Tools für Unternehmen) = 500h in Summe.
+      logDiff("about", "timeline: heute (Text)", nowEntry.text, "(IBM/AWS-Fehler korrigiert)");
+      nowEntry.text =
+        "Ende 2025 habe ich meine Anteile an etailer Solutions verkauft. Seither: zertifizierter KI-Manager (LearnWise Academy, 400 Stunden, in Kooperation mit IBB und TÜV), dazu Weiterbildungen in Prompt Engineering und KI-Tools für Unternehmen sowie DSGVO und EU AI Act, insgesamt über 500 Stunden. Ich suche eine Führungsposition in Festanstellung.";
     } else {
       console.warn("  [warn] timeline_items: Eintrag mit Titel ab '2026' nicht gefunden.");
     }

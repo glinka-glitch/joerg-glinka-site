@@ -28,7 +28,7 @@ const CookieBanner = dynamic(() => import("@/components/CookieBanner"))
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.glinka.tech/"),
 
-  title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
+  title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
   description:
     "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
+    title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
       "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
+    title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
       "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
@@ -110,7 +110,7 @@ const structuredData = {
 
       image: "https://www.glinka.tech/og-image.jpg",
 
-      jobTitle: "Leitung KI-Transformation & Digitalisierung",
+      jobTitle: "KI-Transformation & Digitalisierung",
 
       description:
         "Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Sucht jetzt eine Führungsposition in KI-Transformation und digitaler Transformation, Remote (deutschlandweit).",
@@ -275,7 +275,7 @@ export default function RootLayout({
       {/* Left */}
       <div>
         <p className="text-zinc-400 text-sm">
-          © 2026 Jörg Glinka · Leitung KI-Transformation & Digitalisierung
+          © 2026 Jörg Glinka · KI-Transformation & Digitalisierung
         </p>
 
         <p className="mt-3 text-xs text-zinc-400 max-w-md leading-relaxed">

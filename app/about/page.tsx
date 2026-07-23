@@ -4,7 +4,7 @@ import Link from "next/link"
 import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Werdegang | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
+  title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
     "12 Jahre Mitgründer und Geschäftsführer, dann der Verkauf meiner Anteile. Mein Weg von E-Commerce zu KI-Transformation, und warum ich jetzt eine Führungsposition suche.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Werdegang | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
+    title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
 
     description:
       "12 Jahre Mitgründer und Geschäftsführer, dann der Verkauf meiner Anteile. Mein Weg von E-Commerce zu KI-Transformation, und warum ich jetzt eine Führungsposition suche.",

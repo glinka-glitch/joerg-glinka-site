@@ -4,7 +4,7 @@ import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 import Link from "next/link"
 export const metadata: Metadata = {
-  title: "Kompetenzen | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
+  title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
     "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau und profitables Wachstum. Auf der Suche nach einer Führungsposition (Remote, deutschlandweit).",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Kompetenzen | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
+    title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
     description:
       "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau und profitables Wachstum. Auf der Suche nach einer Führungsposition (Remote, deutschlandweit).",
     url: "https://www.glinka.tech/portfolio",

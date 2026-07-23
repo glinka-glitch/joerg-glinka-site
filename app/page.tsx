@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import JoergGlinkaWebsite from "@/components/JoergGlinkaWebsite";
 
 export const metadata: Metadata = {
-  title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
+  title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
   description:
     "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer einer Plattform mit 500+ Mio. € GMV. Jetzt: Führungsposition in KI-Transformation und digitaler Transformation.",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
+    title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
       "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer einer Plattform mit 500+ Mio. € GMV. Jetzt: Führungsposition in KI-Transformation und digitaler Transformation.",
