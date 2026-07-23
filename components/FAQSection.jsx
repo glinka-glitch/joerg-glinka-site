@@ -2,7 +2,7 @@ const faqs = [
   {
     question: "Sucht Jörg Glinka eine Fachposition oder eine Führungsposition?",
     answer:
-      "Eine Führungsposition. Jörg Glinka war zwölf Jahre Mitgründer und Geschäftsführer eines Unternehmens, dessen Plattform heute über 500 Millionen Euro Jahresumsatz für seine Kunden abwickelt. Er sucht jetzt eine Rolle, in der er KI-Transformation auf genau dieser Ebene verantwortet, nicht als operative Einzelaufgabe.",
+      "Eine Führungsposition. Ich war zwölf Jahre Mitgründer und Geschäftsführer eines Unternehmens, dessen Plattform heute über 500 Millionen Euro Jahresumsatz für seine Kunden abwickelt. Jetzt suche ich eine Rolle, in der ich KI-Transformation auf genau dieser Ebene verantworte, nicht als operative Einzelaufgabe.",
   },
   {
     question: "Was macht ein KI-Manager?",
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Welche Erfahrung bringt Jörg Glinka als KI-Manager mit?",
     answer:
-      "Jörg Glinka war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH und hat die Plattform auf über 500 Millionen Euro Jahresumsatz skaliert, unter anderem mit KI-gestützter Automatisierung in Produktdaten und Übersetzung. Nach dem Verkauf seiner Anteile 2025 hat er sich gezielt in KI-Management weitergebildet und sucht jetzt eine Führungsposition in diesem Bereich.",
+      "Ich war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH und habe die Plattform auf über 500 Millionen Euro Jahresumsatz skaliert, unter anderem mit KI-gestützter Automatisierung in Produktdaten und Übersetzung. Nach dem Verkauf meiner Anteile 2025 habe ich mich gezielt in KI-Management weitergebildet und suche jetzt eine Führungsposition in diesem Bereich.",
   },
   {
     question: "Ist ein KI-Beauftragter dasselbe wie ein KI-Manager?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Ist Jörg Glinka als KI-Manager zertifiziert?",
     answer:
-      "Ja. Jörg Glinka ist zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV.",
+      "Ja. Ich bin zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV.",
   },
 ]
 
