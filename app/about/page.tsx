@@ -105,11 +105,11 @@ export default async function AboutPage() {
             <div className="absolute -inset-4 border-4 border-cyan-400 rounded-3xl"></div>
 
             {blok.image?.filename && (
-              <div className="relative z-10 overflow-hidden rounded-3xl aspect-[4/5]">
+              <div className="relative z-10 overflow-hidden rounded-3xl aspect-[643/1000]">
                 <Image
                   src={blok.image.filename}
                   alt="Jörg Glinka"
-                  width={800}
+                  width={643}
                   height={1000}
                   sizes="(min-width: 640px) 620px, 100vw"
                   priority
