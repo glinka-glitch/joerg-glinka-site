@@ -28,10 +28,10 @@ const CookieBanner = dynamic(() => import("@/components/CookieBanner"))
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.glinka.tech/"),
 
-  title: "Jörg Glinka | KI-Manager & Digitale Transformation",
+  title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
 
   description:
-    "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation sucht Festanstellung (Remote, deutschlandweit). Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
+    "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
 
   robots: {
     index: true,
@@ -39,17 +39,18 @@ export const metadata: Metadata = {
   },
 
   keywords: [
+    "KI-Transformation",
+    "Leitung KI-Transformation",
     "KI-Manager",
     "KI-Manager Festanstellung",
-    "KI-Manager Remote",
-    "KI-Management",
     "KI-Prozessmanager",
     "KI-Prozessmanagement",
+    "KI-Management",
     "AI Manager",
     "KI-Beauftragter",
+    "Digitale Transformation Führungsposition",
     "Prozessautomatisierung",
     "KI-Adoption",
-    "Digitale Transformation",
     "KI-Integration",
     "E-Commerce",
     "Change Management",
@@ -63,10 +64,10 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Jörg Glinka | KI-Manager & Digitale Transformation",
+    title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
 
     description:
-      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation sucht Festanstellung (Remote, deutschlandweit). Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
+      "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
 
     url: "https://www.glinka.tech/",
 
@@ -88,10 +89,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Jörg Glinka | KI-Manager & Digitale Transformation",
+    title: "Jörg Glinka | Leitung KI-Transformation & Digitalisierung",
 
     description:
-      "KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation sucht Festanstellung (Remote, deutschlandweit). Ich verantworte KI-Management end-to-end: Strategie, Prozesse und operative Umsetzung.",
+      "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
 
     images: ["/og-image.jpg"],
   },
@@ -109,16 +110,16 @@ const structuredData = {
 
       image: "https://www.glinka.tech/og-image.jpg",
 
-      jobTitle: "KI-Manager",
+      jobTitle: "Leitung KI-Transformation & Digitalisierung",
 
       description:
-        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation. Sucht Festanstellung, Remote (deutschlandweit).",
+        "Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Sucht jetzt eine Führungsposition in KI-Transformation und digitaler Transformation, Remote (deutschlandweit).",
 
       seeks: {
         "@type": "Demand",
-        name: "Festanstellung als KI-Manager (Remote, deutschlandweit)",
+        name: "Führungsposition in KI-Transformation & digitaler Transformation (Remote, deutschlandweit)",
         description:
-          "Sucht eine Festanstellung als KI-Manager mit Fokus auf KI-Management, Prozessautomatisierung und digitale Transformation. Remote-Position, deutschlandweit.",
+          "Sucht eine Führungsposition (Festanstellung), in der KI-Transformation und digitale Transformation auf Leitungsebene verantwortet werden, mit Grundlage in 25 Jahren operativer Geschäftsführung. Remote-Position, deutschlandweit.",
         availableAtOrFrom: {
           "@type": "Place",
           name: "Remote (Deutschland)",
@@ -126,11 +127,12 @@ const structuredData = {
       },
 
       knowsAbout: [
+        "KI-Transformation",
         "KI-Management",
         "KI-Manager",
+        "KI-Prozessmanagement",
         "Artificial Intelligence",
         "AI Operations",
-        "KI-Prozessmanagement",
         "Process Automation",
         "Digital Transformation",
         "E-Commerce",
@@ -229,7 +231,7 @@ const structuredData = {
       name: "Jörg Glinka",
 
       description:
-        "KI-Manager mit 25 Jahren Erfahrung in digitalem KI-Management, Prozessautomatisierung und digitaler Transformation. Sucht Festanstellung, Remote (deutschlandweit).",
+        "Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Sucht jetzt eine Führungsposition in KI-Transformation und digitaler Transformation, Remote (deutschlandweit).",
 
       publisher: {
         "@id": "https://www.glinka.tech/#organization",
@@ -273,7 +275,7 @@ export default function RootLayout({
       {/* Left */}
       <div>
         <p className="text-zinc-400 text-sm">
-          © 2026 Jörg Glinka · KI-Management & Digitale Transformation
+          © 2026 Jörg Glinka · Leitung KI-Transformation & Digitalisierung
         </p>
 
         <p className="mt-3 text-xs text-zinc-400 max-w-md leading-relaxed">

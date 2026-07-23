@@ -16,14 +16,14 @@ import Link from "next/link"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Gespräch vereinbaren | Jörg Glinka",
+  title: "Gespräch vereinbaren | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
-    "Sie suchen einen KI-Prozessmanager mit Erfahrung in digitaler Transformation. Ich suche genau diese Stelle. Schreiben Sie mir.",
+    "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich suche genau diese Aufgabe. Schreiben Sie mir.",
 
   keywords: [
     "KI-Manager Kontakt",
-    "KI-Prozessmanager Festanstellung",
+    "KI-Transformation Führungsposition",
     "KI-Manager einstellen",
     "KI-Manager für Unternehmen",
     "Gespräch vereinbaren KI-Manager",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Gespräch vereinbaren | Jörg Glinka",
+    title: "Gespräch vereinbaren | Jörg Glinka · KI-Transformation & Digitalisierung",
     description:
-      "Sie suchen einen KI-Prozessmanager mit Erfahrung in digitaler Transformation. Ich suche genau diese Stelle. Schreiben Sie mir.",
+      "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich suche genau diese Aufgabe. Schreiben Sie mir.",
     url: "https://www.glinka.tech/contact",
     images: [
       {
@@ -142,7 +142,7 @@ export default async function ContactPage() {
               <p className="type-label !text-cyan-400 mb-3">Direkttermin</p>
 
               <p className="text-zinc-300 text-lg leading-relaxed">
-                Oder buchen Sie direkt einen Termin — ohne das Formular abzuschicken.
+                Oder buchen Sie direkt einen Termin, ohne das Formular abzuschicken.
               </p>
 
               <a

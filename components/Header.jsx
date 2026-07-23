@@ -27,11 +27,11 @@ export default function Header() {
 
             <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1 leading-tight">
   <span className="md:hidden">
-    KI-Management
+    KI-Transformation
   </span>
 
   <span className="hidden md:inline">
-    KI-Management & Digitale Transformation
+    Leitung KI-Transformation & Digitalisierung
   </span>
 </p>
           </div>

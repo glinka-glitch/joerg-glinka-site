@@ -183,37 +183,40 @@ export default function JoergGlinkaWebsite({ blok }) {
 </section>
 
 {/* ARCHITECTURE GRAPHIC */}
-{blok.architecture_image?.filename && (
-  <section className="px-4 md:px-6 py-14 md:py-20 border-t border-white/10">
-    <div className="max-w-7xl mx-auto">
+{/* Bild liegt lokal in public/ki-architektur.webp (1720x1120), bewusst nicht
+    aus Storyblok geladen: Das CMS-Asset war versehentlich auf eine
+    230x150-Vorschaugrafik verlinkt statt auf die Originaldatei. Ein lokaler
+    Import verhindert, dass dieser Fehler beim nächsten CMS-Update wieder
+    auftritt. Badge/Headline bleiben CMS-gepflegt. */}
+<section className="px-4 md:px-6 py-14 md:py-20 border-t border-white/10">
+  <div className="max-w-7xl mx-auto">
 
-      {blok.architecture_badge && (
-        <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
-          {blok.architecture_badge}
-        </div>
-      )}
-
-      {blok.architecture_headline && (
-        <h2 className="type-h1 mb-10">
-          {blok.architecture_headline}
-        </h2>
-      )}
-
-      <div className="overflow-hidden rounded-[2rem] border border-white/10">
-        <Image
-          src={blok.architecture_image.filename}
-          alt="KI-Management Architektur – Sieben Ebenen"
-          width={1720}
-          height={1120}
-          sizes="(max-width: 1280px) 100vw, 1280px"
-          quality={85}
-          className="w-full h-auto"
-        />
+    {blok.architecture_badge && (
+      <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
+        {blok.architecture_badge}
       </div>
+    )}
 
+    {blok.architecture_headline && (
+      <h2 className="type-h1 mb-10">
+        {blok.architecture_headline}
+      </h2>
+    )}
+
+    <div className="overflow-hidden rounded-[2rem] border border-white/10">
+      <Image
+        src="/ki-architektur.webp"
+        alt="KI-Management Architektur: Sieben Ebenen"
+        width={1720}
+        height={1120}
+        sizes="(max-width: 1280px) 100vw, 1280px"
+        quality={85}
+        className="w-full h-auto"
+      />
     </div>
-  </section>
-)}
+
+  </div>
+</section>
 
 {/* CHALLENGES */}
 

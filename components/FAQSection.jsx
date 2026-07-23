@@ -1,23 +1,28 @@
 const faqs = [
   {
+    question: "Sucht Jörg Glinka eine Fachposition oder eine Führungsposition?",
+    answer:
+      "Eine Führungsposition. Jörg Glinka war zwölf Jahre Mitgründer und Geschäftsführer eines Unternehmens, dessen Plattform heute über 500 Millionen Euro Jahresumsatz für seine Kunden abwickelt. Er sucht jetzt eine Rolle, in der er KI-Transformation auf genau dieser Ebene verantwortet, nicht als operative Einzelaufgabe.",
+  },
+  {
     question: "Was macht ein KI-Manager?",
     answer:
-      "Ein KI-Manager identifiziert KI-Potenziale im Unternehmen, entwickelt KI-Strategien und verantwortet deren operative Umsetzung. Dazu gehören KI-Adoption, Prozessautomatisierung, Change Management und die Messung von KI-Investitionen in Geschäftswert.",
+      "Ein KI-Manager identifiziert KI-Potenziale im Unternehmen, entwickelt eine KI-Strategie und verantwortet deren Umsetzung: Prozessautomatisierung, Change Management und die Frage, ob sich die Investition am Ende auszahlt.",
   },
   {
     question: "Was ist KI-Management?",
     answer:
-      "KI-Management umfasst die strategische Planung, Implementierung und Steuerung von KI-Initiativen in Unternehmen. Es verbindet technisches Verständnis mit operativer Umsetzungskompetenz und Change Management.",
+      "KI-Management umfasst die Planung, Einführung und Steuerung von KI-Projekten in Unternehmen, von der ersten Idee bis zum laufenden Betrieb, inklusive Change Management.",
   },
   {
     question: "Welche Erfahrung bringt Jörg Glinka als KI-Manager mit?",
     answer:
-      "Jörg Glinka ist KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation, E-Commerce und KI-Integration. Er hat KI-Prozesse aufgebaut, Automatisierungsprojekte verantwortet und KI-Investitionen in messbaren Geschäftswert übersetzt.",
+      "Jörg Glinka war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH und hat die Plattform auf über 500 Millionen Euro Jahresumsatz skaliert, unter anderem mit KI-gestützter Automatisierung in Produktdaten und Übersetzung. Nach dem Verkauf seiner Anteile 2025 hat er sich gezielt in KI-Management weitergebildet und sucht jetzt eine Führungsposition in diesem Bereich.",
   },
   {
     question: "Ist ein KI-Beauftragter dasselbe wie ein KI-Manager?",
     answer:
-      "Die Begriffe werden im deutschsprachigen Raum weitgehend synonym verwendet. Ein KI-Beauftragter (englisch: AI Manager) übernimmt dieselbe Rolle wie ein KI-Manager: Verantwortung für KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten im Unternehmen.",
+      "Im deutschsprachigen Raum werden die Begriffe weitgehend synonym verwendet. Ein KI-Beauftragter, englisch AI Manager, trägt dieselbe Verantwortung wie ein KI-Manager: KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten.",
   },
   {
     question: "Ist Jörg Glinka als KI-Manager zertifiziert?",

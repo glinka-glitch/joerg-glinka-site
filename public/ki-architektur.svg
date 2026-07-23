@@ -25,17 +25,17 @@
   <!-- ─── LEFT SIDEBAR: Governance & Sicherheit ─── -->
   <rect x="16" y="16" width="50" height="528" rx="10" fill="#111113" stroke="#22d3ee" stroke-width="0.6" stroke-opacity="0.25"/>
   <text transform="translate(41,280) rotate(-90)" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" letter-spacing="0.04em">Governance &amp; Sicherheit</text>
-  <text transform="translate(28,280) rotate(-90)" fill="#3f3f46" font-family="system-ui,-apple-system,sans-serif" font-size="10" text-anchor="middle">Rollen · Freigaben · Protokolle</text>
+  <text transform="translate(28,280) rotate(-90)" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="10" text-anchor="middle">Rollen · Freigaben · Protokolle</text>
 
   <!-- ─── RIGHT SIDEBAR: Betrieb & Weiterentwicklung ─── -->
   <rect x="794" y="16" width="50" height="528" rx="10" fill="#111113" stroke="#22d3ee" stroke-width="0.6" stroke-opacity="0.25"/>
   <text transform="translate(819,280) rotate(90)" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="12.5" font-weight="700" text-anchor="middle" letter-spacing="0.04em">Betrieb &amp; Weiterentwicklung</text>
-  <text transform="translate(832,280) rotate(90)" fill="#3f3f46" font-family="system-ui,-apple-system,sans-serif" font-size="10" text-anchor="middle">Monitoring · Optimierung</text>
+  <text transform="translate(832,280) rotate(90)" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="10" text-anchor="middle">Monitoring · Optimierung</text>
 
   <!-- ─── LAYER 1: Interaktionsebene ─── -->
   <rect x="82" y="16" width="676" height="88" rx="12" fill="#18181b" stroke="white" stroke-opacity="0.07" stroke-width="1"/>
   <text x="108" y="53" fill="#f4f4f5" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700">Interaktionsebene</text>
-  <text x="108" y="78" fill="#71717a" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Chat · Copilot · Teams · Interface</text>
+  <text x="108" y="78" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Chat · Copilot · Teams · Interface</text>
   <text x="732" y="68" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="900" fill-opacity="0.20" text-anchor="end">01</text>
 
   <!-- connector -->
@@ -45,7 +45,7 @@
   <!-- ─── LAYER 2: KI-Fähigkeiten ─── -->
   <rect x="82" y="116" width="676" height="88" rx="12" fill="#18181b" stroke="white" stroke-opacity="0.07" stroke-width="1"/>
   <text x="108" y="153" fill="#f4f4f5" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700">KI-Fähigkeiten</text>
-  <text x="108" y="178" fill="#71717a" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Skills · Assistenten · Automatisierung</text>
+  <text x="108" y="178" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Skills · Assistenten · Automatisierung</text>
   <text x="732" y="168" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="900" fill-opacity="0.20" text-anchor="end">02</text>
 
   <circle cx="420" cy="204" r="2.5" fill="#22d3ee" opacity="0.30"/>
@@ -57,7 +57,7 @@
   <rect x="82" y="228" width="4" height="76" rx="2" fill="#22d3ee"/>
   <text x="112" y="257" fill="#f4f4f5" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700">Unternehmenswissen</text>
   <rect x="112" y="264" width="34" height="2" rx="1" fill="#22d3ee" opacity="0.65"/>
-  <text x="112" y="290" fill="#a1a1aa" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Wissen · Daten · Prozesse · Sprache</text>
+  <text x="112" y="290" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Wissen · Daten · Prozesse · Sprache</text>
   <rect x="622" y="232" width="106" height="22" rx="4" fill="#22d3ee" fill-opacity="0.10" stroke="#22d3ee" stroke-opacity="0.30" stroke-width="0.5"/>
   <text x="675" y="247" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="9.5" font-weight="800" text-anchor="middle" letter-spacing="0.06em">KERNSCHICHT</text>
   <text x="732" y="276" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="900" fill-opacity="0.28" text-anchor="end">03</text>
@@ -68,7 +68,7 @@
   <!-- ─── LAYER 4: Integration ─── -->
   <rect x="82" y="328" width="676" height="88" rx="12" fill="#18181b" stroke="white" stroke-opacity="0.07" stroke-width="1"/>
   <text x="108" y="365" fill="#f4f4f5" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700">Integration</text>
-  <text x="108" y="390" fill="#71717a" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">M365 · CRM · ERP · bestehende Tools</text>
+  <text x="108" y="390" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">M365 · CRM · ERP · bestehende Tools</text>
   <text x="732" y="380" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="900" fill-opacity="0.20" text-anchor="end">04</text>
 
   <circle cx="420" cy="416" r="2.5" fill="#22d3ee" opacity="0.30"/>
@@ -77,6 +77,6 @@
   <!-- ─── LAYER 5: Fundament ─── -->
   <rect x="82" y="428" width="676" height="100" rx="12" fill="#18181b" stroke="white" stroke-opacity="0.07" stroke-width="1"/>
   <text x="108" y="467" fill="#f4f4f5" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700">Fundament</text>
-  <text x="108" y="492" fill="#71717a" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Modelle · Infrastruktur · anbieterunabhängig</text>
+  <text x="108" y="492" fill="#d4d4d8" font-family="system-ui,-apple-system,sans-serif" font-size="12.5">Modelle · Infrastruktur · anbieterunabhängig</text>
   <text x="732" y="482" fill="#22d3ee" font-family="system-ui,-apple-system,sans-serif" font-size="22" font-weight="900" fill-opacity="0.20" text-anchor="end">05</text>
 </svg>

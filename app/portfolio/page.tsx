@@ -4,15 +4,15 @@ import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 import Link from "next/link"
 export const metadata: Metadata = {
-  title: "KI-Management & Kompetenzen | Jörg Glinka",
+  title: "Kompetenzen | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
 
   description:
-    "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung – als KI-Manager auf der Suche nach einer Festanstellung (Remote, deutschlandweit).",
+    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau und profitables Wachstum. Auf der Suche nach einer Führungsposition (Remote, deutschlandweit).",
 
   keywords: [
-    "KI-Management Kompetenzen",
+    "KI-Transformation Kompetenzen",
     "KI-Manager Festanstellung",
-    "KI-Manager Remote",
+    "Führungsposition Digitale Transformation",
     "KI-Integration Praxis",
     "Digitale Transformation Projekte",
     "E-Commerce Transformation",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "KI-Management & Kompetenzen | Jörg Glinka",
+    title: "Kompetenzen | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
     description:
-      "KI-Management in der Praxis: Vier Kompetenzfelder aus über zwei Jahrzehnten operativer Erfahrung – als KI-Manager auf der Suche nach einer Festanstellung (Remote, deutschlandweit).",
+      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau und profitables Wachstum. Auf der Suche nach einer Führungsposition (Remote, deutschlandweit).",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
@@ -43,6 +43,8 @@ export const metadata: Metadata = {
 const outcomeOverrides: Record<string, string> = {
   "Digitales Geschäftsmodell skalieren":
     "Wettbewerbsvorteile durch Skalierung und Automatisierung, mit klarem Fokus auf profitables Wachstum.",
+  "Profitables Wachstum":
+    "Nachhaltiges Wachstum statt kurzfristiger Umsatzspitzen, mit klaren Prozessen und einer Organisation, die skaliert. Genau diese Erfahrung ist die Basis für die KI-Transformation, die ich heute verantworte.",
 }
 
 const challengeOverrides: Record<string, string> = {
@@ -55,7 +57,7 @@ const challengeOverrides: Record<string, string> = {
 }
 
 const ctaTextOverride =
-  "Sie suchen einen KI-Manager mit über 25 Jahren operativer Erfahrung für eine Festanstellung? Lassen Sie uns sprechen."
+  "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet, mit 25 Jahren operativer Erfahrung im Rücken? Lassen Sie uns sprechen."
 
 export default async function PortfolioPage() {
   const blok = await fetchStory("portfolio")
@@ -206,7 +208,7 @@ export default async function PortfolioPage() {
 </h2>
 
 <p className="type-lead mt-6 max-w-4xl">
-  Was ich einbringe — aus 25 Jahren operativer Verantwortung.
+  Was ich einbringe, aus 25 Jahren operativer Verantwortung.
 </p>
             </div>
 

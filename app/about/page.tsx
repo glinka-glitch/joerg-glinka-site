@@ -4,14 +4,14 @@ import Link from "next/link"
 import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Werdegang | Jörg Glinka – KI-Manager & Digitale Transformation",
+  title: "Werdegang | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
 
   description:
-    "KI-Manager mit 25 Jahren Erfahrung: Mein Weg von E-Commerce bis KI-Management – und warum ich jetzt in Festanstellung wechsle.",
+    "12 Jahre Mitgründer und Geschäftsführer, dann der Verkauf meiner Anteile. Mein Weg von E-Commerce zu KI-Transformation, und warum ich jetzt eine Führungsposition suche.",
 
   keywords: [
     "KI-Manager Werdegang",
-    "KI-Manager Lebenslauf",
+    "KI-Transformation Führungsposition",
     "Digitale Transformation Erfahrung",
     "E-Commerce Geschäftsführer",
     "CEO Digitale Transformation",
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Werdegang | Jörg Glinka – KI-Manager & Digitale Transformation",
+    title: "Werdegang | Jörg Glinka · Leitung KI-Transformation & Digitalisierung",
 
     description:
-      "KI-Manager mit 25 Jahren Erfahrung: Mein Weg von E-Commerce bis KI-Management – und warum ich jetzt in Festanstellung wechsle.",
+      "12 Jahre Mitgründer und Geschäftsführer, dann der Verkauf meiner Anteile. Mein Weg von E-Commerce zu KI-Transformation, und warum ich jetzt eine Führungsposition suche.",
 
     url: "https://www.glinka.tech/about",
 

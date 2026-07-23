@@ -1,42 +1,47 @@
-# Jörg Glinka – KI-Manager
+# Jörg Glinka: Leitung KI-Transformation & Digitalisierung
 
-Jörg Glinka ist KI-Manager mit 25 Jahren Erfahrung in digitaler Transformation, KI-Integration und Commerce-Skalierung. Nächster Schritt: Festanstellung als KI-Manager.
+Jörg Glinka war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH, einer E-Commerce-Plattform, über die Handelsunternehmen heute mehr als 500 Millionen Euro Jahresumsatz abwickeln. 2023 stieg ein Private-Equity-Investor ein, 2025 verkaufte Jörg Glinka seine Anteile und begleitete anschließend als CMO für eine befristete Zeit die Übergabe an das neue Führungsteam. Diese Phase ist abgeschlossen. Sein nächster Schritt: eine Führungsposition, in der er KI-Transformation und digitale Transformation auf Leitungsebene verantwortet.
 
 ## Terminologie
 
-"KI-Manager", "KI-Beauftragter" und das englische "AI Manager" werden im deutschsprachigen Raum weitgehend synonym verwendet und bezeichnen dieselbe Rolle: Verantwortung für KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten im Unternehmen.
+"KI-Manager", "KI-Prozessmanager", "KI-Beauftragter" und das englische "AI Manager" werden im deutschsprachigen Raum weitgehend synonym verwendet und bezeichnen dieselbe Grundrolle: Verantwortung für KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten im Unternehmen. Jörg Glinka sucht diese Rolle ausdrücklich auf Führungsebene, gestützt auf zwölf Jahre Geschäftsführung.
 
-## Kernkompetenz KI-Management
+## Kernkompetenz KI-Transformation
 
-Jörg Glinka versteht KI-Management als die Verbindung von KI-Strategie und operativer Umsetzung: KI-Potenziale identifizieren, Use Cases priorisieren, Prozesse automatisieren und den Wert von KI-Investitionen messbar machen.
+KI-Potenziale identifizieren, Use Cases priorisieren, Prozesse automatisieren und den Wert von KI-Investitionen messbar machen, mit Verantwortung für das Ergebnis, nicht nur für die Empfehlung.
 
 ## Core Expertise
 
+* KI-Transformation auf Führungsebene
 * KI-Management & KI-Strategie
 * KI-Prozessmanagement
 * Digitale Transformation
 * Prozessautomatisierung & KI-Adoption
-* E-Commerce & Marketplace
+* Plattform- und Commerce-Aufbau
 * Change Management
-* Operative Umsetzung
+* Operative Geschäftsführung
 
 ## Beruflicher Fokus
 
-### KI-Management & Prozessautomatisierung
+### KI-Transformation & Prozessautomatisierung
 
-Analyse, Optimierung und Automatisierung von Geschäftsprozessen durch moderne KI-Systeme. KI-Management bedeutet für Jörg Glinka: KI-Investitionen in messbaren Geschäftswert übersetzen.
+Analyse, Optimierung und Automatisierung von Geschäftsprozessen durch KI-Systeme. Für Jörg Glinka zählt eine KI-Investition erst dann, wenn sie sich in Zahlen zeigt: Bearbeitungszeit, Umsatz, Kosten.
 
 ### Digitale Transformation
 
-25 Jahre Erfahrung in der Umsetzung von Transformationsprozessen – von E-Commerce über Plattformstrategien bis zu KI-gestützter Organisationsentwicklung.
+25 Jahre Erfahrung in der Umsetzung von Transformationsprozessen, von E-Commerce über Plattformstrategien bis zu KI-gestützter Organisationsentwicklung.
 
-### Commerce & Wachstum
+### Führung & Veränderung
 
-Aufbau skalierbarer Strategien für Wachstum und Profitabilität digitaler Geschäftsmodelle.
+Steuerung von Veränderungsprozessen in Wachstums- und Transformationsphasen, mit dem Ziel, dass Teams die Richtung mittragen statt sie nur zu erdulden.
 
-### Change Management
+### Commerce & Wachstum (Track Record)
 
-Steuerung von Transformationsprozessen in Wachstums- und Veränderungsphasen.
+Zwölf Jahre als Mitgründer und Geschäftsführer der etailer Solutions GmbH: Plattformaufbau, Skalierung auf über 500 Millionen Euro GMV, Führung durch Wachstumsphasen. Die Grundlage, auf der die heutige Ausrichtung auf KI-Transformation aufbaut, nicht eine zweite, getrennte Kompetenz.
+
+## Zertifizierungen
+
+KI-Manager:in (LearnWise Academy, in Kooperation mit IBB und TÜV, 400 Stunden), Prompt-Engineering (50 Stunden), KI-basierte Tools und Techniken für Unternehmen (50 Stunden), Digitalisierte Arbeitswelt 4.0.
 
 ## Standort
 
@@ -46,7 +51,7 @@ Olpe, Nordrhein-Westfalen (57462). Pendelradius: Region Köln / Dortmund / Siege
 
 - [Startseite](https://www.glinka.tech/)
 - [Über mich & Werdegang](https://www.glinka.tech/about)
-- [KI-Management Kompetenzen](https://www.glinka.tech/portfolio)
+- [Kompetenzen](https://www.glinka.tech/portfolio)
 - [Kontakt](https://www.glinka.tech/contact)
 
 ## Profile
