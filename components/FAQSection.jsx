@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Welche Erfahrung bringt Jörg Glinka als KI-Manager mit?",
     answer:
-      "Ich war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH und habe die Plattform auf über 500 Millionen Euro Jahresumsatz skaliert, unter anderem mit KI-gestützter Automatisierung in Produktdaten und Übersetzung. Nach dem Verkauf meiner Anteile 2025 habe ich mich gezielt in KI-Management weitergebildet und suche jetzt eine Führungsposition in diesem Bereich.",
+      "Ich war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH und habe die Plattform so skaliert, dass Händler heute über 500 Millionen Euro Jahresumsatz darüber abwickeln, unter anderem mit KI-gestützter Automatisierung in Produktdaten und Übersetzung. Nach dem Verkauf meiner Anteile 2025 habe ich mich gezielt in KI-Management weitergebildet und suche jetzt eine Führungsposition in diesem Bereich.",
   },
   {
     question: "Ist ein KI-Beauftragter dasselbe wie ein KI-Manager?",

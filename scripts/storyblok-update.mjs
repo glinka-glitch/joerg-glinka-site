@@ -379,20 +379,21 @@ function patchAbout(content) {
     "Ich führe Veränderungsprozesse so, dass Teams die Richtung verstehen und mitarbeiten wollen. Das klingt einfacher als es ist.";
 
   c.focus_3_title = "Commerce Transformation";
-  logDiff("about", "focus_3_text", c.focus_3_text, "(neu, als Beleg formuliert)");
+  // 500-Millionen-Zahl stand vorher in drei Abschnitten dieser Seite
+  // (Story-Text, hier und in der Timeline), das war Wiederholung statt
+  // Beleg. Bleibt nur im Story-Text stehen, hier und in der Timeline raus.
+  logDiff("about", "focus_3_text", c.focus_3_text, "(Zahlenwiederholung entfernt)");
   c.focus_3_text =
-    "Ich habe digitale Geschäftsmodelle von null aufgebaut und über zwölf Jahre auf mehr als 500 Millionen Euro Plattformumsatz skaliert. Diese Erfahrung ist die Grundlage, auf der ich heute KI-Transformation verantworte, nicht eine zweite, getrennte Kompetenz.";
+    "Ich habe digitale Geschäftsmodelle von null aufgebaut und über zwölf Jahre auf profitables Wachstum skaliert. Diese Erfahrung ist die Grundlage, auf der ich heute KI-Transformation verantworte, nicht eine zweite, getrennte Kompetenz.";
 
   if (Array.isArray(c.timeline_items)) {
     const ceoEntry = c.timeline_items.find((i) =>
       (i.title || "").includes("Mitgründer & CEO")
     );
     if (ceoEntry) {
-      ceoEntry.text = ceoEntry.text.replace(
-        /Ab Oktober 2025.*$/s,
-        "Nach dem Anteilsverkauf 2025 habe ich die Übergabe befristet als CMO begleitet, verantwortlich für Wachstum und Marktentwicklung."
-      );
-      logDiff("about", "timeline: Mitgründer & CEO", "alt", "neu (CMO-Satz präzisiert)");
+      logDiff("about", "timeline: Mitgründer & CEO", "alt", "neu (Zahlenwiederholung entfernt)");
+      ceoEntry.text =
+        "Mitgründer und CEO der etailer Suite, einer Commerce-Plattform für mittelständische Omnichannel-Händler, profitabel und ohne Fremdkapital aufgebaut. Nach dem Anteilsverkauf 2025 habe ich die Übergabe befristet als CMO begleitet, verantwortlich für Wachstum und Marktentwicklung.";
     } else {
       console.warn("  [warn] timeline_items: 'Mitgründer & CEO'-Eintrag nicht gefunden.");
     }
