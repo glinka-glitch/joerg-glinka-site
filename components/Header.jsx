@@ -31,7 +31,7 @@ export default function Header() {
   </span>
 
   <span className="hidden md:inline">
-    Leitung KI-Transformation & Digitalisierung
+    KI-Transformation & Digitalisierung
   </span>
 </p>
           </div>
