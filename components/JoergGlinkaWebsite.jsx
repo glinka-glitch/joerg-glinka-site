@@ -42,7 +42,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
     {/* LEFT */}
 
-    <div className="order-1 lg:order-1">
+    <div className="order-2 lg:order-1">
 
       <div className="inline-block bg-cyan-400 text-black px-4 py-2 font-black uppercase tracking-wide rotate-[-2deg] mb-6">
         {blok?.hero_badge || "KI-gestützte Commerce-Transformation"}
@@ -112,7 +112,7 @@ export default function JoergGlinkaWebsite({ blok }) {
  </div>
     {/* RIGHT */}
 
-    <div className="relative w-full max-w-[620px] xl:max-w-[680px] mx-auto order-2 lg:order-2">
+    <div className="relative w-full max-w-[620px] xl:max-w-[680px] mx-auto order-1 lg:order-2">
 
       <div className="absolute -inset-4 border-4 border-cyan-400 rounded-3xl"></div>
 
