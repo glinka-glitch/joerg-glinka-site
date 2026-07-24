@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 
   keywords: [
     "KI-Transformation",
-    "Leitung KI-Transformation",
+    "KI-Transformation & Digitalisierung",
     "KI-Manager",
     "KI-Manager Festanstellung",
     "KI-Prozessmanager",
