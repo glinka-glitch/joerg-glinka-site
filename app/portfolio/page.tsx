@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 const outcomeOverrides: Record<string, string> = {
   "Digitales Geschäftsmodell skalieren":
-    "Wettbewerbsvorteile durch Skalierung und Automatisierung, mit klarem Fokus auf profitables Wachstum.",
+    "Saubere Datenqualität statt Insellösungen, Wettbewerbsvorteile durch Skalierung und Automatisierung.",
   "Profitables Wachstum":
     "Nachhaltiges Wachstum statt kurzfristiger Umsatzspitzen, mit klaren Prozessen und einer Organisation, die skaliert. Genau diese Erfahrung ist die Basis für die KI-Transformation, die ich heute verantworte.",
 }

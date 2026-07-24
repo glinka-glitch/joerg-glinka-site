@@ -167,7 +167,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         "Automatisierte Produktübersetzungen in alle von DeepL unterstützten Zielsprachen.",
         "+60 % Umsatzwachstum nach Einführung der etailer Suite durch integrierte End-to-End-Prozesse.",
         "+200 % organische Sichtbarkeit durch konsequente Technical-SEO-Optimierung.",
-        "Nahtlose Systemintegration durch flexible API- und Schnittstellenanbindungen für Aufträge, Bestände, Preise sowie Kunden- und Produktdaten.",
+        "Nahtlose Systemintegration zu ERP-, PIM-, Payment- und Marktplatzsystemen für saubere Aufträge-, Bestands-, Preis- und Produktdaten.",
         "50 % niedrigere Kosten für den Betrieb der integrierten E-Commerce-Plattform gegenüber Satellitensystemen ohne Integration.",
       ].map((text, i) => (
         <div

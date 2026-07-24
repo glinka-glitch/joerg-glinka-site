@@ -354,6 +354,9 @@ function patchAbout(content) {
           "Gleichzeitig zieht mich die Metropolregion Köln und das Rhein-Ruhr-Gebiet an. Ich habe dort einige Jahre gelebt, kenne das Netzwerk und die Unternehmensdichte in meinen Themenfeldern."
         ),
         plainParagraph(
+          "Der eigentliche Kern der Arbeit war Integration: ERP- und Warenwirtschaftssysteme, Product Information Management, Zahlungsanbieter, Marktplätze sowie Newsletter- und Recommendation-Systeme sauber an den Shop anzubinden, ohne dass die Datenqualität leidet. Kunden wie Fritz Berger, Fahrrad-XXL oder H&S Bike-Discount haben wir genau dafür begleitet, keine Insellösungen, sondern eine Plattform, die mit der übrigen IT-Landschaft spricht."
+        ),
+        plainParagraph(
           "2023 stieg ein Private-Equity-Investor ein. Das war ein Zeichen, dass wir etwas aufgebaut hatten, das professionelle Investoren für kaufenswert hielten."
         ),
         plainParagraph(
@@ -382,9 +385,9 @@ function patchAbout(content) {
   // 500-Millionen-Zahl stand vorher in drei Abschnitten dieser Seite
   // (Story-Text, hier und in der Timeline), das war Wiederholung statt
   // Beleg. Bleibt nur im Story-Text stehen, hier und in der Timeline raus.
-  logDiff("about", "focus_3_text", c.focus_3_text, "(Zahlenwiederholung entfernt)");
+  logDiff("about", "focus_3_text", c.focus_3_text, "(Integrations-Erfahrung ergänzt)");
   c.focus_3_text =
-    "Ich habe digitale Geschäftsmodelle von null aufgebaut und über zwölf Jahre auf profitables Wachstum skaliert. Diese Erfahrung ist die Grundlage, auf der ich heute KI-Transformation verantworte, nicht eine zweite, getrennte Kompetenz.";
+    "Ich habe digitale Geschäftsmodelle von null aufgebaut, dutzende Schnittstellen zu ERP-, PIM-, Payment- und Marktplatzsystemen integriert und über zwölf Jahre auf profitables Wachstum skaliert. Genau diese Erfahrung mit Datenqualität und sauberer Systemintegration ist die Grundlage, auf der ich heute KI-Transformation verantworte, nicht eine zweite, getrennte Kompetenz.";
 
   if (Array.isArray(c.timeline_items)) {
     const ceoEntry = c.timeline_items.find((i) =>
@@ -438,6 +441,18 @@ function patchPortfolio(content) {
 
   if (Array.isArray(c.portfolio_items)) {
     const byTitle = (t) => c.portfolio_items.find((i) => i.title === t);
+
+    const platformCard = byTitle("Digitales Geschäftsmodell skalieren");
+    if (platformCard) {
+      logDiff("portfolio", "Digitales Geschäftsmodell skalieren (challenge/outcome)", "alt", "Integrations-Erfahrung ergänzt");
+      platformCard.challenge =
+        "Aufbau und Weiterentwicklung skalierbarer Commerce-Plattformen mit Anbindung an ERP-, PIM-, Payment- und Marktplatzsysteme, für Handelsunternehmen wie Fritz Berger oder Fahrrad-XXL.";
+      platformCard.outcome =
+        "Saubere Datenqualität statt Insellösungen, Wettbewerbsvorteile durch Skalierung und Automatisierung.";
+    } else {
+      console.warn("  [warn] Portfolio-Karte 'Digitales Geschäftsmodell skalieren' nicht gefunden.");
+    }
+
     const order = [
       "KI in operative Ergebnisse übersetzen",
       "Transformation & Change",
