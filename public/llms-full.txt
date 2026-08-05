@@ -47,11 +47,16 @@ KI-Manager:in (LearnWise Academy, in Kooperation mit IBB und TÜV, 400 Stunden),
 
 Olpe, Nordrhein-Westfalen (57462). Pendelradius: Region Köln / Dortmund / Siegen. Deutschlandweit & remote verfügbar.
 
+## KI-Readiness-Check
+
+Kostenloser Selbsttest mit 10 Fragen: Wie bereit ist ein Unternehmen für KI-Einführung? Sofortiges Ergebnis mit konkreten Handlungsempfehlungen, kein Preis, keine Anmeldung. Entwickelt von Jörg Glinka auf Basis seiner Erfahrung als KI-Manager und Geschäftsführer.
+
 ## Website
 
 - [Startseite](https://www.glinka.tech/)
 - [Über mich & Werdegang](https://www.glinka.tech/about)
 - [Kompetenzen](https://www.glinka.tech/portfolio)
+- [KI-Readiness-Check](https://www.glinka.tech/ki-readiness-check)
 - [Kontakt](https://www.glinka.tech/contact)
 
 ## Profile

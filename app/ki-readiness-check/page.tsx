@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "KI-Readiness-Check | Jörg Glinka",
 
   description:
-    "Kostenloser Selbsttest: Wie bereit ist Ihr Unternehmen für KI? 10 Fragen, sofortiges Ergebnis mit Handlungsempfehlungen – entwickelt von einem KI-Manager mit 25 Jahren Erfahrung.",
+    "Kostenloser Selbsttest: Wie bereit ist Ihr Unternehmen für KI? 10 Fragen, sofortiges Ergebnis mit Handlungsempfehlungen von einem erfahrenen KI-Manager.",
 
   keywords: [
     "KI-Readiness-Check",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KI-Readiness-Check | Jörg Glinka",
     description:
-      "Kostenloser Selbsttest: Wie bereit ist Ihr Unternehmen für KI? 10 Fragen, sofortiges Ergebnis mit Handlungsempfehlungen – entwickelt von einem KI-Manager mit 25 Jahren Erfahrung.",
+      "Kostenloser Selbsttest: Wie bereit ist Ihr Unternehmen für KI? 10 Fragen, sofortiges Ergebnis mit Handlungsempfehlungen von einem erfahrenen KI-Manager.",
     url: "https://www.glinka.tech/ki-readiness-check",
     images: [
       {
@@ -34,9 +34,34 @@ export const metadata: Metadata = {
   },
 }
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "KI-Readiness-Check",
+  url: "https://www.glinka.tech/ki-readiness-check",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description:
+    "Kostenloser Selbsttest mit 10 Fragen zur KI-Reife eines Unternehmens, mit sofortigem Ergebnis und Handlungsempfehlungen.",
+  isAccessibleForFree: true,
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+  },
+  author: {
+    "@id": "https://www.glinka.tech/#person",
+  },
+}
+
 export default function KiReadinessCheckPage() {
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+
       <div
         id="page-top"
         className="scroll-mt-24 md:scroll-mt-28"
@@ -74,7 +99,7 @@ export default function KiReadinessCheckPage() {
 
           {/* Text */}
           <p className="type-lead mt-6 max-w-[38ch] md:max-w-4xl">
-            10 Fragen, 2 Minuten, sofortiges Ergebnis mit konkreten nächsten Schritten – kein Preis, keine Anmeldung.
+            10 Fragen, 2 Minuten, sofortiges Ergebnis mit konkreten nächsten Schritten, kein Preis, keine Anmeldung.
           </p>
 
         </div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
-    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau und profitables Wachstum. Auf der Suche nach einer Führungsposition (Remote, deutschlandweit).",
+    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau, profitables Wachstum. Führungsposition gesucht.",
 
   keywords: [
     "KI-Transformation Kompetenzen",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
     description:
-      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau und profitables Wachstum. Auf der Suche nach einer Führungsposition (Remote, deutschlandweit).",
+      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau, profitables Wachstum. Führungsposition gesucht.",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
@@ -119,31 +119,6 @@ export default async function PortfolioPage() {
 
   </div>
 </section>
-
-      {/* FEATURE VISUAL */}
-      {false && blok.hero_image?.filename && (
-        <section className="px-4 md:px-6 pb-16 md:pb-24">
-          <div className="max-w-7xl mx-auto">
-
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10">
-
-                            <Image
-  src={blok.hero_image.filename}
-  alt="Transformation Leadership"
-  width={1800}
-  height={1000}
-  sizes="100vw"
-  quality={80}
-  className="w-full h-full object-cover"
-/>
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
-
-            </div>
-
-          </div>
-        </section>
-      )}
 
       {/* IMPACT */}
 <section className="px-4 md:px-6 py-12 md:py-16">

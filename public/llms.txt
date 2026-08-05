@@ -21,6 +21,7 @@ Olpe (Region Köln / Dortmund / Siegen). Deutschlandweit & remote verfügbar.
 - [Startseite](https://www.glinka.tech/)
 - [Über mich & Werdegang](https://www.glinka.tech/about)
 - [Kompetenzen](https://www.glinka.tech/portfolio)
+- [KI-Readiness-Check](https://www.glinka.tech/ki-readiness-check)
 - [Kontakt](https://www.glinka.tech/contact)
 
 ## Profile

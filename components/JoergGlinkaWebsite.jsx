@@ -206,7 +206,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     <div className="overflow-hidden rounded-[2rem] border border-white/10">
       <Image
         src="/ki-architektur.webp"
-        alt="KI-Management Architektur: Sieben Ebenen"
+        alt="KI-Transformation Architektur: Sieben Ebenen"
         width={1720}
         height={1120}
         sizes="(max-width: 1280px) 100vw, 1280px"

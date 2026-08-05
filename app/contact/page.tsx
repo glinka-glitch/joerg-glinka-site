@@ -16,7 +16,7 @@ import Link from "next/link"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Gespräch vereinbaren | Jörg Glinka · KI-Transformation & Digitalisierung",
+  title: "Kontakt | Jörg Glinka · KI-Transformation",
 
   description:
     "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich suche genau diese Aufgabe. Schreiben Sie mir.",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Gespräch vereinbaren | Jörg Glinka · KI-Transformation & Digitalisierung",
+    title: "Kontakt | Jörg Glinka · KI-Transformation",
     description:
       "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich suche genau diese Aufgabe. Schreiben Sie mir.",
     url: "https://www.glinka.tech/contact",
