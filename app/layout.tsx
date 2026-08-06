@@ -237,7 +237,29 @@ const structuredData = {
         "@id": "https://www.glinka.tech/#organization",
       },
 
+      author: {
+        "@id": "https://www.glinka.tech/#person",
+      },
+
       inLanguage: "de-DE",
+
+      // Keine echte interne Suche vorhanden. Google-Site-Suche als
+      // pragmatischer SearchAction-Fallback, damit das WebSite-Schema
+      // vollständig ist. Bei einer echten Suchfunktion hier austauschen.
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate:
+            "https://www.google.com/search?q=site:glinka.tech+{search_term_string}",
+        },
+        "query-input": "required name=search_term_string",
+      },
+
+      // Wird bei jedem Deploy (Vercel-Build) automatisch neu gesetzt.
+      dateModified: new Date().toISOString().slice(0, 10),
+
+      datePublished: "2026-06-01",
     },
   ],
 }
@@ -262,6 +284,28 @@ export default function RootLayout({
     __html: JSON.stringify(structuredData),
   }}
 />
+        {/* Plain <a> tags sind hier bewusst: <noscript>-Inhalt muss ohne
+            JavaScript funktionieren, next/link setzt clientseitige
+            Hydration voraus und waere hier wirkungslos. */}
+        {/* eslint-disable @next/next/no-html-link-for-pages */}
+        <noscript>
+          <div style={{ padding: "2rem", maxWidth: "60ch" }}>
+            <h1>Jörg Glinka | KI-Transformation & Digitalisierung</h1>
+            <p>
+              25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer
+              der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Jetzt: Führungsposition
+              in KI-Transformation und digitaler Transformation.
+            </p>
+            <nav>
+              <a href="/">Startseite</a> · <a href="/about">Werdegang</a> ·{" "}
+              <a href="/portfolio">Kompetenzen</a> ·{" "}
+              <a href="/ki-readiness-check">KI-Readiness-Check</a> ·{" "}
+              <a href="/contact">Kontakt</a>
+            </nav>
+            <p>E-Mail: joerg@glinka.tech · 57462 Olpe, Deutschland</p>
+          </div>
+        </noscript>
+        {/* eslint-enable @next/next/no-html-link-for-pages */}
     <Header />
 <main className="flex-1">
 <ScrollToTop />

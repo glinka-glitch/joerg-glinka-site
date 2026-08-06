@@ -51,11 +51,24 @@ export const metadata: Metadata = {
     ],
   },
 }
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: "https://www.glinka.tech/" },
+    { "@type": "ListItem", position: 2, name: "Kontakt", item: "https://www.glinka.tech/contact" },
+  ],
+}
+
 export default async function ContactPage() {
   const blok = await getContactData()
 
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
 <div
   id="page-top"
   className="scroll-mt-24 md:scroll-mt-28"

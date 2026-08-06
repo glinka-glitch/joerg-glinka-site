@@ -59,6 +59,15 @@ const challengeOverrides: Record<string, string> = {
 const ctaTextOverride =
   "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet, mit 25 Jahren operativer Erfahrung im Rücken? Lassen Sie uns sprechen."
 
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: "https://www.glinka.tech/" },
+    { "@type": "ListItem", position: 2, name: "Kompetenzen", item: "https://www.glinka.tech/portfolio" },
+  ],
+}
+
 export default async function PortfolioPage() {
   const blok = await fetchStory("portfolio")
 
@@ -67,6 +76,10 @@ export default async function PortfolioPage() {
   id="page-top"
   className="relative min-h-screen bg-black text-white overflow-hidden scroll-mt-24 md:scroll-mt-28"
 >
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+  />
 
       {/* Glow Effects */}
       <div className="absolute top-[-300px] left-[-200px] w-[900px] h-[900px] bg-cyan-400/25 blur-[250px] rounded-full pointer-events-none"></div>

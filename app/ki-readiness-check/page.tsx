@@ -54,12 +54,25 @@ const structuredData = {
   },
 }
 
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: "https://www.glinka.tech/" },
+    { "@type": "ListItem", position: 2, name: "KI-Readiness-Check", item: "https://www.glinka.tech/ki-readiness-check" },
+  ],
+}
+
 export default function KiReadinessCheckPage() {
   return (
     <main className="relative min-h-screen bg-black text-white overflow-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
 
       <div

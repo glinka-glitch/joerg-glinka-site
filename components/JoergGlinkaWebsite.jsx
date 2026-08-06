@@ -161,7 +161,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     />
 
     {/* Impact Cards */}
-    <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+    <ul className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5 list-none">
       {[
         "70 % weniger Bearbeitungszeit durch KI-gestützte Produktdatenpflege.",
         "Automatisierte Produktübersetzungen in alle von DeepL unterstützten Zielsprachen.",
@@ -170,15 +170,15 @@ export default function JoergGlinkaWebsite({ blok }) {
         "Nahtlose Systemintegration zu ERP-, PIM-, Payment- und Marktplatzsystemen für saubere Aufträge-, Bestands-, Preis- und Produktdaten.",
         "50 % niedrigere Kosten für den Betrieb der integrierten E-Commerce-Plattform gegenüber Satellitensystemen ohne Integration.",
       ].map((text, i) => (
-        <div
+        <li
           key={i}
           className="flex items-start gap-4 rounded-2xl border border-white/10 bg-zinc-900/60 px-6 py-5"
         >
           <span className="mt-1 shrink-0 text-cyan-400 text-lg font-black leading-none">→</span>
           <p className="text-zinc-300 text-base md:text-lg leading-snug">{text}</p>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   </div>
 </section>
 
