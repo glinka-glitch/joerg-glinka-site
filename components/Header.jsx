@@ -6,7 +6,7 @@ import MobileMenu from "./MobileMenu"
 
 export default function Header() {
   return (
-   <header className="sticky top-0 left-0 w-full z-[9999] backdrop-blur-md bg-black/90 border-b border-white/10 shadow-[0_8px_32px_rgba(34,211,238,0.1)]">
+   <header className="sticky top-0 left-0 w-full z-[9999] backdrop-blur-md bg-black/90 border-b border-white/10 shadow-[0_8px_32px_rgba(0,255,255,0.1)]">
 
     <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
 
