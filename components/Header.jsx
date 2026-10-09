@@ -6,18 +6,18 @@ import MobileMenu from "./MobileMenu"
 
 export default function Header() {
   return (
-   <header className="sticky top-0 left-0 w-full z-[9999] backdrop-blur-md bg-black/90 border-b border-white/10">
+   <header className="sticky top-0 left-0 w-full z-[9999] backdrop-blur-md bg-black/90 border-b border-white/10 shadow-[0_8px_32px_rgba(34,211,238,0.1)]">
 
     <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
 
-        <Link href="/" className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4 hover:opacity-80 transition-all duration-300 hover:drop-shadow-[0_0_16px_rgba(34,211,238,0.3)]">
 
           <Image
             src="/logo.png"
             alt="Jörg Glinka Logo"
             width={48}
             height={48}
-            className="w-12 h-12 object-contain"
+            className="w-12 h-12 object-contain hover:scale-110 transition-transform duration-300"
           />
 
           <div>

@@ -48,7 +48,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         {blok?.hero_badge || "KI-gestützte Commerce-Transformation"}
       </div>
 
-     <h1 className="type-display max-w-[620px] whitespace-pre-line hyphens-auto break-words" lang="de">
+     <h1 className="type-display max-w-[900px] whitespace-pre-line hyphens-auto break-words" lang="de">
         {`${blok?.hero_title_line_1 || "Digitale"}\n${blok?.hero_title_line_2 || "Transformation"}\n${blok?.hero_title_line_3 || "& KI"}`}
       </h1>
 
