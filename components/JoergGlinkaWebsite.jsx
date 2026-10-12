@@ -273,11 +273,11 @@ export default function JoergGlinkaWebsite({ blok }) {
   </div>
 
  <h2 className="type-h1 break-words max-w-full md:max-w-6xl">
-    {blok?.services_headline || "Leistungen & Expertise"}
+    {blok?.services_headline || "Leistungen & Expertise — Projektleitung & Transformation"}
   </h2>
 
   <p className="type-lead mt-6 max-w-5xl font-semibold">    {blok?.services_text ||
-      "KI-gestützte Wachstumsstrategien, Commerce-Transformation und moderne digitale Systeme für nachhaltige Skalierung."}
+      "Strategische Projektleitung in E-Commerce und digitalen Plattformen. KI-gestützte Wachstumsstrategien, Commerce-Transformation, Change Management und moderne digitale Systeme für nachhaltige Skalierung."}
   </p>
 
 </div>   
