@@ -2,7 +2,7 @@ const faqs = [
   {
     question: "Sucht Jörg Glinka eine Fachposition oder eine Führungsposition?",
     answer:
-      "Eine Führungsposition. Ich war zwölf Jahre Mitgründer und Geschäftsführer eines Unternehmens, mit voller Verantwortung für Umsatz und Ergebnis. Jetzt suche ich eine Rolle, in der ich KI-Transformation auf genau dieser Ebene verantworte, nicht als operative Einzelaufgabe.",
+      "Eine Führungsposition als CIO/VP oder strategischer Projektleiter. Ich war 12 Jahre Gründer & CEO mit voller Business-Verantwortung. Jetzt suche ich eine Rolle, in der ich KI-Transformation und digitale Plattformen auf Führungsebene oder als Trusted Advisor in der Projektleitung verantworte — strategisch, nicht als operative Einzelaufgabe.",
   },
   {
     question: "Was macht ein KI-Manager?",
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Welche Erfahrung bringt Jörg Glinka als KI-Manager mit?",
     answer:
-      "Ich war zwölf Jahre Mitgründer und Geschäftsführer der etailer Solutions GmbH und habe die Plattform so skaliert, dass Händler heute über 500 Millionen Euro Jahresumsatz darüber abwickeln, mit sauberen Schnittstellen zu ERP-, PIM-, Payment- und Marktplatzsystemen sowie KI-gestützter Automatisierung in Produktdaten und Übersetzung. Nach dem Verkauf meiner Anteile 2025 habe ich die Übergabe noch für eine befristete Zeit als CMO begleitet, diese Phase ist abgeschlossen. Seither habe ich mich gezielt in KI-Management weitergebildet und suche jetzt eine Führungsposition in diesem Bereich.",
+      "Ich war 12 Jahre Mitgründer & CEO der etailer Solutions GmbH — strategische Projektleitung in E-Commerce und digitalen Plattformen. Ich skalierte die Plattform, sodass Händler heute über 500 Millionen Euro Jahresumsatz darüber abwickeln: komplexe Systemintegrationen (ERP, PIM, Payment, Marktplätze), KI-gestützte Automatisierung in Produktdaten und Übersetzung, Change Management und Stakeholder-Führung. Nach dem Verkauf 2025 begleitete ich die Übergabe als CMO. Jetzt suche ich eine Führungsposition als CIO, Projektleiter oder Trusted Advisor, wo ich diese Expertise strategisch einbringe.",
   },
   {
     question: "Ist ein KI-Beauftragter dasselbe wie ein KI-Manager?",
@@ -28,6 +28,11 @@ const faqs = [
     question: "Ist Jörg Glinka als KI-Manager zertifiziert?",
     answer:
       "Ja. Ich bin zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV.",
+  },
+  {
+    question: "Gibt es einen Unterschied zwischen KI-Manager und Projektleiter Digital Platforms?",
+    answer:
+      "Der Fokus unterscheidet sich: Ein KI-Manager verantwortet die KI-Strategie und deren unternehmensweite Umsetzung. Ein Projektleiter Digital Platforms leitet spezifische E-Commerce- oder Plattform-Projekte und nutzt KI als strategisches Enabler in diesen Projekten. Meine 12 Jahre CEO-Erfahrung und Projektleitung bei etailer Solutions kombiniert beide: ich verstehe KI-Transformation nicht als isolierte Funktion, sondern als integralen Bestandteil von Business- und Plattform-Strategie.",
   },
 ]
 
