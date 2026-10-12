@@ -144,7 +144,7 @@ export default async function ContactPage() {
                 </p>
 
                 <p className="mt-3 text-zinc-400 text-base leading-relaxed">
-                  Deutschlandweit & remote verfügbar. Pendelradius: Region Köln / Dortmund / Siegen.
+                  Bereit für die nächste Herausforderung: Remote oder vor Ort in der Region Köln / Dortmund / Siegen. Deutschlandweit mobil für die richtige Führungsrolle.
                 </p>
               </div>
             )}
