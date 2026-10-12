@@ -106,7 +106,7 @@ export default async function AboutPage() {
                 ))
               ) : (
                 <p>
-                  Ich unterstütze Unternehmen dabei, nachhaltiges Wachstum durch moderne E-Commerce-Strategien, KI-gestützte Systeme und digitale Transformation zu realisieren.
+                  25 Jahre digitale Transformation, 12 Jahre als Gründer & CEO. Nach dem Verkauf meiner Anteile 2025 und der Übergabephase als CMO suche ich jetzt eine Führungsposition, wo ich meine Expertise in KI-Systemen und organisationalem Wachstum einbringen kann.
                 </p>
               )}
             </div>
