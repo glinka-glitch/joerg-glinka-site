@@ -230,7 +230,7 @@ export default async function AboutPage() {
 
           <h2 className="type-h1 mb-16">Kompetenzen & Tools</h2>
 
-          <div className="grid md:grid-cols-3 gap-10 md:gap-16">
+          <div className="grid md:grid-cols-4 gap-10 md:gap-16">
 
             <div>
               <p className="type-label !text-cyan-400 mb-6">KI & Prozessmanagement</p>
@@ -260,6 +260,18 @@ export default async function AboutPage() {
               <p className="type-label !text-cyan-400 mb-6">Organisation & Steuerung</p>
               <div className="flex flex-wrap gap-3">
                 {["Operating Models", "KPI-basierte Unternehmenssteuerung", "Datengetriebene Entscheidungsfindung", "Organisationsentwicklung", "Prompt Engineering"].map(skill => (
+                  <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-base leading-snug">
+                    {skill}
+                  </span>
+                ))}
+                <span className="px-4 py-2 rounded-full border border-dashed border-white/20 text-zinc-400 text-sm">+</span>
+              </div>
+            </div>
+
+            <div>
+              <p className="type-label !text-cyan-400 mb-6">Projektmanagement & Leadership</p>
+              <div className="flex flex-wrap gap-3">
+                {["Strategische Projektleitung", "E-Commerce & Digital Platforms", "Ressourcen- & Budgetmanagement", "Qualitätssicherung & Risikomanagement", "Stakeholder-Führung", "SAP Commerce Cloud Projekte", "Team-Skalierung", "Deeskalation & Problem-Solving"].map(skill => (
                   <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-base leading-snug">
                     {skill}
                   </span>
