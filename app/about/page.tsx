@@ -271,7 +271,7 @@ export default async function AboutPage() {
             <div>
               <p className="type-label !text-cyan-400 mb-6">Projektmanagement & Leadership</p>
               <div className="flex flex-wrap gap-3">
-                {["Strategische Projektleitung", "E-Commerce & Digital Platforms", "Ressourcen- & Budgetmanagement", "Qualitätssicherung & Risikomanagement", "Stakeholder-Führung", "SAP Commerce Cloud Projekte", "Team-Skalierung", "Deeskalation & Problem-Solving"].map(skill => (
+                {["Strategische Projektleitung", "E-Commerce & Digital Platforms", "Ressourcen- & Budgetmanagement", "Qualitätssicherung & Risikomanagement", "Stakeholder-Führung", "Team-Skalierung", "Deeskalation & Problem-Solving"].map(skill => (
                   <span key={skill} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-zinc-300 text-base leading-snug">
                     {skill}
                   </span>
