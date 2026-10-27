@@ -2,7 +2,6 @@ import Image from "next/image"
 import FadeIn from './animations/FadeIn'
 import Link from "next/link"
 import { renderRichText } from "@storyblok/react"
-import FAQSection from "./FAQSection"
 
 export default function JoergGlinkaWebsite({ blok }) {
   const methodologyItems = blok?.methodology_items || []
@@ -322,19 +321,17 @@ export default function JoergGlinkaWebsite({ blok }) {
 
       {/* Testimonials — entfernt, bis echte Referenzen vorhanden */}
 
-<FAQSection />
-
 {/* Page Navigation */}
 <section className="px-4 md:px-6 py-8 md:py-16">
 
   <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
     <h3 className="type-h2 mb-4">
-      Mein Werdegang & Motivation
+      Mein Werdegang & Advisory
     </h3>
 
     <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">
-      25 Jahre Erfahrung in digitaler Transformation. Was mich antreibt und warum ich jetzt eine Festanstellung suche.
+      25 Jahre digitale Transformation. Jetzt: Strategic Advisor für KI-Integration und Plattform-Skalierung.
     </p>
 
     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
