@@ -331,7 +331,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     </h3>
 
     <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">
-      25 Jahre digitale Transformation. Jetzt: Strategic Advisor für KI-Integration und Plattform-Skalierung.
+      25 Jahre Expertise in KI-Integration, E-Commerce und digitaler Transformation.
     </p>
 
     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
