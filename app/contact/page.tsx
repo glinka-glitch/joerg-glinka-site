@@ -19,17 +19,14 @@ export const metadata: Metadata = {
   title: "Kontakt | Jörg Glinka · KI-Transformation",
 
   description:
-    "Jörg Glinka berät Unternehmen bei KI-Transformation, digitaler Strategie und Plattform-Skalierung. Kontakt für Strategic Advisory & Consulting.",
+    "Kontakt zu Jörg Glinka. Austausch über KI-Transformation, digitale Strategie und Entrepreneurship.",
 
   keywords: [
-    "KI-Beratung Kontakt",
-    "Digital Transformation Consulting",
-    "KI-Consultant kontaktieren",
-    "Digital Strategy Beratung",
-    "Plattform-Skalierung Consultant",
-    "KI-Integration Beratung",
-    "Strategic Advisory Köln",
-    "Digital Transformation Consultant",
+    "Jörg Glinka Kontakt",
+    "KI-Transformation Austausch",
+    "Digital Strategy Dialog",
+    "Entrepreneurship Austausch",
+    "Digitale Transformation Gespräch",
   ],
 
   alternates: {
@@ -39,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kontakt | Jörg Glinka · KI-Transformation",
     description:
-      "Jörg Glinka berät Unternehmen bei KI-Transformation, digitaler Strategie und Plattform-Skalierung. Kontakt für Strategic Advisory & Consulting.",
+      "Kontakt zu Jörg Glinka. Austausch über KI-Transformation, digitale Strategie und Entrepreneurship.",
     url: "https://www.glinka.tech/contact",
     images: [
       {

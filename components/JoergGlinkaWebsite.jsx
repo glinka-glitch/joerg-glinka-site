@@ -327,7 +327,7 @@ export default function JoergGlinkaWebsite({ blok }) {
   <div className="max-w-7xl mx-auto border-t border-white/10 pt-6 md:pt-8 relative z-50">
 
     <h3 className="type-h2 mb-4">
-      Mein Werdegang & Advisory
+      Mein Werdegang & Expertise
     </h3>
 
     <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">

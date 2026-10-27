@@ -55,8 +55,7 @@ const challengeOverrides: Record<string, string> = {
     "Steuerung von Transformationsprozessen in Wachstums- und Veränderungsphasen.",
 }
 
-const ctaTextOverride =
-  "Sie planen eine KI-Transformation oder digitale Plattform-Skalierung? Ich berate Sie bei dieser Herausforderung. Lassen Sie uns sprechen."
+const ctaTextOverride = null
 
 const breadcrumbData = {
   "@context": "https://schema.org",
