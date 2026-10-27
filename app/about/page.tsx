@@ -345,11 +345,11 @@ export default async function AboutPage() {
       <div className="max-w-4xl">
 
         <h3 className="type-h2 max-w-[12ch] md:max-w-none mb-4">
-          Bereit für das erste Gespräch?
+          Bereit für Ihre Transformation?
         </h3>
 
         <p className="type-body max-w-[36ch] md:max-w-2xl">
-          Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich freue mich auf den Austausch.
+          Wenn Sie Ihre KI-Transformation strategisch umsetzen wollen, freue ich mich auf den Austausch.
         </p>
 
       </div>
