@@ -16,16 +16,18 @@ import Link from "next/link"
 import ContactForm from "@/components/ContactForm"
 
 export const metadata: Metadata = {
-  title: "Kontakt | Jörg Glinka · KI-Transformation",
+  title: "Kontakt | Jörg Glinka - Austausch über KI & Transformation",
 
   description:
-    "Kontakt zu Jörg Glinka. Austausch über KI-Transformation, digitale Strategie oder einfach ein Gespräch.",
+    "Kontakt zu Jörg Glinka. Austausch über KI-Transformation, digitale Strategien, operative Führung und Geschäftswachstum. Direkttermin oder Formular.",
 
   keywords: [
-    "Kontakt",
-    "KI-Transformation",
+    "Kontakt Jörg Glinka",
+    "KI-Transformation Beratung",
     "Digital Transformation",
     "Austausch",
+    "E-Commerce Expertise",
+    "Geschäftswachstum",
   ],
 
   alternates: {

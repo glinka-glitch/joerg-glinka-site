@@ -4,19 +4,20 @@ import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 import Link from "next/link"
 export const metadata: Metadata = {
-  title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
+  title: "Kompetenzen | KI-Transformation & Digitale Skalierung",
 
   description:
-    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum.",
+    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, E-Commerce & Plattform Leadership, profitables Wachstum. Expertise für digitale Transformation.",
 
   keywords: [
+    "Kompetenzen",
     "KI-Transformation",
     "Digital Transformation",
-    "KI-Integration",
-    "Digitale Strategien",
-    "E-Commerce",
+    "E-Commerce Leadership",
     "Plattform-Skalierung",
     "Change Management",
+    "Transformationsprojekte",
+    "Wachstumsstrategie",
   ],
 
   alternates: {

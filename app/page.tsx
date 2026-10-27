@@ -5,10 +5,20 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
   description:
-    "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH (500+ Mio. € GMV). Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
+    "Ich baue digitale Plattformen, die skalieren. 25 Jahre Transformation, 12 Jahre CEO. 500 Mio. EUR jährlicher Kundenumsatz. Expertise in KI, E-Commerce und organisationalem Wachstum.",
+
+  keywords: [
+    "KI-Transformation",
+    "Digital Transformation",
+    "E-Commerce Plattformen",
+    "Plattform-Skalierung",
+    "Jörg Glinka",
+    "Geschäftsführer",
+    "CEO",
+  ],
 
   alternates: {
-    canonical: "https://www.glinka.tech/",
+    canonical: "https://www.glinka.tech",
   },
 
   openGraph: {

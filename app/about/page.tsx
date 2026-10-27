@@ -4,19 +4,20 @@ import Link from "next/link"
 import { fetchStory } from "@/lib/storyblok"
 import type { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
+  title: "Werdegang | Jörg Glinka - Von Gründer zu Thought Leader",
 
   description:
-    "Der Weg von Gründer zu Thought Leader: 25 Jahre digitale Transformation, 12 Jahre CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
+    "25 Jahre digitale Transformation. 12 Jahre Mitgründer und CEO der etailer Solutions GmbH (500M EUR GMV). Expertise in KI-Integration, E-Commerce-Skalierung, Transformation und Leadership.",
 
   keywords: [
     "Werdegang",
-    "Digital Transformation Expertise",
-    "KI-Integration Erfahrung",
-    "E-Commerce CEO",
-    "Plattform-Skalierung",
-    "Digital Leadership",
+    "Jörg Glinka",
+    "CEO etailer Solutions",
+    "Digital Transformation",
+    "KI-Integration",
+    "E-Commerce Leadership",
     "Change Management",
+    "Thought Leadership",
   ],
 
   alternates: {
