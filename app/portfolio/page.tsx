@@ -7,18 +7,17 @@ export const metadata: Metadata = {
   title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
-    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau, profitables Wachstum. Führungsposition gesucht.",
+    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum. Strategic Advisory & Consulting.",
 
   keywords: [
     "KI-Transformation Kompetenzen",
-    "KI-Manager Festanstellung",
-    "Führungsposition Digitale Transformation",
-    "KI-Integration Praxis",
+    "Digital Consulting Expertise",
+    "KI-Integration Best Practices",
     "Digitale Transformation Projekte",
-    "E-Commerce Transformation",
-    "Prozessautomatisierung",
-    "KI Use Cases",
-    "Profitables Wachstum",
+    "E-Commerce Strategie",
+    "Prozessoptimierung",
+    "Plattform-Skalierung",
+    "Digital Strategy",
   ],
 
   alternates: {
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
     description:
-      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Veränderungsführung, Plattformaufbau, profitables Wachstum. Führungsposition gesucht.",
+      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum. Strategic Advisory & Consulting.",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {
@@ -57,7 +56,7 @@ const challengeOverrides: Record<string, string> = {
 }
 
 const ctaTextOverride =
-  "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet, mit 25 Jahren operativer Erfahrung im Rücken? Lassen Sie uns sprechen."
+  "Sie planen eine KI-Transformation oder digitale Plattform-Skalierung? Ich berate Sie bei dieser Herausforderung. Lassen Sie uns sprechen."
 
 const breadcrumbData = {
   "@context": "https://schema.org",

@@ -1,38 +1,33 @@
 const faqs = [
   {
-    question: "Sucht Jörg Glinka eine Fachposition oder eine Führungsposition?",
+    question: "Was ist das aktuelle Geschäftsmodell von Jörg Glinka?",
     answer:
-      "Eine Führungsposition als CIO/VP oder strategischer Projektleiter. Ich war 12 Jahre Gründer & CEO mit voller Business-Verantwortung. Jetzt suche ich eine Rolle, in der ich KI-Transformation und digitale Plattformen auf Führungsebene oder als Trusted Advisor in der Projektleitung verantworte — strategisch, nicht als operative Einzelaufgabe.",
+      "Nach meinem Exit 2025 als CEO der etailer Solutions GmbH biete ich Strategic Advisory & Consulting an — spezialisiert auf KI-Integration, Digital Transformation und die Skalierung digitaler Plattformen. Ich arbeite mit Unternehmen zusammen, die diese Herausforderungen meistern wollen, und bringe meine 25 Jahre operative Erfahrung und 12 Jahre CEO-Expertise ein.",
   },
   {
-    question: "Was macht ein KI-Manager?",
+    question: "Was macht ein KI-Consultant?",
     answer:
-      "Ein KI-Manager identifiziert KI-Potenziale im Unternehmen, entwickelt eine KI-Strategie und verantwortet deren Umsetzung: Prozessautomatisierung, Change Management und die Frage, ob sich die Investition am Ende auszahlt.",
+      "Ein KI-Consultant berät Unternehmen bei der Entwicklung und Umsetzung von KI-Strategien. Das umfasst: Identifizierung von KI-Potenzialen, Entwicklung von Use Cases, Change Management bei der Einführung und die Frage, wie KI als Geschäftstreiber wirkt — nicht nur als Technologie.",
   },
   {
-    question: "Was ist KI-Management?",
+    question: "Was ist der Unterschied zwischen Advisory und operative Umsetzung?",
     answer:
-      "KI-Management umfasst die Planung, Einführung und Steuerung von KI-Projekten in Unternehmen, von der ersten Idee bis zum laufenden Betrieb, inklusive Change Management.",
+      "Advisory bedeutet strategische Beratung und Konzeption — ich arbeite mit deinen Teams zusammen, entwickle Strategien und helfe bei Entscheidungen. Operative Umsetzung ist die tägliche Implementierung. Ich konzentriere mich auf die strategische Seite, basierend auf meinen 25 Jahren operative Erfahrung.",
   },
   {
-    question: "Welche Erfahrung bringt Jörg Glinka als KI-Manager mit?",
+    question: "Welche Erfahrung bringt Jörg Glinka als Consultant mit?",
     answer:
-      "Ich war 12 Jahre Mitgründer & CEO der etailer Solutions GmbH — strategische Projektleitung in E-Commerce und digitalen Plattformen. Ich skalierte die Plattform, sodass Händler heute über 500 Millionen Euro Jahresumsatz darüber abwickeln: komplexe Systemintegrationen (ERP, PIM, Payment, Marktplätze), KI-gestützte Automatisierung in Produktdaten und Übersetzung, Change Management und Stakeholder-Führung. Nach dem Verkauf 2025 begleitete ich die Übergabe als CMO. Jetzt suche ich eine Führungsposition als CIO, Projektleiter oder Trusted Advisor, wo ich diese Expertise strategisch einbringe.",
-  },
-  {
-    question: "Ist ein KI-Beauftragter dasselbe wie ein KI-Manager?",
-    answer:
-      "Im deutschsprachigen Raum werden die Begriffe weitgehend synonym verwendet. Ein KI-Beauftragter, englisch AI Manager, trägt dieselbe Verantwortung wie ein KI-Manager: KI-Strategie, KI-Adoption und die operative Umsetzung von KI-Projekten.",
+      "12 Jahre Mitgründer & CEO der etailer Solutions GmbH — ich skalierte die Plattform von null auf 500+ Mio. € Jahresumsatz. Das umfasst: KI-Integration in Produktdaten und Prozessen, Aufbau komplexer Systemarchitekturen (ERP, PIM, Payment, Marktplätze), Change Management, Stakeholder-Führung und profitables Wachstum. Diese Erfahrung ist die Basis meiner Advisory.",
   },
   {
     question: "Ist Jörg Glinka als KI-Manager zertifiziert?",
     answer:
-      "Ja. Ich bin zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV.",
+      "Ja. Ich bin zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV. Diese Zertifizierung ergänzt meine 25 Jahre praktische Erfahrung in digitaler Transformation.",
   },
   {
-    question: "Gibt es einen Unterschied zwischen KI-Manager und Projektleiter Digital Platforms?",
+    question: "Welche Unternehmen profitieren am meisten von diesem Consulting?",
     answer:
-      "Der Fokus unterscheidet sich: Ein KI-Manager verantwortet die KI-Strategie und deren unternehmensweite Umsetzung. Ein Projektleiter Digital Platforms leitet spezifische E-Commerce- oder Plattform-Projekte und nutzt KI als strategisches Enabler in diesen Projekten. Meine 12 Jahre CEO-Erfahrung und Projektleitung bei etailer Solutions kombiniert beide: ich verstehe KI-Transformation nicht als isolierte Funktion, sondern als integralen Bestandteil von Business- und Plattform-Strategie.",
+      "Unternehmen, die KI nicht als isoliertes Tech-Projekt sehen, sondern als integralen Bestandteil ihrer Geschäftstransformation. Besonders E-Commerce-Plattformen, Retailer mit digitalen Zielen und Organisationen, die Skalierung mit KI verbinden wollen. Ideal: 50+ Mio. € Umsatz, etablierte Prozesse, ambitionierte Wachstumsziele.",
   },
 ]
 

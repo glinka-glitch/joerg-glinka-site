@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
   description:
-    "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
+    "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO der etailer Solutions GmbH (500+ Mio. € GMV).",
 
   robots: {
     index: true,
@@ -41,20 +41,17 @@ export const metadata: Metadata = {
   keywords: [
     "KI-Transformation",
     "KI-Transformation & Digitalisierung",
-    "KI-Manager",
-    "KI-Manager Festanstellung",
-    "KI-Prozessmanager",
-    "KI-Prozessmanagement",
-    "KI-Management",
-    "AI Manager",
-    "KI-Beauftragter",
-    "Digitale Transformation Führungsposition",
-    "Prozessautomatisierung",
+    "KI-Beratung",
+    "KI-Consultant",
+    "KI-Strategie",
+    "Digital Transformation Consulting",
+    "KI-Integration Beratung",
+    "Plattform-Skalierung",
+    "E-Commerce Strategie",
+    "Change Management Beratung",
+    "Digital Strategy",
     "KI-Adoption",
-    "KI-Integration",
-    "E-Commerce",
-    "Change Management",
-    "Festanstellung",
+    "Business Advisory",
   ],
 
   authors: [
@@ -67,7 +64,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
-      "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
+      "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO etailer Solutions GmbH.",
 
     url: "https://www.glinka.tech/",
 
@@ -92,7 +89,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
-      "25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer. Jörg Glinka sucht eine Führungsposition in KI-Transformation und digitaler Transformation (Festanstellung, Remote, deutschlandweit).",
+      "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO etailer Solutions GmbH.",
 
     images: ["/og-image.jpg"],
   },
@@ -110,20 +107,15 @@ const structuredData = {
 
       image: "https://www.glinka.tech/og-image.jpg",
 
-      jobTitle: "KI-Transformation & Digitalisierung",
+      jobTitle: "Strategic Advisor & Consultant | KI-Transformation",
 
       description:
-        "Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Sucht jetzt eine Führungsposition in KI-Transformation und digitaler Transformation, Remote (deutschlandweit).",
+        "Ehemaliger Mitgründer und CEO der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). 25 Jahre digitale Transformation & KI-Expertise. Jetzt: Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung.",
 
-      seeks: {
-        "@type": "Demand",
-        name: "Führungsposition in KI-Transformation & digitaler Transformation (Remote, deutschlandweit)",
-        description:
-          "Sucht eine Führungsposition (Festanstellung), in der KI-Transformation und digitale Transformation auf Leitungsebene verantwortet werden, mit Grundlage in 25 Jahren operativer Geschäftsführung. Remote-Position, deutschlandweit.",
-        availableAtOrFrom: {
-          "@type": "Place",
-          name: "Remote (Deutschland)",
-        },
+      affiliation: {
+        "@type": "Organization",
+        name: "Strategic Advisory",
+        url: "https://www.glinka.tech/",
       },
 
       knowsAbout: [

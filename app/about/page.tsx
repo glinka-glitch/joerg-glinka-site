@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
-    "12 Jahre Mitgründer und Geschäftsführer, dann der Verkauf meiner Anteile. Mein Weg von E-Commerce zu KI-Transformation, und warum ich jetzt eine Führungsposition suche.",
+    "Der Weg von Gründer zu Consultant: 25 Jahre digitale Transformation, 12 Jahre CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung. Jetzt: Strategic Advisory & Consulting.",
 
   keywords: [
-    "KI-Manager Werdegang",
-    "KI-Transformation Führungsposition",
-    "Digitale Transformation Erfahrung",
-    "E-Commerce Geschäftsführer",
-    "CEO Digitale Transformation",
-    "Change Management Erfahrung",
-    "KI-Manager Festanstellung",
+    "KI-Consultant Werdegang",
+    "Digital Transformation Expertise",
+    "KI-Beratung Erfahrung",
+    "E-Commerce CEO",
+    "Plattform-Skalierung",
+    "Digital Strategy Consultant",
+    "Change Management Experte",
   ],
 
   alternates: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
 
     description:
-      "12 Jahre Mitgründer und Geschäftsführer, dann der Verkauf meiner Anteile. Mein Weg von E-Commerce zu KI-Transformation, und warum ich jetzt eine Führungsposition suche.",
+      "Der Weg von Gründer zu Consultant: 25 Jahre digitale Transformation, 12 Jahre CEO. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung. Strategic Advisory & Consulting.",
 
     url: "https://www.glinka.tech/about",
 

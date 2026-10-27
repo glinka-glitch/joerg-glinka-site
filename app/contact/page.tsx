@@ -19,18 +19,17 @@ export const metadata: Metadata = {
   title: "Kontakt | Jörg Glinka · KI-Transformation",
 
   description:
-    "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich suche genau diese Aufgabe. Schreiben Sie mir.",
+    "Jörg Glinka berät Unternehmen bei KI-Transformation, digitaler Strategie und Plattform-Skalierung. Kontakt für Strategic Advisory & Consulting.",
 
   keywords: [
-    "KI-Manager Kontakt",
-    "KI-Transformation Führungsposition",
-    "KI-Manager einstellen",
-    "KI-Manager für Unternehmen",
-    "Gespräch vereinbaren KI-Manager",
-    "KI-Manager Köln",
-    "KI-Manager Dortmund",
-    "KI-Manager Siegen",
-    "KI-Manager remote",
+    "KI-Beratung Kontakt",
+    "Digital Transformation Consulting",
+    "KI-Consultant kontaktieren",
+    "Digital Strategy Beratung",
+    "Plattform-Skalierung Consultant",
+    "KI-Integration Beratung",
+    "Strategic Advisory Köln",
+    "Digital Transformation Consultant",
   ],
 
   alternates: {
@@ -40,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kontakt | Jörg Glinka · KI-Transformation",
     description:
-      "Sie suchen jemanden, der KI-Transformation auf Führungsebene verantwortet? Ich suche genau diese Aufgabe. Schreiben Sie mir.",
+      "Jörg Glinka berät Unternehmen bei KI-Transformation, digitaler Strategie und Plattform-Skalierung. Kontakt für Strategic Advisory & Consulting.",
     url: "https://www.glinka.tech/contact",
     images: [
       {
@@ -144,7 +143,7 @@ export default async function ContactPage() {
                 </p>
 
                 <p className="mt-3 text-zinc-400 text-base leading-relaxed">
-                  Bereit für die nächste Herausforderung: Remote oder vor Ort in der Region Köln / Dortmund / Siegen. Deutschlandweit mobil für die richtige Führungsrolle.
+                  Verfügbar für Advisory & Consulting Projekte. Remote oder vor Ort in der Region Köln / Dortmund / Siegen. Deutschlandweit für die richtigen Projekte.
                 </p>
               </div>
             )}
