@@ -55,7 +55,7 @@ export default function JoergGlinkaWebsite({ blok }) {
 
       <p className="type-lead mt-8 max-w-2xl">
         {blok?.hero_text ||
-          "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH (500+ Mio. EUR GMV). Expertise in KI-Integration, E-Commerce und Plattform-Skalierung."}
+          "Ich baue digitale Plattformen, die skalieren. 25 Jahre Transformation, 12 Jahre CEO. 500 Millionen EUR jährlicher Kundenumsatz. Expertise in KI, E-Commerce und organisationalem Wachstum."}
       </p>
       {blok.hero_subtext && (
  <p className="mt-5 text-base text-zinc-400 leading-7 max-w-2xl">
