@@ -142,9 +142,6 @@ export default async function ContactPage() {
                   {blok.location}
                 </p>
 
-                <p className="mt-3 text-zinc-400 text-base leading-relaxed">
-                  Verfügbar für Advisory & Consulting Projekte. Remote oder vor Ort in der Region Köln / Dortmund / Siegen. Deutschlandweit für die richtigen Projekte.
-                </p>
               </div>
             )}
 
