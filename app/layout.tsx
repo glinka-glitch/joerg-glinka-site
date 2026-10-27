@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
   description:
-    "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO der etailer Solutions GmbH (500+ Mio. € GMV).",
+    "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH (500+ Mio. € GMV). Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
   robots: {
     index: true,
@@ -40,18 +40,15 @@ export const metadata: Metadata = {
 
   keywords: [
     "KI-Transformation",
-    "KI-Transformation & Digitalisierung",
-    "KI-Beratung",
-    "KI-Consultant",
-    "KI-Strategie",
-    "Digital Transformation Consulting",
-    "KI-Integration Beratung",
+    "Digital Transformation",
+    "E-Commerce",
     "Plattform-Skalierung",
-    "E-Commerce Strategie",
-    "Change Management Beratung",
-    "Digital Strategy",
-    "KI-Adoption",
-    "Business Advisory",
+    "KI-Integration",
+    "Change Management",
+    "Digitale Strategie",
+    "CEO",
+    "Entrepreneurship",
+    "Digital Leadership",
   ],
 
   authors: [
@@ -64,7 +61,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
-      "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO etailer Solutions GmbH.",
+      "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
     url: "https://www.glinka.tech/",
 
@@ -89,7 +86,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
-      "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO etailer Solutions GmbH.",
+      "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
     images: ["/og-image.jpg"],
   },
@@ -107,16 +104,10 @@ const structuredData = {
 
       image: "https://www.glinka.tech/og-image.jpg",
 
-      jobTitle: "Strategic Advisor & Consultant | KI-Transformation",
+      jobTitle: "Founder, CEO | KI-Transformation",
 
       description:
-        "Ehemaliger Mitgründer und CEO der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). 25 Jahre digitale Transformation & KI-Expertise. Jetzt: Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung.",
-
-      affiliation: {
-        "@type": "Organization",
-        name: "Strategic Advisory",
-        url: "https://www.glinka.tech/",
-      },
+        "Mitgründer und ehemaliger CEO der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). 25 Jahre digitale Transformation, Plattform-Skalierung und KI-Integration.",
 
       knowsAbout: [
         "KI-Transformation",
@@ -223,7 +214,7 @@ const structuredData = {
       name: "Jörg Glinka",
 
       description:
-        "Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Sucht jetzt eine Führungsposition in KI-Transformation und digitaler Transformation, Remote (deutschlandweit).",
+        "Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). 25 Jahre digitale Transformation, Plattform-Skalierung und KI-Integration.",
 
       publisher: {
         "@id": "https://www.glinka.tech/#organization",
@@ -284,9 +275,7 @@ export default function RootLayout({
           <div style={{ padding: "2rem", maxWidth: "60ch" }}>
             <h1>Jörg Glinka | KI-Transformation & Digitalisierung</h1>
             <p>
-              25 Jahre digitale Führung, davon 12 Jahre als Mitgründer und Geschäftsführer
-              der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Jetzt: Führungsposition
-              in KI-Transformation und digitaler Transformation.
+              25 Jahre digitale Transformation. Mitgründer und 12 Jahre Geschäftsführer der etailer Solutions GmbH (500+ Mio. € Plattform-GMV). Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.
             </p>
             <nav>
               <a href="/">Startseite</a> · <a href="/about">Werdegang</a> ·{" "}

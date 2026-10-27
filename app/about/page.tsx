@@ -7,16 +7,16 @@ export const metadata: Metadata = {
   title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
-    "Der Weg von Gründer zu Consultant: 25 Jahre digitale Transformation, 12 Jahre CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung. Jetzt: Strategic Advisory & Consulting.",
+    "Der Weg von Gründer zu Thought Leader: 25 Jahre digitale Transformation, 12 Jahre CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
   keywords: [
-    "KI-Consultant Werdegang",
+    "Werdegang",
     "Digital Transformation Expertise",
-    "KI-Beratung Erfahrung",
+    "KI-Integration Erfahrung",
     "E-Commerce CEO",
     "Plattform-Skalierung",
-    "Digital Strategy Consultant",
-    "Change Management Experte",
+    "Digital Leadership",
+    "Change Management",
   ],
 
   alternates: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Werdegang | Jörg Glinka · KI-Transformation & Digitalisierung",
 
     description:
-      "Der Weg von Gründer zu Consultant: 25 Jahre digitale Transformation, 12 Jahre CEO. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung. Strategic Advisory & Consulting.",
+      "Der Weg von Gründer zu Thought Leader: 25 Jahre digitale Transformation, 12 Jahre CEO. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
     url: "https://www.glinka.tech/about",
 
@@ -106,7 +106,7 @@ export default async function AboutPage() {
                 ))
               ) : (
                 <p>
-                  25 Jahre digitale Transformation, 12 Jahre als Gründer & CEO. Nach dem Verkauf meiner Anteile 2025 und der Übergabephase als CMO suche ich jetzt eine Führungsposition, wo ich meine Expertise in KI-Systemen und organisationalem Wachstum einbringen kann.
+                  25 Jahre digitale Transformation. 12 Jahre Mitgründer und CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.
                 </p>
               )}
             </div>

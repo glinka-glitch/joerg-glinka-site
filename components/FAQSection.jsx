@@ -1,33 +1,28 @@
 const faqs = [
   {
-    question: "Was ist das aktuelle Geschäftsmodell von Jörg Glinka?",
+    question: "Was ist die Expertise von Jörg Glinka?",
     answer:
-      "Nach meinem Exit 2025 als CEO der etailer Solutions GmbH biete ich Strategic Advisory & Consulting an — spezialisiert auf KI-Integration, Digital Transformation und die Skalierung digitaler Plattformen. Ich arbeite mit Unternehmen zusammen, die diese Herausforderungen meistern wollen, und bringe meine 25 Jahre operative Erfahrung und 12 Jahre CEO-Expertise ein.",
+      "25 Jahre digitale Transformation, 12 Jahre als Mitgründer und CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce-Skalierung, Change Management und organisationales Wachstum. Ich verstehe KI nicht als isolierte Technologie, sondern als integraler Bestandteil von Geschäftsstrategie.",
   },
   {
-    question: "Was macht ein KI-Consultant?",
+    question: "Was hat Jörg Glinka als CEO aufgebaut?",
     answer:
-      "Ein KI-Consultant berät Unternehmen bei der Entwicklung und Umsetzung von KI-Strategien. Das umfasst: Identifizierung von KI-Potenzialen, Entwicklung von Use Cases, Change Management bei der Einführung und die Frage, wie KI als Geschäftstreiber wirkt — nicht nur als Technologie.",
+      "Bei etailer Solutions: Eine E-Commerce-Plattform, die heute über 500 Millionen Euro Jahresumsatz abwickelt. Aufgebaut von null. Das umfasst: KI-Integration in Produktdaten und Prozessen, komplexe Systemarchitekturen (ERP, PIM, Payment, Marktplätze), Change Management bei Wachstum und Skalierung von Teams. Verkauf der Anteile 2025.",
   },
   {
-    question: "Was ist der Unterschied zwischen Advisory und operative Umsetzung?",
+    question: "Welche Zertifizierungen hat Jörg Glinka?",
     answer:
-      "Advisory bedeutet strategische Beratung und Konzeption — ich arbeite mit deinen Teams zusammen, entwickle Strategien und helfe bei Entscheidungen. Operative Umsetzung ist die tägliche Implementierung. Ich konzentriere mich auf die strategische Seite, basierend auf meinen 25 Jahren operative Erfahrung.",
+      "Zertifizierter KI-Manager (400 Stunden) der LearnWise Academy in Kooperation mit IBB und TÜV. Diese Zertifizierung ergänzt 25 Jahre praktische Erfahrung in digitaler Transformation.",
   },
   {
-    question: "Welche Erfahrung bringt Jörg Glinka als Consultant mit?",
+    question: "Wie verstehen Sie KI-Integration?",
     answer:
-      "12 Jahre Mitgründer & CEO der etailer Solutions GmbH — ich skalierte die Plattform von null auf 500+ Mio. € Jahresumsatz. Das umfasst: KI-Integration in Produktdaten und Prozessen, Aufbau komplexer Systemarchitekturen (ERP, PIM, Payment, Marktplätze), Change Management, Stakeholder-Führung und profitables Wachstum. Diese Erfahrung ist die Basis meiner Advisory.",
+      "KI ist erfolgreich, wenn sie sich in Zahlen zeigt, nicht in Präsentationen. Bei etailer habe ich KI eingesetzt, um konkrete Probleme zu lösen: Produktdaten für internationalen Handel ohne dass jede neue Sprache ein eigenes Team brauchte. KI war nie Selbstzweck, sondern Werkzeug für Geschäftsziele.",
   },
   {
-    question: "Ist Jörg Glinka als KI-Manager zertifiziert?",
+    question: "Wo ist Jörg Glinka erreichbar?",
     answer:
-      "Ja. Ich bin zertifizierter KI-Manager (400 Stunden) der LearnWise Academy, in Kooperation mit dem IBB und TÜV. Diese Zertifizierung ergänzt meine 25 Jahre praktische Erfahrung in digitaler Transformation.",
-  },
-  {
-    question: "Welche Unternehmen profitieren am meisten von diesem Consulting?",
-    answer:
-      "Unternehmen, die KI nicht als isoliertes Tech-Projekt sehen, sondern als integralen Bestandteil ihrer Geschäftstransformation. Besonders E-Commerce-Plattformen, Retailer mit digitalen Zielen und Organisationen, die Skalierung mit KI verbinden wollen. Ideal: 50+ Mio. € Umsatz, etablierte Prozesse, ambitionierte Wachstumsziele.",
+      "Kontakt unter glinka.tech/contact. Ich freue mich auf den Austausch über digitale Transformation, KI-Strategien oder Entrepreneurship.",
   },
 ]
 

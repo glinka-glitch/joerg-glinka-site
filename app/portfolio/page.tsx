@@ -7,17 +7,16 @@ export const metadata: Metadata = {
   title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
 
   description:
-    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum. Strategic Advisory & Consulting.",
+    "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum.",
 
   keywords: [
-    "KI-Transformation Kompetenzen",
-    "Digital Consulting Expertise",
-    "KI-Integration Best Practices",
-    "Digitale Transformation Projekte",
-    "E-Commerce Strategie",
-    "Prozessoptimierung",
+    "KI-Transformation",
+    "Digital Transformation",
+    "KI-Integration",
+    "Digitale Strategien",
+    "E-Commerce",
     "Plattform-Skalierung",
-    "Digital Strategy",
+    "Change Management",
   ],
 
   alternates: {
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kompetenzen | Jörg Glinka · KI-Transformation & Digitalisierung",
     description:
-      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum. Strategic Advisory & Consulting.",
+      "Vier Kompetenzfelder aus 25 Jahren operativer Führung: KI-Transformation, Change Management, Plattform-Skalierung, profitables Wachstum.",
     url: "https://www.glinka.tech/portfolio",
     images: [
       {

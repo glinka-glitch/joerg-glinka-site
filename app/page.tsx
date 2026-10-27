@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
   description:
-    "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO etailer Solutions GmbH (500+ Mio. €).",
+    "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH (500+ Mio. € GMV). Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
   alternates: {
     canonical: "https://www.glinka.tech/",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Jörg Glinka | KI-Transformation & Digitalisierung",
 
     description:
-      "25 Jahre digitale Transformation & KI-Expertise. Strategic Advisory & Consulting für KI-Integration, Digital Transformation und Plattform-Skalierung. Ehemaliger CEO etailer Solutions GmbH (500+ Mio. €).",
+      "25 Jahre digitale Transformation. Mitgründer und CEO der etailer Solutions GmbH. Expertise in KI-Integration, E-Commerce und Plattform-Skalierung.",
 
     url: "https://www.glinka.tech/",
 

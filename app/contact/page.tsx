@@ -19,14 +19,13 @@ export const metadata: Metadata = {
   title: "Kontakt | Jörg Glinka · KI-Transformation",
 
   description:
-    "Kontakt zu Jörg Glinka. Austausch über KI-Transformation, digitale Strategie und Entrepreneurship.",
+    "Kontakt zu Jörg Glinka. Austausch über KI-Transformation, digitale Strategie oder einfach ein Gespräch.",
 
   keywords: [
-    "Jörg Glinka Kontakt",
-    "KI-Transformation Austausch",
-    "Digital Strategy Dialog",
-    "Entrepreneurship Austausch",
-    "Digitale Transformation Gespräch",
+    "Kontakt",
+    "KI-Transformation",
+    "Digital Transformation",
+    "Austausch",
   ],
 
   alternates: {
