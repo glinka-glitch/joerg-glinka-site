@@ -331,7 +331,7 @@ export default function JoergGlinkaWebsite({ blok }) {
     </h3>
 
     <p className="type-body max-w-[36ch] md:max-w-2xl mb-8">
-      25 Jahre Expertise in KI-Integration, E-Commerce und digitaler Transformation.
+      Digitale Transformation und E-Commerce über 25 Jahre. Spezialisiert auf KI-Integration und Prozessautomatisierung.
     </p>
 
     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
