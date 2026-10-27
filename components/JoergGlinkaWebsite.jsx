@@ -165,7 +165,7 @@ export default function JoergGlinkaWebsite({ blok }) {
         "70 % weniger Bearbeitungszeit durch KI-gestützte Produktdatenpflege.",
         "Automatisierte Produktübersetzungen in alle von DeepL unterstützten Zielsprachen.",
         "+60 % Umsatzwachstum nach Einführung der etailer Suite durch integrierte End-to-End-Prozesse.",
-        "+200 % organische Sichtbarkeit durch konsequente Technical-SEO-Optimierung.",
+        "+200 % organische Sichtbarkeit durch Technical-SEO und Geo-Targeting.",
         "Nahtlose Systemintegration zu ERP-, PIM-, Payment- und Marktplatzsystemen für saubere Aufträge-, Bestands-, Preis- und Produktdaten.",
         "50 % niedrigere Kosten für den Betrieb der integrierten E-Commerce-Plattform gegenüber Satellitensystemen ohne Integration.",
       ].map((text, i) => (
