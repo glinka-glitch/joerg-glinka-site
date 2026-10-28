@@ -27,11 +27,11 @@ export default function Header() {
 
             <p className="text-[11px] uppercase tracking-[0.18em] text-zinc-400 mt-1 leading-tight">
   <span className="md:hidden">
-    KI-Transformation
+    AI STRATEGY
   </span>
 
   <span className="hidden md:inline">
-    KI-Transformation & Digitalisierung
+    AI STRATEGY & DIGITAL TRANSFORMATION
   </span>
 </p>
           </div>
